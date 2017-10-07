@@ -12,6 +12,8 @@ tags: [支付系统]
 关于Jigsaw Payment系统设计，参考[老熊的博客](http://blog.lixf.cn)。
 各个模块的负责人以及相关说明如下：
 
+## 正式项目
+
 类别| 项目名称 | 模块名称 | 负责人账号 | 参与人账号 | 说明
 ----|-----| -------- | ------ | ---------|------
 框架| jigsaw-thrift-protobuf | RPC服务端框架和客户端框架| xxx | xxx | 使用Apache Thrift和Google Protobuf的RPC框架
@@ -24,5 +26,9 @@ RPC | jigsaw-rpc-id | ID生成器| xxx | xxx| 支持生成订单、账户等的I
 RPC | jigsaw-rpc-payment | 支付核心服务 | xxx | xxx| 支持各个支付操作的服务。 
 RPC | jigsaw-rpc-user | 用户服务| xxx | xxx | 获取用户信息的基础服务。 
 RPC | jigsaw-rpc-channel | 渠道基础服务 | xxx | xxx | 渠道基础服务，包括渠道注册、信息读取等基础操作。 
-WEB | jigsaw-mode-fastpay | 快捷支付接口实现| xxx | xxx | 对外提供快捷支付接口
  
+## 孵化项目
+
+类别| 项目名称 | 模块名称 | 负责人账号 | 参与人账号 | 说明
+----|-----| -------- | ------ | ---------|------
+WEB | jigsaw-mode-fastpay | 快捷支付接口实现| xxx | xxx | 对外提供快捷支付接口
