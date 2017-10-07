@@ -12,7 +12,7 @@ tags: [支付系统]
 关于Jigsaw Payment系统设计，参考[老熊的博客](http://blog.lixf.cn)。
 各个模块的负责人以及相关说明如下：
 
-类别| 项目名称 | 模块名称 | 负责人账号 | 邮箱 | 说明
+类别| 项目名称 | 模块名称 | 负责人账号 | 参与人账号 | 说明
 ----|-----| -------- | ------ | ---------|------
 框架| jigsaw-thrift-protobuf | RPC服务端框架和客户端框架| xxx | xxx | 使用Apache Thrift和Google Protobuf的RPC框架
 框架| jigsaw-runtime-metrics | 运行时 metrics指标采集 | xxxx | xxxx | 支持metrics指标采集的annotation的实现
