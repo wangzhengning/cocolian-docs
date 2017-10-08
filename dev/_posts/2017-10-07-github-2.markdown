@@ -9,6 +9,8 @@ catalog: true
 tags: [支付系统]  
 ---
 
+> 注意，这个文件必须以UTF-8无BOM格式编码。 
+
 关于Jigsaw Payment系统设计，参考[老熊的博客](http://blog.lixf.cn)。
 各个模块的负责人以及相关说明如下：
 
