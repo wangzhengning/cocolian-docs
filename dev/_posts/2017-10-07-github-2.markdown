@@ -34,3 +34,4 @@ RPC | jigsaw-rpc-channel | 渠道基础服务 | xxx | RocZH | 渠道基础服务
 类别| 项目名称 | 模块名称 | 负责人账号 | 参与人账号 | 说明
 ----|-----| -------- | ------ | ---------|------
 WEB | jigsaw-mode-fastpay | 快捷支付接口实现| xxx | RocZH | 对外提供快捷支付接口
+WEB | jigsaw-mode-fastpay | 快捷支付接口实现| xxx | alexpdh| 对外提供快捷支付接口
