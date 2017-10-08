@@ -1,12 +1,12 @@
 ﻿---
-layout: post
-title: "Jigsaw Payment模块分工"
-subtitle: "GitHub-2"
-date: 2017-10-07 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [支付系统]
+layout: post 
+title: "Jigsaw Payment模块分工"  
+subtitle: "GitHub-2"  
+date: 2017-10-07 12:00:00  
+author: "shamphone"  
+header-img: "img/home-bg-post.jpg"  
+catalog: true  
+tags: [支付系统]  
 ---
 
 关于Jigsaw Payment系统设计，参考[老熊的博客](http://blog.lixf.cn)。
