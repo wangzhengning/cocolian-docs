@@ -18,7 +18,7 @@ tags: [支付系统]
 
 类别| 项目名称 | 模块名称 | 负责人账号 | 参与人账号 | 说明
 ----|-----| -------- | ------ | ---------|------
-框架| jigsaw-thrift-protobuf | RPC服务端框架和客户端框架| xxx | Tony-dulei, yifeng0898 ,liangyd1024| 使用Apache Thrift和Google Protobuf的RPC框架
+框架| jigsaw-thrift-protobuf | RPC服务端框架和客户端框架| xxx | Tony-dulei, yifeng0898 ,liangyd1024，liubinqi2007| 使用Apache Thrift和Google Protobuf的RPC框架
 框架| jigsaw-runtime-metrics | 运行时 metrics指标采集 | xxxx | xxxx | 支持metrics指标采集的annotation的实现
 框架| jigsaw-protobuf-format | protobuf messsage 对象格式化处理 | xxx | xxx|  protobuf messsage 对象格式化处理
 框架|jigsaw-payment-algorithm | 算法库| xxx | yifeng0898| 支付系统中使用的基础算法，包括安全、加密等算法的实现。 
