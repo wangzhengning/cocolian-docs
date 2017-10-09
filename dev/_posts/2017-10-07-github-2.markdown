@@ -18,7 +18,7 @@ tags: [支付系统]
 
 类别| 项目名称 | 模块名称 | 负责人账号 | 参与人账号 | 说明
 ----|-----| -------- | ------ | ---------|------
-框架| jigsaw-thrift-protobuf | RPC服务端框架和客户端框架| xxx | Tony-dulei, yifeng0898 | 使用Apache Thrift和Google Protobuf的RPC框架
+框架| jigsaw-thrift-protobuf | RPC服务端框架和客户端框架| xxx | Tony-dulei, yifeng0898 ,liangyd1024，liubinqi2007| 使用Apache Thrift和Google Protobuf的RPC框架
 框架| jigsaw-runtime-metrics | 运行时 metrics指标采集 | xxxx | xxxx | 支持metrics指标采集的annotation的实现
 框架| jigsaw-protobuf-format | protobuf messsage 对象格式化处理 | xxx | xxx|  protobuf messsage 对象格式化处理
 框架|jigsaw-payment-algorithm | 算法库| xxx | yifeng0898| 支付系统中使用的基础算法，包括安全、加密等算法的实现。 
@@ -26,7 +26,7 @@ tags: [支付系统]
 数据|jigsaw-payment-schema | 基础数据定义| xxx| RocZH| 使用protobuf来定义的基础数据
 RPC | jigsaw-rpc-id | ID生成器| xxx | xxx| 支持生成订单、账户等的ID的RPC服务。 
 RPC | jigsaw-rpc-payment | 支付核心服务 | xxx | kentxp, Tony-dulei,franklu918| 支持各个支付操作的服务。 
-RPC | jigsaw-rpc-user | 用户服务| xxx | chenjieming | 获取用户信息的基础服务。
+RPC | jigsaw-rpc-user | 用户服务| xxx | chenjieming ,liangyd1024| 获取用户信息的基础服务。
 RPC | jigsaw-rpc-channel | 渠道基础服务 | xxx | RocZH, Tony-dulei,jetman13 | 渠道基础服务，包括渠道注册、信息读取等基础操作。 
 
  
