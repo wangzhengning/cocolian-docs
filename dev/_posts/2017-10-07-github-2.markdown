@@ -25,7 +25,7 @@ tags: [支付系统]
 框架| jigsaw-mysql-protobuf | protobuf数据存储到mysql的模板类库| xxx | xxx| 支持将protobuf格式的数据，通过option标记来实现O/R映射，存储到MySQL中。 
 数据|jigsaw-payment-schema | 基础数据定义| xxx| RocZH| 使用protobuf来定义的基础数据
 RPC | jigsaw-rpc-id | ID生成器| xxx | xxx| 支持生成订单、账户等的ID的RPC服务。 
-RPC | jigsaw-rpc-payment | 支付核心服务 | xxx | kentxp, Tony-dulei,franklu918| 支持各个支付操作的服务。 
+RPC | jigsaw-rpc-payment | 支付核心服务 | xxx | kentxp, Tony-dulei,franklu918,dingaiminGIT| 支持各个支付操作的服务。 
 RPC | jigsaw-rpc-user | 用户服务| xxx | chenjieming ,liangyd1024| 获取用户信息的基础服务。
 RPC | jigsaw-rpc-channel | 渠道基础服务 | xxx | RocZH, Tony-dulei,jetman13 | 渠道基础服务，包括渠道注册、信息读取等基础操作。 
 
