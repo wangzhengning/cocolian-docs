@@ -14,26 +14,31 @@ tags: [支付系统]
 关于Jigsaw Payment系统设计，参考[老熊的博客](http://blog.lixf.cn)。
 各个模块的负责人以及相关说明如下：
 
+## PM团队
+
+微信群 jigsaw-payment-PM, 已建立。要求有3年以上支付产品设计或软件架构设计经验。 
+
+
 ## 正式项目
 
-类别| 项目名称 | 模块名称 | 负责人账号 | 参与人账号 | 说明
+类别| 项目名称 | 模块名称 | 负责人账号 | 参与人账号 | 微信群 | 说明
 ----|-----| -------- | ------ | ---------|------
-框架| jigsaw-thrift-protobuf | RPC服务端框架和客户端框架| xxx | Tony-dulei, yifeng0898 ,liangyd1024，liubinqi2007| 使用Apache Thrift和Google Protobuf的RPC框架
-框架| jigsaw-runtime-metrics | 运行时 metrics指标采集 | xxxx | xxxx | 支持metrics指标采集的annotation的实现
-框架| jigsaw-protobuf-format | protobuf messsage 对象格式化处理 | xxx | xxx|  protobuf messsage 对象格式化处理
-框架|jigsaw-payment-algorithm | 算法库| xxx | yifeng0898| 支付系统中使用的基础算法，包括安全、加密等算法的实现。 
-框架| jigsaw-mysql-protobuf | protobuf数据存储到mysql的模板类库| xxx | xxx| 支持将protobuf格式的数据，通过option标记来实现O/R映射，存储到MySQL中。 
-数据|jigsaw-payment-schema | 基础数据定义| xxx| RocZH| 使用protobuf来定义的基础数据
-RPC | jigsaw-rpc-id | ID生成器| xxx | xxx| 支持生成订单、账户等的ID的RPC服务。 
-RPC | jigsaw-rpc-payment | 支付核心服务 | xxx | kentxp, Tony-dulei,franklu918,dingaiminGIT| 支持各个支付操作的服务。 
-RPC | jigsaw-rpc-user | 用户服务| xxx | chenjieming ,liangyd1024| 获取用户信息的基础服务。
-RPC | jigsaw-rpc-channel | 渠道基础服务 | xxx | RocZH, Tony-dulei,jetman13 | 渠道基础服务，包括渠道注册、信息读取等基础操作。 
+框架| jigsaw-thrift-protobuf | RPC服务端框架和客户端框架| xxx | Tony-dulei, yifeng0898 ,liangyd1024，liubinqi2007| jigsaw-thrift-protobuf | 使用Apache Thrift和Google Protobuf的RPC框架。使用技术Apache Thrift, Google Protocol Buffer, Zookeeper/Consul等。
+框架| jigsaw-runtime-metrics | 运行时 metrics指标采集 | xxxx | xxxx | 待建群 |支持metrics指标采集的annotation的实现。要求熟悉spring metrics， spring annotation。
+框架| jigsaw-protobuf-format | protobuf messsage 对象格式化处理 | xxx | xxx| 待建群 | protobuf messsage 对象格式化处理。要求熟悉Google Protobuf。
+框架|jigsaw-payment-algorithm | 算法库| xxx | yifeng0898| 待建群 |支付系统中使用的基础算法，包括安全、加密等算法的实现。 要求有算法经验。 
+框架| jigsaw-mysql-protobuf | protobuf数据存储到mysql的模板类库| xxx | xxx| 待建群 |支持将protobuf格式的数据，通过option标记来实现O/R映射，存储到MySQL中。要求精通MySQL, Google Protocol Buffer。 
+数据|jigsaw-payment-schema | 基础数据定义| xxx| RocZH| 待建群 |使用protobuf来定义的基础数据。需要产品经理参加。
+RPC | jigsaw-rpc-id | ID生成器| xxx | xxx| 待建群 |支持生成订单、账户等的ID的RPC服务。 要求精通Jedis。
+RPC | jigsaw-rpc-payment | 支付核心服务 | xxx | kentxp, Tony-dulei,franklu918,dingaiminGIT| 待建群 |支持各个支付操作的服务。要求精通RPC，有支付核心开发经验。 
+RPC | jigsaw-rpc-user | 用户服务| xxx | chenjieming ,liangyd1024| 待建群 |获取用户信息的基础服务。要求精通RPC。
+RPC | jigsaw-rpc-channel | 渠道基础服务 | xxx | RocZH, Tony-dulei,jetman13 | 待建群 |渠道基础服务，包括渠道注册、信息读取等基础操作。 要求精通RPC，有支付渠道对接经验。
 
  
 ## 孵化项目
 
 类别| 项目名称 | 模块名称 | 负责人账号 | 参与人账号 | 说明
 ----|-----| -------- | ------ | ---------|------
-WEB | jigsaw-mode-fastpay | 快捷支付接口实现| xxx | RocZH | 对外提供快捷支付接口
+WEB | jigsaw-mode-fastpay | 快捷支付接口实现| xxx | RocZH | 待建群 |对外提供快捷支付接口
 
 上述各个项目会建立对应的同名微信群。 如需要加入群，请联系凤凰牌老熊。
