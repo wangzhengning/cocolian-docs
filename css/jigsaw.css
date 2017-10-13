@@ -1,3 +1,11 @@
+@media (min-width: 768px) {
+  .post-container {
+    padding-right: 10px;
+	width: 100%;
+	margin-left: 50px;
+	padding-right: 320px;
+  }
+}
 
 @media (min-width: 1200px) {
 .container {
@@ -10,13 +18,7 @@
 	padding-right: 320px;
   }
 }
-@media (min-width: 768px) {
-  .post-container {
-    padding-right: 10px;
-	width: 100%;
-	margin-left: 50px;
-  }
-}
+
 
 .sidebar-container {
   color: #bfbfbf;
