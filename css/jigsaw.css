@@ -1,9 +1,9 @@
-@media (min-width: 1200px)
+
+@media (min-width: 1200px) {
 .container {
   width:100%;
 }
 
-@media (min-width: 1200px) {
   .post-container,
   .sidebar-container {
     padding-right: 15px;
