@@ -17,6 +17,10 @@
 .sidebar-container {
   color: #bfbfbf;
   font-size: 14px;
+  position:fixed;
+  width:200px;
+  right:20px;
+  top:240px;
 }
 .sidebar-container h5 {
   color: #808080;
