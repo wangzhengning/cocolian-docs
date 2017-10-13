@@ -3,9 +3,7 @@
 .container {
   width:100%;
 }
-
-  .post-container,
-  .sidebar-container {
+  .post-container {
     padding-right: 15px;
 	width: 100%;
 	margin-left: 50px;
