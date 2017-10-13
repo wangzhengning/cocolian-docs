@@ -1,9 +1,16 @@
+@media (min-width: 1200px)
+bootstrap.min.css:5
+.container {
+  width:100%;
+}
+
 @media (min-width: 1200px) {
   .post-container,
   .sidebar-container {
     padding-right: 15px;
 	width: 100%;
 	margin-left: 50px;
+	padding-right: 320px;
   }
 }
 @media (min-width: 768px) {
