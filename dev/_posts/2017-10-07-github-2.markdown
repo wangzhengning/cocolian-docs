@@ -39,6 +39,7 @@ RPC | jigsaw-rpc-channel | 渠道基础服务 | xxx | RocZH, Tony-dulei,jetman13
 
 类别| 项目名称 | 模块名称 | 负责人账号 | 参与人账号 | 说明
 ----|-----| -------- | ------ | ---------|------
-WEB | jigsaw-mode-fastpay | 快捷支付接口实现| xxx | RocZH | 待建群 |对外提供快捷支付接口
 
-上述各个项目会建立对应的同名微信群。 如需要加入群，请联系凤凰牌老熊。
+WEB | jigsaw-mode-fastpay | 快捷支付接口实现| xxx | RocZH,alexpdh | 对外提供快捷支付接口
+
+
