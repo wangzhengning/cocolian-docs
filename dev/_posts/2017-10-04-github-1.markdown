@@ -6,7 +6,7 @@ date: 2017-10-04 12:00:00
 author: "shamphone"
 header-img: "img/home-bg-post.jpg"
 catalog: true
-tags: [支付系统]
+tag: [bootcamp]
 ---
 
 Pull请求是通过fork一个新的代码库用来独立开发，并将变更贡献回原始代码库。当某一个模块的开发工作完成后，可以发送一个pull请求给代码库所有者，来合并我们的代码更改。Pull请求本身可以引起合作者之间的评论，包括代码质量，功能，甚至总体战略等。
