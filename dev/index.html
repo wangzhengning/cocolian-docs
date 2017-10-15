@@ -7,54 +7,42 @@ header-img: "img/home-bg.jpg"
 
 <h2>开发者入门</h2>
 <hr/>
+<ul>
 {% for post in site.categories.dev %}
 	{% assign  display = false  %}
 		{% for tag in post.tags %}
 			{% if(tag == "bootcamp") %} {% assign display = true %}  {%endif %}
 		{% endfor %}
 	{% if display %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h3 class="post-title">
-            {{ post.title }}
-        </h3>
-    </a>
-</div>
+    <ol><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></ol>
 	{% endif %}
 {% endfor %}
+</ul>
 
 <h2>开发规范</h2>
 <hr/>
+<ul>
 {% for post in site.categories.dev %}
 	{% assign  display = false  %}
 		{% for tag in post.tags %}
 			{% if(tag == "specification") %} {% assign display = true %}  {%endif %}
 		{% endfor %}
 	{% if display %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h3 class="post-title">
-            {{ post.title }}
-        </h3>
-    </a>
-</div>
+    <ol><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></ol>
 	{% endif %}
 {% endfor %}
+</ul>
 
 <h2>产品设计</h2>
 <hr/>
+<ul>
 {% for post in site.categories.dev %}
 	{% assign  display = false  %}
 		{% for tag in post.tags %}
 			{% if(tag == "design") %} {% assign display = true %}  {%endif %}
 		{% endfor %}
 	{% if display %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h3 class="post-title">
-            {{ post.title }}
-        </h3>
-    </a>
-</div>
+    <ol><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></ol>
 	{% endif %}
 {% endfor %}
+</ul>
