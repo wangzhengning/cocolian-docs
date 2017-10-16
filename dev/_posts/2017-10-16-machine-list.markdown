@@ -1,0 +1,22 @@
+---
+layout: post 
+title: "Jigsaw Payment线上环境清单"  
+subtitle: "infra文档"  
+date: 2017-10-16 12:00:00  
+author: "shamphone"  
+header-img: "img/home-bg-post.jpg"  
+catalog: true  
+tag: [design]  
+---
+
+> 注意，这个文件必须以UTF-8无BOM格式编码。 
+
+
+
+## 一、机器列表
+
+
+| ﻿IP地址      | 操作系统                   | owner              | 配置             | 状态                   |
+|-------------|----------------------------|--------------------|------------------|------------------------|
+| 172.16.2.23 | Centos7.4.17.08            | 凤凰牌老熊         | 2core/3G/120G    | 待装机                 |
+| 172.16.2.24 | Centos7.4.17.08            | 凤凰牌老熊         | 2core/6G/100G    | 可用                   |
