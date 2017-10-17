@@ -22,3 +22,4 @@ tag: [design]
 | 172.16.2.24 | Centos7.4.17.08            | 凤凰牌老熊         | 2core/6G/100G    | 可用                   |
 | 172.104.124.177 | Ubuntu 12.04 LTS            | Codefor         | 1core/1G/20G    | 可用                   |
 | 115.29.141.22 | Ubuntu 12.04.5 LTS            | Codefor         | 1core/1G/20G    | 可用                   |
+| 117.48.205.183 | CentOS 7.3.1611            | andyadc         | 1core/2G/30G    | 可用                   |
