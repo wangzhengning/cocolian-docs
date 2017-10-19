@@ -6,7 +6,7 @@ date: 2017-10-04 12:00:00
 author: "shamphone"
 header-img: "img/home-bg-post.jpg"
 catalog: true
-tags: [支付系统]
+tag: [bootcamp]
 ---
 
 Pull请求是通过fork一个新的代码库用来独立开发，并将变更贡献回原始代码库。当某一个模块的开发工作完成后，可以发送一个pull请求给代码库所有者，来合并我们的代码更改。Pull请求本身可以引起合作者之间的评论，包括代码质量，功能，甚至总体战略等。
@@ -139,6 +139,74 @@ To github.com:shamphone/jigsaw-payment.git
 ![github-6](http://blog.lixf.cn/img/in-post/github-6.png)
 
 在本地计算机上进行合并：另外一种情况，合并的时候可能会遇到冲突，点击上部的Info图标，GitHub有非常清晰的指导，怎么从贡献者的分支上下拉代码变更到本地，合并并解决冲突。
+
+## 六、同步远程库
+
+当代码合并到jigsaw-projects的主库之后，版本就变得复杂起来了：
+1. 本地的update-readme分支，是最新的代码。（假设没有其他人在更新这个分支） 
+2. 本地的master和个人github上的master一样，是修改之前的代码。  
+3. 主库，也就是远程的jigsaw-projects上的jigsaw-payment-docs项目代码，和1一样，都是最新的代码。   
+
+这样，我们就需要更新本地master和个人github上的master代码，让他们和jigsaw-projects主库的最新代码保持一致。 
+
+首先，我们需要设置一下主库来作为个人github分支这个从库的上游。 
+
+```bash
+ git remote add upstream git@github.com:jigsaw-projects/jigsaw-payment-docs.git
+ ```
+ 
+看一下现在的库的情况：
+
+```bash
+$ git remote -v
+origin  git@github.com:shamphone/jigsaw-payment-docs.git (fetch)
+origin  git@github.com:shamphone/jigsaw-payment-docs.git (push)
+upstream        git@github.com:jigsaw-projects/jigsaw-payment-docs.git (fetch)
+upstream        git@github.com:jigsaw-projects/jigsaw-payment-docs.git (push)
+```
+
+抓取主库的信息到本地：
+
+```bash
+$ git fetch upstream
+remote: Counting objects: 1, done.
+remote: Total 1 (delta 0), reused 1 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:jigsaw-projects/jigsaw-payment-docs
+ * [new branch]      master     -> upstream/master
+```
+
+注意，这个变更被同步到 upstream/master这个分支了。 
+
+切换到master分支
+
+```bash
+$ git checkout master
+```
+
+将upstream/master分支合并到主干master。 如果本地没有更新，则会执行fast-forward。
+
+```bash
+$ git merge upstream/master
+Updating e58f17a..90c18ac
+Fast-forward
+ dev/_posts/2017-10-15-function-list.markdown | 158 +++++++++++++++++++++++++++
+ 1 file changed, 158 insertions(+)
+ create mode 100644 dev/_posts/2017-10-15-function-list.markdown
+
+```
+
+注意，到目前为止，只是将你的本地的master同步到最新版本，如果需要更新个人github上的分支，需要执行push操作
+
+```
+$ git push origin master
+Counting objects: 1, done.
+Writing objects: 100% (1/1), 281 bytes | 281.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To paymentrpc:paymentrpc/jigsaw-payment-docs.git
+   e58f17a..90c18ac  master -> master
+
+```
 
 
 如上，如有问题，请大家及时在微信群里沟通。 

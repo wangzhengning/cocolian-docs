@@ -1,18 +1,32 @@
-@media (min-width: 1200px) {
-  .post-container,
-  .sidebar-container {
-    padding-right: 15px;
-  }
-}
 @media (min-width: 768px) {
   .post-container {
-    padding-right: 5%;
+    padding-right: 10px;
+	width: 100%;
+	margin-left: 50px;
+	padding-right: 320px;
   }
 }
+
+@media (min-width: 1200px) {
+.container {
+  width:100%;
+}
+  .post-container {
+    padding-right: 15px;
+	width: 100%;
+	margin-left: 50px;
+	padding-right: 320px;
+  }
+}
+
 
 .sidebar-container {
   color: #bfbfbf;
   font-size: 14px;
+  position:fixed;
+  width:200px;
+  right:20px;
+  top:240px;
 }
 .sidebar-container h5 {
   color: #808080;
