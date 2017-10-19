@@ -94,9 +94,10 @@ sudo hostnamectl --static set-hostname kube[XX].jigsaw
 修改/etc/hosts 文件，添加master节点
 
 ``` bash
-sudo echo "172.16.2.24  kube-master.jigsaw  
 
-172.16.2.[XX]  kube[XX].jigsaw" >> /etc/hosts
+172.16.2.24  kube-master.jigsaw  
+172.16.2.[XX]  kube[XX].jigsaw
+
 ```
 
 修改 /etc/kubernetes/config 文件，内容如下:
