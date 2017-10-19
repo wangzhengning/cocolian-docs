@@ -82,20 +82,21 @@ gpgcheck=0
 
 安装Kubernetes, etcd 和 flannel， 同时，作为依赖， docker和cadvisor也会被安装。 
 ```bash
-yum -y install --enablerepo=virt7-docker-common-release kubernetes etcd flannel
+sudo yum -y install --enablerepo=virt7-docker-common-release kubernetes etcd flannel
 ```
 
 修改机器名为kube[XX].jigsaw为机器名。 其中[XX]为分配的IP地址尾号，比如kube28.jigsaw。
 
 ```bash
-hostnamectl --static set-hostname kube[XX].jigsaw
+sudo hostnamectl --static set-hostname kube[XX].jigsaw
 ```
 
 修改/etc/hosts 文件，添加master节点
 
 ``` bash
-sudo echo "172.16.2.24  kube-master.jigsaw
-172.16.2.[XX] kube[XX].jigsaw" >> /etc/hosts
+sudo echo "172.16.2.24  kube-master.jigsaw  
+
+172.16.2.[XX]  kube[XX].jigsaw" >> /etc/hosts
 ```
 
 修改 /etc/kubernetes/config 文件，内容如下:
@@ -122,7 +123,7 @@ sudo systemctl disable iptables-services firewalld
 sudo systemctl stop iptables-services firewalld
 ```
 
-**重启系统**
+注意，修改后，需要*重启系统*， 以让设置生效。 
 
 
 **2. 修改配置文件**
