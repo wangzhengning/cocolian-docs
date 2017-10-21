@@ -28,7 +28,7 @@ tag: [design]
   ####  本次主要从以下几个维度来分析下用户体系做什么？怎么做？为什么这么做？ ####
 
 我们先来看一张用户的生命周期图：
-![](/img/rpc-user/smzq.png)
+![](http://jigsaw.lixf.cn/img/rpc-user/smzq.png)
 
 **一、用户概念**
 
