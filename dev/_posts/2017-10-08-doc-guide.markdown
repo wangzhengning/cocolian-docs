@@ -6,7 +6,7 @@ date: 2017-10-08 12:00:00
 author: "shamphone"
 header-img: "img/home-bg-post.jpg"
 catalog: true
-tag: [bootcamp, specification]
+tag: [PM]
 ---
 
 ## Markdown语法

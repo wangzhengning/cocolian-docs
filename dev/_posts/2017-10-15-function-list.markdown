@@ -6,7 +6,7 @@ date: 2017-10-15 12:00:00
 author: "shamphone"  
 header-img: "img/home-bg-post.jpg"  
 catalog: true  
-tag: [design]  
+tag: [PM]  
 ---
 
 > 注意，这个文件必须以UTF-8无BOM格式编码。 
