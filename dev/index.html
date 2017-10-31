@@ -9,23 +9,26 @@ header-img: "img/home-bg.jpg"
 
 <h3>基础设施建设</h3>
 <p>这里涉及到基础设施的建设。所有基础设施的搭建都需要有文档记录，使得采用jigsaw payment系统的客户可以按照这个指南来搭建自己的系统。 </p>
-<ul>
-{% for post in site.tags['infra'] %}
-<ol><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></ol>
+<ol class="title_list">
+{% assign sorted_infra = site.tags['infra'] %}
+{% for post in sorted_infra %}
+<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 {% endfor %}
-</ul>
+</ol>
 
 <h3>架构设计</h3>
-<ul>
-{% for post in site.tags['PM'] %}
-<ol><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></ol>
+<ol class="title_list">
+{% assign sorted_pm = site.tags['PM']  %}
+{% for post in sorted_pm %}
+<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 {% endfor %}
-</ul>
+</ol>
 
 
 <h3>用户管理模块设计</h3>
-<ul>
-{% for post in site.tags['user'] %}
-<ol><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></ol>
+<ol class="title_list">
+{% assign sorted_user = site.tags['user'] %}
+{% for post in sorted_user %}
+<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 {% endfor %}
-</ul>
+</ol>
