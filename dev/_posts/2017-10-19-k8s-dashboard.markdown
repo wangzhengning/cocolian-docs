@@ -2,11 +2,11 @@
 layout: post 
 title: "Kubernetes Dashboard安装指南"  
 subtitle: "infra文档"  
-date: 2017-10-17 12:00:00  
+date: 2017-10-20 12:00:00  
 author: "shamphone"  
 header-img: "img/home-bg-post.jpg"  
 catalog: true  
-tag: [design]  
+tag: [infra]  
 ---
 
 > 注意，这个文件必须以UTF-8无BOM格式编码。 
