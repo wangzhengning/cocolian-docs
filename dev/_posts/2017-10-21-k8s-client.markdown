@@ -1,8 +1,8 @@
 ---
 layout: post 
-title: "Kubeadm安装Kubernetes指南(Master)"  
+title: "Kubeadm安装Kubernetes指南(Client)"  
 subtitle: "infra文档"  
-date: 2017-10-17 12:00:00  
+date: 2017-10-21 12:00:00  
 author: "shamphone"  
 header-img: "img/home-bg-post.jpg"  
 catalog: true  
@@ -11,10 +11,10 @@ tag: [design]
 
 > 注意，这个文件必须以UTF-8无BOM格式编码。 
 
-这里描述如何使用Kubeadm安装Kubernetes服务器端
+这里描述如何使用Kubeadm安装Kubernetes的nodes端
 
 > 注意k8s的版本，不是所有的版本都适合这种安装方式。安装KubeAdm的时候需要访问google，需要使用一个http/https代理。
-> 注意，客户端不需要这个安装过程，这仅在kube-master上安装。这里记录这个安装过程做备份。 
+
 
 ## 一、安装docker
 
@@ -90,79 +90,21 @@ sudo systemctl stop iptables-services firewalld
 ```
 
 注意，修改后，需要*重启系统*， 以让设置生效。 
-
-
-## 五、设置代理服务器
-
-这里使用ssh来做隧道代理，但这个是socks代理，不能直接用，需要使用privoxy来转换。
-
-kubeadm只接受http/https代理，不接受socks代理。使用ssh隧道的话，还需要做一个转发。 可以使用privoxy来实现。 
-运气好的话，可以直接安装：
-
-
-
-```bash 
-# 添加一个用户给 Privoxy
-echo 'privoxy:*:7777:7777:privoxy proxy:/no/home:/no/shell' >> /etc/passwd
-# 分配个组给 Privoxy
-echo 'privoxy:*:7777:' >> /etc/group
-# 开始安装
-sudo yum install -y privoxy 
-```
-
-如果报告找不到依赖包包 libxxx.so， 恭喜，需要从源代码开始弄了。 
+修改 /etc/sysctl.conf  文件，添加内容
 ```bash
-[jigsaw@kube-master ~]$ sudo yum install privoxy
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * epel: mirror.dmmlabs.jp
-Resolving Dependencies
---> Running transaction check
----> Package privoxy.x86_64 0:3.0.24-2.el6 will be installed
---> Processing Dependency: libpcre.so.0()(64bit) for package: privoxy-3.0.24-2.el6.x86_64
---> Finished Dependency Resolution
-Error: Package: privoxy-3.0.24-2.el6.x86_64 (epel)
-           Requires: libpcre.so.0()(64bit)
- You could try using --skip-broken to work around the problem
- You could try running: rpm -Va --nofiles --nodigest
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
 ```
-到 [sourceforege源码库](https://sourceforge.net/projects/ijbswa/files/)下载对应的版本。 
 
-
+执行如下内容让其生效
 
 ```bash
-# 默认是没有wget命令，可以yum来安装；
-wget http://jaist.dl.sourceforge.net/project/ijbswa/Sources/3.0.23%20%28stable%29/privoxy-3.0.23-stable-src.tar.gz
-# 解压文件
-tar -xzf privoxy-3.0.23-stable-src.tar.gz
-cd privoxy-3.0.23-stable
 
-# sudo yum install -y gcc
-# sudo yum install -y autoconf
-
-autoconf
-./configure
-make
-sudo make -s install
+sudo modprobe br_netfilter
+sudo sysctl -p 
 ```
 
-修改配置文件
-```bash
-vi /usr/local/etc/privoxy/config
-```
-
-```bash
-#找到listen-address，配置HTTP代理的端口
-listen-address  127.0.0.1:18880
-# 找到forward-socks5，配置要转发的端口，及特地规则。具体使用场景可以参考官方配置里写上。
-# 这里我们配置全局转发，目前是18888端口(ssh客户端端口)
-forward-socks5   /         127.0.0.1:18888 .
-```
-
-> 在使用 privoxy 对 sock5 等代理协议进行转发成 http 的时候 forward-socks5 和 forward-socks5t 区别虽然不是很大，但是有时候却非常头疼，只能 GET  不能 POST。经过排查发现，forward-socks5 的 DNS 解析会在远程服务器上进行，而 forward-socks5t 却不会，这就导致使用后者访问境外网站的时候 ，国内 DNS 无法解析境外网址的情况，从而也就不知道去访问哪个IP。一般来说，还是建议使用 forward-socks5。
-
-
-## 六、 安装kubeadm
+## 五、 安装kubeadm
 
 ```bash
 sudo yum install -y kubelet kubeadm kubectl
@@ -170,141 +112,101 @@ sudo systemctl enable kubelet
 sudo systemctl start kubelet
 ```
 
-## 七、下载相关镜像
+## 六、下载相关镜像
 
-非常关键，这些镜像无法从gcr.io下载，可以先从国内源下载。 
+非常关键，这些镜像无法从gcr.io下载，可以先从国内源下载。 以下是从阿里云上下载的镜像源，亲测可用。 
 创建 docker.sh文件，内容如下， 然后执行 sudo docker.sh 即可。 
-
+K8s的client端需要安装一些docker，这些docker默认从google的服务器上下载。这些服务器目前从国内无法正常访问。如果不预先下载，cni就无法正常初始化。
+执行：
 ```bash
-docker pull hub.c.163.com/ap6108/pause-amd64:3.0
-docker pull hub.c.163.com/ap6108/k8s-dns-sidecar-amd64:1.14.4
-docker pull hub.c.163.com/ap6108/kube-apiserver-amd64:v1.7.5
-docker pull hub.c.163.com/ap6108/kube-controller-manager-amd64:v1.7.5
-docker pull hub.c.163.com/ap6108/kube-scheduler-amd64:v1.7.5
-docker pull hub.c.163.com/ap6108/kube-proxy-amd64:v1.7.5
-docker pull hub.c.163.com/ap6108/flannel:v0.8.0-amd64
-docker pull hub.c.163.com/ap6108/k8s-dns-kube-dns-amd64:1.14.4
-docker pull hub.c.163.com/ap6108/k8s-dns-dnsmasq-nanny-amd64:1.14.4
-docker pull hub.c.163.com/ap6108/etcd-amd64:3.0.17
-
-docker tag hub.c.163.com/ap6108/etcd-amd64:3.0.17  gcr.io/google_containers/etcd-amd64:3.0.17
-docker tag hub.c.163.com/ap6108/kube-apiserver-amd64:v1.7.5 gcr.io/google_containers/kube-apiserver-amd64:v1.7.5
-docker tag hub.c.163.com/ap6108/kube-controller-manager-amd64:v1.7.5  gcr.io/google_containers/kube-controller-manager-amd64:v1.7.5
-docker tag hub.c.163.com/ap6108/kube-scheduler-amd64:v1.7.5 gcr.io/google_containers/kube-scheduler-amd64:v1.7.5
-docker tag hub.c.163.com/ap6108/k8s-dns-dnsmasq-nanny-amd64:1.14.4 gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.4
-docker tag hub.c.163.com/ap6108/k8s-dns-kube-dns-amd64:1.14.4 gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.4
-docker tag hub.c.163.com/ap6108/flannel:v0.8.0-amd64 gcr.io/google_containers/flannel:v0.8.0-amd64
-docker tag hub.c.163.com/ap6108/kube-proxy-amd64:v1.7.5 gcr.io/google_containers/kube-proxy-amd64:v1.7.5
-docker tag hub.c.163.com/ap6108/pause-amd64:3.0 gcr.io/google_containers/pause-amd64:3.0
-docker tag hub.c.163.com/ap6108/k8s-dns-sidecar-amd64:1.14.4 gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.4
-
-docker rmi -f hub.c.163.com/ap6108/pause-amd64:3.0
-docker rmi -f hub.c.163.com/ap6108/k8s-dns-sidecar-amd64:1.14.4
-docker rmi -f hub.c.163.com/ap6108/kube-apiserver-amd64:v1.7.5
-docker rmi -f hub.c.163.com/ap6108/kube-controller-manager-amd64:v1.7.5
-docker rmi -f hub.c.163.com/ap6108/kube-scheduler-amd64:v1.7.5
-docker rmi -f hub.c.163.com/ap6108/kube-proxy-amd64:v1.7.5
-docker rmi -f hub.c.163.com/ap6108/flannel:v0.8.0-amd64
-docker rmi -f hub.c.163.com/ap6108/k8s-dns-kube-dns-amd64:1.14.4
-docker rmi -f hub.c.163.com/ap6108/k8s-dns-dnsmasq-nanny-amd64:1.14.4
-docker rmi -f hub.c.163.com/ap6108/etcd-amd64:3.0.17
+journalctl -r -u kubelet
 ```
 
-
-## 八、使用proxy来运行init
-
-新建 run_kubeadm.sh文件，内容
+日志中会出现如下错误：
 
 ```bash
-## 重启privoxy
-/etc/init.d/privoxy restart
-## 设置proxy
-export http_proxy="http://127.0.0.1:18880/"
-export https_proxy="http://127.0.0.1:18880/"
-export no_proxy="localhost,127.0.0.1,192.168.1.112,192.168.1.115,172.16.2.23, 172.16.2.24,172.16.1.,.jigsaw"
-echo $http_proxy
-echo $https_proxy
-echo $no_proxy
-## 开始执行
-sudo kubeadm init --apiserver-advertise-address=172.16.2.24 --kubernetes-version=v1.7.5 --pod-network-cidr=10.244.0.0/16
+9161 cni.go:189] Unable to update cni config: No networks found in /etc/cni/net.d
+9161 kubelet.go:2136] Container runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:docke
+Nov 07 12:43:22 kube23.jigsaw dockerd-current[11576]: time="2017-11-07T12:43:22.425674182+08:00" level=error msg="Attempting next endpoint for pull after error: Get https://gcr.io/v1/_ping:
+9161 helpers.go:432] Couldn't load Docker cofig. If sandbox image "gcr.io/google_containers/pause-amd64:3.0" is in a pri
+9161 remote_runtime.go:91] RunPodSandbox from runtime service failed: rpc error: code = 2 desc = unable to pull sandbox
+9161 kuberuntime_sandbox.go:54] CreatePodSandbox for pod "kube-proxy-fx6pf_kube-system(32142190-c370-11e7-b5ca-f0def1214
+9161 kuberuntime_manager.go:618] createPodSandbox for pod "kube-proxy-fx6pf_kube-system(32142190-c370-11e7-b5ca-f0def121
+9161 pod_workers.go:182] Error syncing pod 32142190-c370-11e7-b5ca-f0def12142f8 ("kube-proxy-fx6pf_kube-system(32142190-
+```
+即无法下载 gcr.io/google_containers/pause-amd64:3.0 这个镜像。 以下可以预先下载镜像到本地：
+【TODO： 如何建立本地镜像仓库？】
+
+```bash
+docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/pause-amd64:3.0
+docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-sidecar-amd64:1.14.4
+docker pull registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-apiserver-amd64:v1.7.5
+docker pull registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-controller-manager-amd64:v1.7.5
+docker pull registry.cn-hangzhou.aliyuncs.com/google-containers/kube-scheduler-amd64:v1.7.5
+docker pull registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-proxy-amd64:v1.7.5
+docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/flannel:v0.8.0-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-amd64:1.14.4
+docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4
+docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17
+
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17  gcr.io/google_containers/etcd-amd64:3.0.1
+docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-apiserver-amd64:v1.7.5 gcr.io/google_containers/kube-apiserver-
+docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-controller-manager-amd64:v1.7.5  gcr.io/google_containers/kube-ager-amd64:v1.7.5
+docker tag registry.cn-hangzhou.aliyuncs.com/google-containers/kube-scheduler-amd64:v1.7.5 gcr.io/google_containers/kube64:v1.7.5
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4 gcr.io/google_containers/q-nanny-amd64:1.14.4
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-amd64:1.14.4 gcr.io/google_containers/k8s-dd64:1.14.4
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/flannel:v0.8.0-amd64 gcr.io/google_containers/flannel:v0.8.0
+docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-proxy-amd64:v1.7.5 gcr.io/google_containers/kube-proxy-amd64:v1
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/pause-amd64:3.0 gcr.io/google_containers/pause-amd64:3.0
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-sidecar-amd64:1.14.4 gcr.io/google_containers/k8s-dn4:1.14.4
+
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/pause-amd64:3.0
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-sidecar-amd64:1.14.4
+docker rmi -f registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-apiserver-amd64:v1.7.5
+docker rmi -f registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-controller-manager-amd64:v1.7.5
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/google-containers/kube-scheduler-amd64:v1.7.5
+docker rmi -f registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-proxy-amd64:v1.7.5
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/flannel:v0.8.0-amd64
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-amd64:1.14.4
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17
 
 ```
 
-然后执行：
+## 七、加入kubernetes网络
+
+注意，这里的token是在master上执行kubeadm init之后的返回值。 172.16.2.24是kubernetes的master。 
 
 ```bash
-## 建立ssh隧道
-ssh -N -f -C -D 18888 deploy.lixf.cn
-## 执行初始化
-sudo sh run_kubeadm.sh
-```
-
-成功后，能看到
-```bash
-[init] Using Kubernetes version: v1.7.5
-[init] Using Authorization modes: [Node RBAC]
+[jigsaw@kube23 ~]$ sudo kubeadm join --token 703089.e6b9cc54a8810491 172.16.2.24:6443
+[kubeadm] WARNING: kubeadm is in beta, please do not use it for production clusters.
 [preflight] Running pre-flight checks
 [preflight] Starting the kubelet service
-[kubeadm] WARNING: starting in 1.8, tokens expire after 24 hours by default (if you require a non-expiring token use --token-ttl 0)
-[certificates] Generated CA certificate and key.
-[certificates] Generated API server certificate and key.
-[certificates] API Server serving cert is signed for DNS names [kube-master.jigsaw kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 172.16.2.24]
-[certificates] Generated API server kubelet client certificate and key.
-[certificates] Generated service account token signing key and public key.
-[certificates] Generated front-proxy CA certificate and key.
-[certificates] Generated front-proxy client certificate and key.
-[certificates] Valid certificates and keys now exist in "/etc/kubernetes/pki"
-[kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/scheduler.conf"
-[kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/admin.conf"
+[discovery] Trying to connect to API Server "172.16.2.24:6443"
+[discovery] Created cluster-info discovery client, requesting info from "https://172.16.2.24:6443"
+[discovery] Cluster info signature and contents are valid, will use API Server "https://172.16.2.24:6443"
+[discovery] Successfully established connection with API Server "172.16.2.24:6443"
+[bootstrap] Detected server version: v1.7.5
+[bootstrap] The server supports the Certificates API (certificates.k8s.io/v1beta1)
+[csr] Created API client to obtain unique certificate for this node, generating keys and certificate signing request
+[csr] Received signed certificate from the API server, generating KubeConfig...
 [kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/kubelet.conf"
-[kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/controller-manager.conf"
-[apiclient] Created API client, waiting for the control plane to become ready
-[apiclient] All control plane components are healthy after 41.502720 seconds
-[token] Using token: eabf28.7add6212a7aed62f
-[apiconfig] Created RBAC rules
-[addons] Applied essential addon: kube-proxy
-[addons] Applied essential addon: kube-dns
 
-Your Kubernetes master has initialized successfully!
+Node join complete:
+* Certificate signing request sent to master and response
+  received.
+* Kubelet informed of new secure connection details.
 
-To start using your cluster, you need to run (as a regular user):
-
-  mkdir -p $HOME/.kube
-  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-  sudo chown $(id -u):$(id -g) $HOME/.kube/config
-
-You should now deploy a pod network to the cluster.
-Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
-  http://kubernetes.io/docs/admin/addons/
-
-You can now join any number of machines by running the following on each node
-as root:
-
-  kubeadm join --token eabf28.7add6212a7aed62f 172.16.2.24:6443
+Run 'kubectl get nodes' on the master to see this machine join.
 
 ```
-
-之后按照这个指示，执行
-
-```bash
- mkdir -p $HOME/.kube
- sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
- sudo chown $(id -u):$(id -g) $HOME/.kube/config
-```
-
-
-## 九、验证
+## 八、验证
 
 ```bash
 
-[jigsaw@kube-master ~]$ kubectl get pod  -o wide  --all-namespaces
-NAMESPACE     NAME                                         READY     STATUS    RESTARTS   AGE       IP               NODE
-kube-system   etcd-kube-master.jigsaw                      1/1       Running   0          1d        111.63.112.254   kube-master.jigsaw
-kube-system   kube-apiserver-kube-master.jigsaw            1/1       Running   0          1d        111.63.112.254   kube-master.jigsaw
-kube-system   kube-controller-manager-kube-master.jigsaw   1/1       Running   0          1d        111.63.112.254   kube-master.jigsaw
-kube-system   kube-dns-2425271678-qhk1m                    3/3       Running   0          1d        10.244.0.2       kube-master.jigsaw
-kube-system   kube-flannel-ds-1bm2n                        1/1       Running   0          1d        111.63.112.254   kube-master.jigsaw
-kube-system   kube-proxy-7rk7g                             1/1       Running   0          1d        111.63.112.254   kube-master.jigsaw
-kube-system   kube-scheduler-kube-master.jigsaw            1/1       Running   0          1d        111.63.112.254   kube-master.jigsaw
-kube-system   kubernetes-dashboard-1592587111-42pnb        1/1       Running   0          23h       10.244.0.12      kube-master.jigsaw
+[jigsaw@kube-master ~]$ kubectl get nodes
+NAME                 STATUS    AGE       VERSION
+kube-master.jigsaw   Ready     1h        v1.7.5
+kube23.jigsaw        Ready     59m       v1.7.5
+
 ```

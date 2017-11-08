@@ -89,6 +89,21 @@ sudo systemctl disable iptables-services firewalld
 sudo systemctl stop iptables-services firewalld
 ```
 
+修改 /etc/sysctl.conf  文件，添加内容
+```bash
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+```
+
+执行如下内容让其生效
+
+```bash
+
+sudo modprobe br_netfilter
+sudo sysctl -p 
+```
+
+
 注意，修改后，需要*重启系统*， 以让设置生效。 
 
 
@@ -176,38 +191,38 @@ sudo systemctl start kubelet
 创建 docker.sh文件，内容如下， 然后执行 sudo docker.sh 即可。 
 
 ```bash
-docker pull hub.c.163.com/ap6108/pause-amd64:3.0
-docker pull hub.c.163.com/ap6108/k8s-dns-sidecar-amd64:1.14.4
-docker pull hub.c.163.com/ap6108/kube-apiserver-amd64:v1.7.5
-docker pull hub.c.163.com/ap6108/kube-controller-manager-amd64:v1.7.5
-docker pull hub.c.163.com/ap6108/kube-scheduler-amd64:v1.7.5
-docker pull hub.c.163.com/ap6108/kube-proxy-amd64:v1.7.5
-docker pull hub.c.163.com/ap6108/flannel:v0.8.0-amd64
-docker pull hub.c.163.com/ap6108/k8s-dns-kube-dns-amd64:1.14.4
-docker pull hub.c.163.com/ap6108/k8s-dns-dnsmasq-nanny-amd64:1.14.4
-docker pull hub.c.163.com/ap6108/etcd-amd64:3.0.17
+docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/pause-amd64:3.0
+docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-sidecar-amd64:1.14.4
+docker pull registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-apiserver-amd64:v1.7.5
+docker pull registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-controller-manager-amd64:v1.7.5
+docker pull registry.cn-hangzhou.aliyuncs.com/google-containers/kube-scheduler-amd64:v1.7.5
+docker pull registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-proxy-amd64:v1.7.5
+docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/flannel:v0.8.0-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-amd64:1.14.4
+docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4
+docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17
 
-docker tag hub.c.163.com/ap6108/etcd-amd64:3.0.17  gcr.io/google_containers/etcd-amd64:3.0.17
-docker tag hub.c.163.com/ap6108/kube-apiserver-amd64:v1.7.5 gcr.io/google_containers/kube-apiserver-amd64:v1.7.5
-docker tag hub.c.163.com/ap6108/kube-controller-manager-amd64:v1.7.5  gcr.io/google_containers/kube-controller-manager-amd64:v1.7.5
-docker tag hub.c.163.com/ap6108/kube-scheduler-amd64:v1.7.5 gcr.io/google_containers/kube-scheduler-amd64:v1.7.5
-docker tag hub.c.163.com/ap6108/k8s-dns-dnsmasq-nanny-amd64:1.14.4 gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.4
-docker tag hub.c.163.com/ap6108/k8s-dns-kube-dns-amd64:1.14.4 gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.4
-docker tag hub.c.163.com/ap6108/flannel:v0.8.0-amd64 gcr.io/google_containers/flannel:v0.8.0-amd64
-docker tag hub.c.163.com/ap6108/kube-proxy-amd64:v1.7.5 gcr.io/google_containers/kube-proxy-amd64:v1.7.5
-docker tag hub.c.163.com/ap6108/pause-amd64:3.0 gcr.io/google_containers/pause-amd64:3.0
-docker tag hub.c.163.com/ap6108/k8s-dns-sidecar-amd64:1.14.4 gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.4
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17  gcr.io/google_containers/etcd-amd64:3.0.1
+docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-apiserver-amd64:v1.7.5 gcr.io/google_containers/kube-apiserver-
+docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-controller-manager-amd64:v1.7.5  gcr.io/google_containers/kube-ager-amd64:v1.7.5
+docker tag registry.cn-hangzhou.aliyuncs.com/google-containers/kube-scheduler-amd64:v1.7.5 gcr.io/google_containers/kube64:v1.7.5
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4 gcr.io/google_containers/q-nanny-amd64:1.14.4
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-amd64:1.14.4 gcr.io/google_containers/k8s-dd64:1.14.4
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/flannel:v0.8.0-amd64 gcr.io/google_containers/flannel:v0.8.0
+docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-proxy-amd64:v1.7.5 gcr.io/google_containers/kube-proxy-amd64:v1
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/pause-amd64:3.0 gcr.io/google_containers/pause-amd64:3.0
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-sidecar-amd64:1.14.4 gcr.io/google_containers/k8s-dn4:1.14.4
 
-docker rmi -f hub.c.163.com/ap6108/pause-amd64:3.0
-docker rmi -f hub.c.163.com/ap6108/k8s-dns-sidecar-amd64:1.14.4
-docker rmi -f hub.c.163.com/ap6108/kube-apiserver-amd64:v1.7.5
-docker rmi -f hub.c.163.com/ap6108/kube-controller-manager-amd64:v1.7.5
-docker rmi -f hub.c.163.com/ap6108/kube-scheduler-amd64:v1.7.5
-docker rmi -f hub.c.163.com/ap6108/kube-proxy-amd64:v1.7.5
-docker rmi -f hub.c.163.com/ap6108/flannel:v0.8.0-amd64
-docker rmi -f hub.c.163.com/ap6108/k8s-dns-kube-dns-amd64:1.14.4
-docker rmi -f hub.c.163.com/ap6108/k8s-dns-dnsmasq-nanny-amd64:1.14.4
-docker rmi -f hub.c.163.com/ap6108/etcd-amd64:3.0.17
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/pause-amd64:3.0
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-sidecar-amd64:1.14.4
+docker rmi -f registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-apiserver-amd64:v1.7.5
+docker rmi -f registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-controller-manager-amd64:v1.7.5
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/google-containers/kube-scheduler-amd64:v1.7.5
+docker rmi -f registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-proxy-amd64:v1.7.5
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/flannel:v0.8.0-amd64
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-amd64:1.14.4
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17
 ```
 
 
@@ -216,17 +231,22 @@ docker rmi -f hub.c.163.com/ap6108/etcd-amd64:3.0.17
 新建 run_kubeadm.sh文件，内容
 
 ```bash
-## 重启privoxy
+
+#!/bin/bash
+
+# 重启privoxy
 /etc/init.d/privoxy restart
-## 设置proxy
 export http_proxy="http://127.0.0.1:18880/"
 export https_proxy="http://127.0.0.1:18880/"
 export no_proxy="localhost,127.0.0.1,192.168.1.112,192.168.1.115,172.16.2.23, 172.16.2.24,172.16.1.,.jigsaw"
 echo $http_proxy
 echo $https_proxy
 echo $no_proxy
-## 开始执行
-sudo kubeadm init --apiserver-advertise-address=172.16.2.24 --kubernetes-version=v1.7.5 --pod-network-cidr=10.244.0.0/16
+
+# 重新加载kubelet服务
+systemctl daemon-reload
+systemctl restart kubelet
+kubeadm init  --pod-network-cidr=10.244.0.0/16 --kubernetes-version=v1.7.5
 
 ```
 
@@ -241,26 +261,31 @@ sudo sh run_kubeadm.sh
 
 成功后，能看到
 ```bash
+Stopping Privoxy, OK.
+Starting Privoxy, OK.
+http://127.0.0.1:18880/
+http://127.0.0.1:18880/
+localhost,127.0.0.1,192.168.1.112,192.168.1.115,172.16.2.23, 172.16.2.24,172.16.1.,.jigsaw
+[kubeadm] WARNING: kubeadm is in beta, please do not use it for production clusters.
 [init] Using Kubernetes version: v1.7.5
 [init] Using Authorization modes: [Node RBAC]
 [preflight] Running pre-flight checks
-[preflight] Starting the kubelet service
 [kubeadm] WARNING: starting in 1.8, tokens expire after 24 hours by default (if you require a non-expiring token use --token-ttl 0)
 [certificates] Generated CA certificate and key.
 [certificates] Generated API server certificate and key.
-[certificates] API Server serving cert is signed for DNS names [kube-master.jigsaw kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 172.16.2.24]
+[certificates] API Server serving cert is signed for DNS names [kube-master.jigsaw kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 192.168.1.112]
 [certificates] Generated API server kubelet client certificate and key.
 [certificates] Generated service account token signing key and public key.
 [certificates] Generated front-proxy CA certificate and key.
 [certificates] Generated front-proxy client certificate and key.
 [certificates] Valid certificates and keys now exist in "/etc/kubernetes/pki"
-[kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/scheduler.conf"
 [kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/admin.conf"
 [kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/kubelet.conf"
 [kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/controller-manager.conf"
+[kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/scheduler.conf"
 [apiclient] Created API client, waiting for the control plane to become ready
-[apiclient] All control plane components are healthy after 41.502720 seconds
-[token] Using token: eabf28.7add6212a7aed62f
+[apiclient] All control plane components are healthy after 35.503021 seconds
+[token] Using token: 703089.e6b9cc54a8810491
 [apiconfig] Created RBAC rules
 [addons] Applied essential addon: kube-proxy
 [addons] Applied essential addon: kube-dns
@@ -280,7 +305,8 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
 You can now join any number of machines by running the following on each node
 as root:
 
-  kubeadm join --token eabf28.7add6212a7aed62f 172.16.2.24:6443
+  kubeadm join --token 703089.e6b9cc54a8810491 172.16.2.24:6443
+
 
 ```
 

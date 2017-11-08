@@ -13,14 +13,72 @@ tag: [infra]
 
 Dashboard用来监控k8s集群负载。 [官网](https://github.com/kubernetes/dashboard)、[安装指南](https://github.com/kubernetes/dashboard/wiki/Installation)
 
-## 一、安装
+## 一、下载镜像
 
-安装很简单：
+老规矩，把安装中需要的镜像下载到服务器上。 
+```bash
+docker pull  registry.cn-hangzhou.aliyuncs.com/outman_google_containers/kubernetes-dashboard-init-amd64:v1.0.1
+docker tag registry.cn-hangzhou.aliyuncs.com/outman_google_containers/kubernetes-dashboard-init-amd64:v1.0.1   gcr.io/google_containers/kubernetes-dashboard-init-amd64:v1.0.1
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/outman_google_containers/kubernetes-dashboard-init-amd64:v1.0.1
+
+docker pull  registry.cn-hangzhou.aliyuncs.com/outman_google_containers/kubernetes-dashboard-amd64:v1.7.1
+docker tag registry.cn-hangzhou.aliyuncs.com/outman_google_containers/kubernetes-dashboard-amd64:v1.7.1  gcr.io/google_containers/kubernetes-dashboard-amd64:v1.7.1
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/outman_google_containers/kubernetes-dashboard-amd64:v1.7.1
+```
+
+## 二、安装
+
+
+安装很简单，首先生成证书：
+
+```bash
+$ openssl genrsa -des3 -passout pass:x -out dashboard.pass.key 2048
+...
+$ openssl rsa -passin pass:x -in dashboard.pass.key -out dashboard.key
+# Writing RSA key
+$ rm dashboard.pass.key
+$ openssl req -new -key dashboard.key -out dashboard.csr
+# 一路回车即可，特别是设置密码的步骤，直接回车，不要密码
+...
+Country Name (2 letter code) [AU]: US
+...
+A challenge password []: 
+...
+$ openssl x509 -req -sha256 -days 365 -in dashboard.csr -signkey dashboard.key -out dashboard.crt
+```
+将生成的dashboard.csr, dashboard.crt, dashboard.key转移到 $HOME/certs 目录下，结果如下
+
+```bash
+[jigsaw@kube-master ~]$ ls certs
+dashboard.crt  dashboard.csr  dashboard.key
+```
+
+然后执行：
 
 ```bash
 kubectl create secret generic kubernetes-dashboard-certs --from-file=$HOME/certs -n kube-system
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
 ```
+
+确认节点正常运行
+
+```bash
+[jigsaw@kube-master ~]$ kubectl get pods --all-namespaces
+NAMESPACE     NAME                                         READY     STATUS    RESTARTS   AGE
+kube-system   etcd-kube-master.jigsaw                      1/1       Running   0          1h
+kube-system   kube-apiserver-kube-master.jigsaw            1/1       Running   0          1h
+kube-system   kube-controller-manager-kube-master.jigsaw   1/1       Running   0          1h
+kube-system   kube-dns-2425271678-jpn04                    3/3       Running   0          1h
+kube-system   kube-flannel-ds-r03d4                        1/1       Running   0          1h
+kube-system   kube-flannel-ds-wfmx0                        1/1       Running   0          1h
+kube-system   kube-proxy-fx6pf                             1/1       Running   0          1h
+kube-system   kube-proxy-s7ndf                             1/1       Running   0          1h
+kube-system   kube-scheduler-kube-master.jigsaw            1/1       Running   0          1h
+kube-system   kubernetes-dashboard-1592587111-lz8cx        1/1       Running   0          17m
+
+```bash
+
+注意kubernetes-dashboard-1592587111-lz8cx   是running的状态。 
 
 ## 二、本机和远程访问
 
