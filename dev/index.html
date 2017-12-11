@@ -16,6 +16,15 @@ header-img: "img/home-bg.jpg"
 {% endfor %}
 </ol>
 
+<h3>开发环境配置</h3>
+<p>开发同学请参考这个指南来配置开发环境。 </p>
+<ol class="title_list">
+{% assign sorted_infra = site.tags['devenv'] %}
+{% for post in sorted_infra %}
+<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% endfor %}
+</ol>
+
 <h3>架构设计</h3>
 <ol class="title_list">
 {% assign sorted_pm = site.tags['PM']  %}
