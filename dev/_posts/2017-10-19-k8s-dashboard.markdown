@@ -76,7 +76,7 @@ kube-system   kube-proxy-s7ndf                             1/1       Running   0
 kube-system   kube-scheduler-kube-master.jigsaw            1/1       Running   0          1h
 kube-system   kubernetes-dashboard-1592587111-lz8cx        1/1       Running   0          17m
 
-```bash
+```
 
 注意kubernetes-dashboard-1592587111-lz8cx   是running的状态。 
 
@@ -245,7 +245,8 @@ Data
 ====
 ca.crt:         1025 bytes
 namespace:      11 bytes
-token:          eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJrdWJlcm5ldGVzLWRhc2hib2FyZC1hZG1pbi10b2tlbi1yNXB0ayIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJrdWJlcm5ldGVzLWRhc2hib2FyZC1hZG1pbiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjQ4YWE2YWU0LWJkODItMTFlNy05MmVhLWYwZGVmMTIxNDJmOCIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTprdWJlcm5ldGVzLWRhc2hib2FyZC1hZG1pbiJ9.uAG9VtE-gdm6RU8ItuxTHIVG8o8UH4EQen-cJq50lShbt5fnslOV_UVpFFJhol8tZEhymCYVYtKGjW_wjWcqPJ_eTCSKFcPrQHNaCRyeHfYtjyUui01OfRVQiNzZ3L0W5B_Zhdyq8YELRUkvrdkM96uGCPMySmgwkcOvvYxuVxtr-9sJs7CqkD8P6cpZDe6_0UdknsaZN8MRTXU0vzZmPVeEx1PJQKp0KDGTnYyKz6xUidlqUoaPx4nBuYceRNTsBaSoSWZsw_QPaykUlGbTeumR3W_znp0Vfxen6AWTSgw95h00f-rhfUT1ZTbc-vTmpp4hYsFOKQQvMIPMTUKj5w
+token:          token:          eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJrdWJlcm5ldGVzLWRhc2hib2FyZC1hZG1pbi10b2tlbi14bXAxbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJrdWJlcm5ldGVzLWRhc2hib2FyZC1hZG1pbiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjA4Y2E1OTc1LWNkMjMtMTFlNy04OWRmLWYwZGVmMTIxNDJmOCIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTprdWJlcm5ldGVzLWRhc2hib2FyZC1hZG1pbiJ9.mbB0OqeecKBnMNzNNO2oRQ2Pwfv0H1-PT_XRgQ-3J3iKZlYFoh6Q0kIxev6eN34pfG8rtrzxBGqPM8xYmPjMrKbm4ii74d5-T-m4IQE0L_7wjkS_aHxwFVTKZ9RCkTpBNyK1De3_KVMmSBFUIgwwF9fpLAD4WfKY9VAix5TW3asH_uLQ1XaLL7g9n8nYW4XQOF7h6XD8kH_XEJbdZ0KekkrV6DGgJd59cxj2qQ-ewvytEcfcmSCe1g0rWBve9o83nlczGnhgucHO_AXp6shPBS22_oNNBPx1Pcqq36dX45Td7B1d5o422jR4qt0tNii1i33wu4gviO8wMymYmznrYw
+
 ```
 
 将Token复制到登录框中，即可登录。 

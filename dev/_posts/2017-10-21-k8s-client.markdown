@@ -53,7 +53,7 @@ Server:
 docker默认使用docker.io的源，国内访问慢，容易出错。修改为国内的源：
 
 访问 [阿里云的开发者平台](http://dev.aliyun.com/search.html),登录后，进入管理中心，首次登录会让用户设置密码。然后就会看到如下页面：
-![aliyun](http://jigsaw.lixf.cn/img/in-post/aliyun-docker.png)
+![aliyun](http://doc.jigsaw.lixf.cn/img/in-post/aliyun-docker.png)
 阿里云为每个人分配一个加速器地址。 我的地址是 https://n76bgciz.mirror.aliyuncs.com 
 修改 /etc/docker/daemon.json 
 
@@ -149,16 +149,16 @@ docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-am
 docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4
 docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17
 
-docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17  gcr.io/google_containers/etcd-amd64:3.0.1
-docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-apiserver-amd64:v1.7.5 gcr.io/google_containers/kube-apiserver-
-docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-controller-manager-amd64:v1.7.5  gcr.io/google_containers/kube-ager-amd64:v1.7.5
-docker tag registry.cn-hangzhou.aliyuncs.com/google-containers/kube-scheduler-amd64:v1.7.5 gcr.io/google_containers/kube64:v1.7.5
-docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4 gcr.io/google_containers/q-nanny-amd64:1.14.4
-docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-amd64:1.14.4 gcr.io/google_containers/k8s-dd64:1.14.4
-docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/flannel:v0.8.0-amd64 gcr.io/google_containers/flannel:v0.8.0
-docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-proxy-amd64:v1.7.5 gcr.io/google_containers/kube-proxy-amd64:v1
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17  gcr.io/google_containers/etcd-amd64:3.0.17
+docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-apiserver-amd64:v1.7.5 gcr.io/google_containers/kube-apiserver-amd64:v1.7.5
+docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-controller-manager-amd64:v1.7.5  gcr.io/google_containers/kube-controller-manager-amd64:v1.7.5
+docker tag registry.cn-hangzhou.aliyuncs.com/google-containers/kube-scheduler-amd64:v1.7.5 gcr.io/google_containers/kube-scheduler-amd64:v1.7.5
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4 gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.4
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-amd64:1.14.4 gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.4
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/flannel:v0.8.0-amd64 gcr.io/google_containers/flannel:v0.8.0-amd64
+docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-proxy-amd64:v1.7.5 gcr.io/google_containers/kube-proxy-amd64:v1.7.5
 docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/pause-amd64:3.0 gcr.io/google_containers/pause-amd64:3.0
-docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-sidecar-amd64:1.14.4 gcr.io/google_containers/k8s-dn4:1.14.4
+docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-sidecar-amd64:1.14.4 gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.4
 
 docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/pause-amd64:3.0
 docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-sidecar-amd64:1.14.4
@@ -171,6 +171,7 @@ docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-
 docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4
 docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17
 
+
 ```
 
 ## 七、加入kubernetes网络
@@ -178,7 +179,7 @@ docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17
 注意，这里的token是在master上执行kubeadm init之后的返回值。 172.16.2.24是kubernetes的master。 
 
 ```bash
-[jigsaw@kube23 ~]$ sudo kubeadm join --token 703089.e6b9cc54a8810491 172.16.2.24:6443
+[jigsaw@kube23 ~]$ sudo kubeadm join --token jigsaw.paymentkubetoken 172.16.2.24:6443
 [kubeadm] WARNING: kubeadm is in beta, please do not use it for production clusters.
 [preflight] Running pre-flight checks
 [preflight] Starting the kubelet service
@@ -210,3 +211,55 @@ kube-master.jigsaw   Ready     1h        v1.7.5
 kube23.jigsaw        Ready     59m       v1.7.5
 
 ```
+
+## 九、开启Accounting
+
+通过journalctl -r -u kubelet查看日志，发现大量的错误
+```bash 
+27505 container_manager_linux.go:750] MemoryAccounting not enabled for pid: 27505
+27505 container_manager_linux.go:747] CPUAccounting not enabled for pid: 2750
+27505 container_manager_linux.go:750] MemoryAccounting not enabled for pid: 28012
+27505 container_manager_linux.go:747] CPUAccounting not enabled for pid: 28012
+```
+
+其中27505是kubelet的pid, 28012是docker的pid。 
+需要打开这两个属性
+
+```bash
+# sudo systemctl show docker | grep Accounting
+CPUAccounting=no
+BlockIOAccounting=no
+MemoryAccounting=no
+```
+确认没有打开，执行如下操作
+```bash
+#sudo systemctl set-property docker.service MemoryAccounting=yes
+#sudo systemctl set-property docker.service CPUAccounting=yes
+```
+打开成功
+```bash
+# systemctl show docker | grep Accounting
+CPUAccounting=yes
+BlockIOAccounting=no
+MemoryAccounting=yes
+```
+
+对kubelet服务同样执行：
+
+```bash
+# sudo systemctl show kubelet | grep Accounting
+CPUAccounting=no
+BlockIOAccounting=no
+MemoryAccounting=no
+```
+确认没有打开，执行如下操作
+```bash
+#sudo systemctl set-property kubelet.service MemoryAccounting=yes
+#sudo systemctl set-property kubelet.service CPUAccounting=yes
+```
+打开成功
+```bash
+# sudo systemctl show kubelet | grep Accounting
+CPUAccounting=yes
+BlockIOAccounting=no
+MemoryAccounting=yes
