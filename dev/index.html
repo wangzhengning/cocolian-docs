@@ -19,7 +19,7 @@ header-img: "img/home-bg.jpg"
 <h3>开发环境配置</h3>
 <p>开发同学请参考这个指南来配置开发环境。 </p>
 <ol class="title_list">
-{% assign sorted_infra = site.tags['devenv'] %}
+{% assign sorted_infra = site.tags['devenv'] sort:"date" %}
 {% for post in sorted_infra %}
 <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 {% endfor %}
