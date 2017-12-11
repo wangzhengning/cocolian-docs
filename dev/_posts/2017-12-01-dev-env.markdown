@@ -34,26 +34,3 @@ sudo yum groupinstall "GNOME Desktop" "Development Tools" "Graphical Administrat
 ```bash
 sudo yum groupinstall "KDE Plasma Workspaces" "Development Tools" "Graphical Administration Tools" "System Administration Tools" "System Management" "Server with GUI"
 ```
-
- 
-## 3.安装Protobuf
-
-## 4.安装Apache Thrift（可选）
-
-## 5.安装Docker
-
-## 6.安装Maven（可选）
-
-
-
-## 7.常用命令
-
-- 停止已经exited的docker 容器
-```bash
-sudo docker stop $(sudo docker ps -a -q)
-```
-
-- 删除已经停止的docker容器
-```bash
-sudo docker rm $(sudo docker ps -a -q)
-```

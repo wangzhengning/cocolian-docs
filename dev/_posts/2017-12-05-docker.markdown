@@ -62,3 +62,15 @@ Server:
 
 这样就可以使用aliyun作为docker的源， 以及支持通过远程访问本地docker库，开发时fabric8 plugin将依赖于这个设置。 
 
+
+## 三.常用命令
+
+- 停止已经exited的docker 容器
+```bash
+sudo docker stop $(sudo docker ps -a -q)
+```
+
+- 删除已经停止的docker容器
+```bash
+sudo docker rm $(sudo docker ps -a -q)
+```
