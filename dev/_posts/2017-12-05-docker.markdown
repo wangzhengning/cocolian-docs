@@ -61,6 +61,12 @@ Server:
 ```
 
 这样就可以使用aliyun作为docker的源， 以及支持通过远程访问本地docker库，开发时fabric8 plugin将依赖于这个设置。 
+注意修改完了后要重启docker:
+
+```bash
+sudo systemctl daemon-reload 
+sudo systemctl restart docker
+```
 
 
 ## 三.常用命令
