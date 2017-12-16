@@ -1,6 +1,6 @@
 # Site settings
-title: Jigsaw Payment
-SEOTitle: Jigsaw Payment | 聚合支付
+title: "Jigsaw Payment"
+SEOTitle: "Jigsaw Payment | 聚合支付"
 header-img: img/home-bg.jpg
 email: shamphone@gmail.com
 description: "Jigsaw Payment，一个使用微服务来构建的聚合支付系统"
@@ -33,7 +33,7 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
+# gems: [jekyll-paginate]
 
 
 
@@ -53,7 +53,7 @@ kramdown:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 7590b8f08665741fdf5a4d378feccaaf
+# ba_track_id: 7590b8f08665741fdf5a4d378feccaaf
 # Google Analytics
 # ga_track_id: 'UA-82322518-1'            # Format: UA-xxxxxx-xx
 # ga_domain: jigsaw.lixf.cn
@@ -62,27 +62,22 @@ ba_track_id: 7590b8f08665741fdf5a4d378feccaaf
 
 # Sidebar settings
 sidebar: false                           # whether or not using Sidebar.
-sidebar-about-description: "开源聚合支付"
-sidebar-avatar: /img/avatar-lixf.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+# sidebar-about-description: "开源聚合支付"
+# sidebar-avatar: /img/avatar-lixf.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # Featured Tags
 featured-tags: false                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+#featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 
 
-# Friends
-#friends: [
-#    {
-#        title: "Su",
-#        href: "http://su.gallery/"
-#    },{
-#        title: "乱序",
-#        href: "http://mida.re/"
-#    },{
-#        title: "前端外刊评论",
-#        href: "http://qianduan.guru/"
-#    }
-#]
+# Modules
+# 模块名称，用来显示在左侧导航条上的。 
+modules: 
+  dev : "开发环境配置"
+  infra : "基础设施建设"
+  manual: "用户手册"
+  user : "用户管理"
+  payment : "交易核心"
