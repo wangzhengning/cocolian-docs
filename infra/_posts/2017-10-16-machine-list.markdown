@@ -4,7 +4,7 @@ title: "Jigsaw Payment线上环境清单"
 subtitle: "infra文档"
 date: 2017-10-16 12:00:00
 author: "shamphone"
-header-img: "img/home-bg-post.jpg"
+chapter: "1"
 catalog: true
 tag: [infra]
 ---

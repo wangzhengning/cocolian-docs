@@ -4,7 +4,7 @@ title: "安装Docker"
 subtitle: "Dev Config"
 date: 2017-12-05 12:00:00
 author: "shamphone"
-header-img: "img/home-bg-post.jpg"
+chapter: "1"
 catalog: true
 tag: [devenv]
 ---

@@ -4,7 +4,7 @@ title: "安装sonarqube"
 subtitle: "jigsaw-payment-infra"  
 date: 2017-11-03 20:00:00  
 author: "shamphone"  
-header-img: "img/home-bg-post.jpg"  
+chapter: "7" 
 catalog: true  
 tag: [infra]  
 ---

@@ -4,7 +4,7 @@ title: "持续交互环境安装"
 subtitle: "支付系统基础架构-1"
 date: 2017-11-21 12:00:00
 author: "shamphone"
-header-img: "img/home-bg-post.jpg"
+chapter: "8"
 catalog: true
 tags: [支付系统]
 ---

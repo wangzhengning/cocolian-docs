@@ -4,7 +4,7 @@ title: "Kubeadm安装Kubernetes指南(Master)"
 subtitle: "infra文档"  
 date: 2017-10-17 12:00:00  
 author: "shamphone"  
-header-img: "img/home-bg-post.jpg"  
+chapter: "3"
 catalog: true  
 tag: [infra]  
 ---
