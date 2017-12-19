@@ -2,7 +2,7 @@
 layout: post 
 title: "/user/register-from-cp 托管平台注册"  
 subtitle: "CIF-1001"  
-date: 2017-11-16 20:00:00  
+date: 2017-01-07 20:00:00  
 author: "shamphone"  
 header-img: "img/home-bg-post.jpg"  
 catalog: true  

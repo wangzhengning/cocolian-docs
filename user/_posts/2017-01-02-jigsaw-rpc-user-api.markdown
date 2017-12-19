@@ -2,7 +2,7 @@
 layout: post 
 title: "用户服务接口文档"  
 subtitle: "jigsaw-rpc-user-api"  
-date: 2017-11-02 20:00:00  
+date: 2017-01-02 20:00:00  
 author: "skaic"  
 header-img: "img/home-bg-post.jpg"  
 catalog: true  

@@ -2,7 +2,7 @@
 layout: post 
 title: "/user/register 简易开户"  
 subtitle: "CIF-1001"  
-date: 2017-11-16 20:00:00  
+date: 2017-01-06 20:00:00  
 author: "shamphone"  
 header-img: "img/home-bg-post.jpg"  
 catalog: true  
