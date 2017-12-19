@@ -2,7 +2,7 @@
 layout: post 
 title: "/user/activate 激活账户"  
 subtitle: "CIF-1001"  
-date: 2017-11-17 20:00:00  
+date: 2017-01-08 20:00:00  
 author: "shamphone"  
 header-img: "img/home-bg-post.jpg"  
 catalog: true  
