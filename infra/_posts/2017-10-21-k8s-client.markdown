@@ -4,7 +4,7 @@ title: "Kubeadm安装Kubernetes指南(Client)"
 subtitle: "infra文档"  
 date: 2017-10-21 12:00:00  
 author: "shamphone"  
-header-img: "img/home-bg-post.jpg"  
+chapter: "5"
 catalog: true  
 tag: [infra]  
 ---

@@ -4,7 +4,7 @@ title: "Kubernetes Dashboard安装指南"
 subtitle: "infra文档"  
 date: 2017-10-20 12:00:00  
 author: "shamphone"  
-header-img: "img/home-bg-post.jpg"  
+chapter: "4" 
 catalog: true  
 tag: [infra]  
 ---

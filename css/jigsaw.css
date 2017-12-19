@@ -9,10 +9,18 @@
 	padding-left: 320px;
 }
 
-aside.content-aside{
+.post-list {
+	list-style: none;
+}
+
+aside.content-aside {
 	position: absolute;
 	left: 0px;
 	top: 80px;
+}
+
+aside.content-aside ul{
+	list-style: none;
 }
 
 ul.main_container {
@@ -519,7 +527,7 @@ pre code {
   }
 
 .intro-header .post-heading h1 {
-  font-size: 26px;
+  font-size: 32px;
   margin-bottom: 24px;
   margin-top: 24px;
   color:#303030;
@@ -528,12 +536,9 @@ pre code {
 .intro-header .post-heading .meta {
   line-height: 1.1;
   display: block;
+  margin: 0px 0px 0px -35px;
 }
 .intro-header .post-heading .subheading {
-  /* Hux learn from
-     *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
   font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   font-size: 17px;
@@ -542,24 +547,18 @@ pre code {
   margin: 10px 0 10px;
   margin-top: -5px;
 }
-.intro-header .post-heading .meta {
+
+.intro-header .post-heading .meta li{
+  display: inline-block;
   font-weight: 300;
   font-size: 16px;
   color: #c0c0c0;
+  margin-right:20px;
 }
-.intro-header .post-heading .meta a {
-  color: white;
+.intro-header .post-heading .meta i{
+	margin-right:10px;
 }
-@media only screen and (min-width: 768px) {
-  .intro-header .post-heading h1 {
-    font-size: 30px;
-	font-weight: 800;
-	white-space:nowrap;
-  }
-  .intro-header .post-heading .subheading {
-    font-size: 30px;
-  }
-}
+
 .post-preview > a {
   color: #404040;
 }

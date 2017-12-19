@@ -4,7 +4,7 @@ title: "安装nfs"
 subtitle: "jigsaw-payment-infra"  
 date: 2017-11-02 20:00:00  
 author: "shamphone"  
-header-img: "img/home-bg-post.jpg"  
+chapter: "6"
 catalog: true  
 tag: [infra]  
 ---

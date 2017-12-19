@@ -4,7 +4,7 @@ title: "安装Oracle JDK"
 subtitle: "开发环境配置指南"
 date: 2017-12-02 12:00:00
 author: "shamphone"
-header-img: "img/home-bg-post.jpg"
+chapter: "1"
 catalog: true
 tags: [devenv]
 ---

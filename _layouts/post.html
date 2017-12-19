@@ -4,7 +4,7 @@ layout: default
 <style type="text/css">
     header.intro-header{
         position: relative;
-		height: 140px;
+		height: 150px;
      }
 
     {% if page.header-mask %}
@@ -39,8 +39,12 @@ layout: default
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">                  
                     <h1>{{ page.title }}</h1>                
-                    <span class="meta">{% for pcat in page.categories%}{{site.modules[pcat]}}{% endfor%}  |  {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}  | {{ page.date | date: "%Y-%m-%d" }}</span>
-                </div>
+					<ul class="meta">
+						<li><i class="icon-sitemap"></i>{% for pcat in page.categories%}{{site.modules[pcat]}}{% endfor%}  </li>
+						<li><i class="icon-user"></i>{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}  </li>
+						<li><i class="icon-time"></i>{{ page.date | date: "%Y-%m-%d" }}</li>
+					</ul>                
+				</div>
             </div>
         </div>
     </div>
@@ -83,11 +87,12 @@ layout: default
     </div>
 </article>
 <aside class="content-aside">
-<ol>
+<ul>
 {% for cat in page.categories%}
-{% for post in site.categories[cat] reversed%}
-<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% assign posts =  site.categories[cat] | sort:"chapter"%}
+{% for post in posts  %}
+<li><a href="{{ post.url | prepend: site.baseurl }}">{% if post.chapter %}{{ post.chapter }}&nbsp;&nbsp;{% endif %} {{ post.title }}</a></li>
 {% endfor %}
 {% endfor %}
-</ol>
+</ul>
 </aside>
