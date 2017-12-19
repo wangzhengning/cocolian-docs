@@ -5,23 +5,13 @@ description: "模块设计"
 header-img: "img/home-bg.jpg"
 ---
 
-{% for post in site.categories.user %}
 <div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
+    <a href="/user/2017/11/17/about/">
         <h2 class="post-title">
-            {{ post.title }}
+            会员管理模块
         </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
         <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+            会员管理提供会员注册、银行卡管理等功能。 
         </div>
     </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
 </div>
-{% endfor %}
