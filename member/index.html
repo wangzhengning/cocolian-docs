@@ -1,0 +1,13 @@
+---
+layout: category
+title: "会员管理接口"
+description: "开发者指南"
+header-img: "img/home-bg.jpg"
+---
+
+<ul class="post-list">
+{% assign posts = site.categories['member'] | sort:'chapter'%}
+{% for post in posts %}
+<li>{{ post.chapter}}.  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>

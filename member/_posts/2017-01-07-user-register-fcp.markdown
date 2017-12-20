@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: "/user/register-from-cp 托管平台注册"  
+title: "从托管平台注册"  
 subtitle: "CIF-1001"  
 date: 2017-01-07 20:00:00  
 author: "shamphone"  
@@ -13,7 +13,7 @@ tag: [api]
 ## 接口定义
 
 ```html
-POST /user/request-from-cp
+POST /member/request-from-cp
 ```
 
 ## 输入参数

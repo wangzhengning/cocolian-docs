@@ -79,5 +79,5 @@ modules:
   dev : "开发环境配置"
   infra : "基础设施建设"
   manual: "用户手册"
-  user : "用户管理"
+  member : "会员管理"
   payment : "交易核心"
