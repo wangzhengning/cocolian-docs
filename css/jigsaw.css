@@ -1,12 +1,7 @@
-
-.container {
-  width:100%;
-}
 .post-container {
     padding-right: 15px;
 	width: 100%;
 	margin-left: 50px;
-	padding-left: 320px;
 }
 
 .post-list {
@@ -14,9 +9,15 @@
 }
 
 aside.content-aside {
-	position: absolute;
-	left: 0px;
-	top: 80px;
+	display:none;
+}
+@media (min-width: 768px) {
+	aside.content-aside {
+		display: block;
+		position: absolute;
+		left: 0px;
+		top: 80px;
+	}
 }
 
 aside.content-aside ul{
@@ -1069,12 +1070,14 @@ div.session_list {
 	padding-top: 10px;
 	margin-top: 10px;
 }
-div.session_list aside{
-	float:left;
-} 
-div.session_list section{
-	margin-left:320px;
+div.session_list section {
+	display: inline-block;
 }
+div.session_list aside{
+	margin-right: 30px;
+	display: inline-block;
+} 
+
 
 div.session_list header {
 	font-size: 24px;
