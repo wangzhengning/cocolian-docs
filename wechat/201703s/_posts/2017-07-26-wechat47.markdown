@@ -6,10 +6,10 @@ author:     "PaymentGroup"
 tag:		[publish]                        
 header-img: "img/post-bg-wechat.jpg"                             
 ---          
-![图](http://wechat.lixf.cn/img/2017/20170726_190059.png)  
+![图](http://static.cocolian.org/img/2017/20170726_190059.png)  
     
 银联的二维码，跟微信、支付宝等产品的二维码相比，除了消费和转账，取现是一个独具特色的亮点，但是取现这一块对于非银行机构来说，意义并不大，所以这次分享里还是会以消费和转账为主。    
-![图](http://wechat.lixf.cn/img/2017/20170726_190220.png)    
+![图](http://static.cocolian.org/img/2017/20170726_190220.png)    
     
 ## 一、主扫消费     
     
@@ -17,7 +17,7 @@ header-img: "img/post-bg-wechat.jpg"
 1. 收款码在后台对应商户信息或订单信息。    
 2. 付款账户可以是借记卡、信用卡以及电子账户。    
   
-![图](http://wechat.lixf.cn/img/2017/20170726_190706.png)  
+![图](http://static.cocolian.org/img/2017/20170726_190706.png)  
   
 ## 二、被扫消费     
     
@@ -42,7 +42,7 @@ header-img: "img/post-bg-wechat.jpg"
 4.中国银联负责二维码支付业务的交易转接及资金清算，根据业务、风险规则及业务协议与参与机构共同维护业务秩序。      
     
 ## 五、实现载体    
-![图](http://wechat.lixf.cn/img/2017/20170726_191056.png)    
+![图](http://static.cocolian.org/img/2017/20170726_191056.png)    
 1. 付款人或人到人付款产品的收款人智能设备上安装应用方的 APP。     
 2. 被扫消费商户需要具有扫码枪（商户 MIS 系统自带）或装配扫码功能的 POS 机或其他智能终端。     
 3. 主扫消费商户通过商户系统展示收款码。商户系统包括但不限于网上商城系统、电视商城系统、多媒体终端、自助售货机等。    
@@ -56,19 +56,19 @@ header-img: "img/post-bg-wechat.jpg"
 - 静态码：适用于小微商户    
     
 ## 七、总体操作    
-![图](http://wechat.lixf.cn/img/2017/20170726_191409.png)    
+![图](http://static.cocolian.org/img/2017/20170726_191409.png)    
 - 对于银联二维码来说，在操作的时候与微信、支付宝的二维码基本没有什么差别。    
 - 对于用户来说，就是打开的APP不一样，但是付款的过程都是一致的。    
 - 对于商户来说，收款、查询交易、退款等流程也都是一样的，不同的也就是可能在不同后台的用户体验会略有差异    
     
 ## 八、身份验证    
-![图](http://wechat.lixf.cn/img/2017/20170726_191932.png)    
+![图](http://static.cocolian.org/img/2017/20170726_191932.png)    
 - 身份验证这里，银联本身并不会对消费者做身份验证，而是把身份验证的步骤交给了应用方。    
 - 用户身份验证方式包括但不限于数字密码、手势密码、指纹及人脸识别等。    
 - 在每笔二维码交易中，应用方应依据与持卡人约定的用户身份验证方式开展交易验证或开展免密支付。    
     
 ## 九、付款模式    
-![图](http://wechat.lixf.cn/img/2017/20170726_192230.png)    
+![图](http://static.cocolian.org/img/2017/20170726_192230.png)    
 付款模式，就是扣款模式，由谁来发起扣款。银联与付款行之间存在 2 种持卡人账户扣款的模式，即“移动应用前置模式”和“银行卡前置模式”。简单来说，    
 - 移动应用前置模式是由银行方自行扣款然后通知银联扣款结果，    
 - 银行卡前置模式是由银联发起扣款然后通知APP。    
@@ -77,39 +77,39 @@ header-img: "img/post-bg-wechat.jpg"
 而如果APP绑定他行卡或是非银行机构的话，就必须选择“银行卡前置模式”。    
     
 ## 十、发码方式    
-![图](http://wechat.lixf.cn/img/2017/20170726_192724.png)    
+![图](http://static.cocolian.org/img/2017/20170726_192724.png)    
 在生成二维码的时候，有两种方式可以自主选择    
 - 银联发码：由银联二维码处理系统根据订单信息来生成二维码。    
 - 成员机构发码：由成员机构的收单系统根据订单信息按照银联标准来生成二维码。    
     
 ## 十一、竞争优势    
-![图](http://wechat.lixf.cn/img/2017/20170726_193020.png)    
+![图](http://static.cocolian.org/img/2017/20170726_193020.png)    
 - 政策支持： 银联二维码支付产品是在人民银行的领导下，联合商业银行共同研发的；    
 - 安全性高： 采用符合人民银行支付标记化技术规范的Token，由后台生成，加密传输。    
 - 机制完善： 银联二维码支付产品与传统银行卡的业务模式一致，具有完善的配套机制。    
 - 生态体系： 发卡、收单、银联、商户、应用服务方角色边界清晰，利于共同推动市场做大做强。    
 - 国际性：银联二维码支付产品由EMVCo二维码工作组组长牵头指定规范，产品国际国内通用。    
     
-![图](http://wechat.lixf.cn/img/2017/20170726_193644.png)   
+![图](http://static.cocolian.org/img/2017/20170726_193644.png)   
   
-![图](http://wechat.lixf.cn/img/2017/20170726_193655.png)  
+![图](http://static.cocolian.org/img/2017/20170726_193655.png)  
   
-![图](http://wechat.lixf.cn/img/2017/20170726_193656.png)  
+![图](http://static.cocolian.org/img/2017/20170726_193656.png)  
   
-![图](http://wechat.lixf.cn/img/2017/20170726_193658.png)  
+![图](http://static.cocolian.org/img/2017/20170726_193658.png)  
   
-![图](http://wechat.lixf.cn/img/2017/20170726_193708.png)  
+![图](http://static.cocolian.org/img/2017/20170726_193708.png)  
   
-![图](http://wechat.lixf.cn/img/2017/20170726_193710.png)  
+![图](http://static.cocolian.org/img/2017/20170726_193710.png)  
   
-![图](http://wechat.lixf.cn/img/2017/20170726_193712.png)  
+![图](http://static.cocolian.org/img/2017/20170726_193712.png)  
   
-![图](http://wechat.lixf.cn/img/2017/20170726_193729.png)  
+![图](http://static.cocolian.org/img/2017/20170726_193729.png)  
   
-![图](http://wechat.lixf.cn/img/2017/20170726_193742.png)  
+![图](http://static.cocolian.org/img/2017/20170726_193742.png)  
   
-![图](http://wechat.lixf.cn/img/2017/20170726_193802.png)  
+![图](http://static.cocolian.org/img/2017/20170726_193802.png)  
   
-![图](http://wechat.lixf.cn/img/2017/20170726_193807.png)  
+![图](http://static.cocolian.org/img/2017/20170726_193807.png)  
   
-![图](http://wechat.lixf.cn/img/2017/20170726_193808.png)
+![图](http://static.cocolian.org/img/2017/20170726_193808.png)

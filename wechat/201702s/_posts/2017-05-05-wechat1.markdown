@@ -4,7 +4,7 @@ title:      "聊天记录2017-05-05未整理版"
 date:        2017-05-05  12:00:00    
 author:     "PaymentGroup"    
 tag:		[publish]   
-header-img: "img/post-bg-wechat.jpg"    
+   
 ---  
 
    14:39:14  现在行业做得最好的都有哪些公司  

@@ -4,7 +4,7 @@ title:      "20170628-银行资金存管系统"
 date:       2017-06-28 19:00:00                                                   
 author:     "PaymentGroup"              
 tag:		[hidden]        
-header-img: "img/post-bg-wechat.jpg"             
+            
 ---            
   
   
@@ -102,7 +102,7 @@ A1：线上是易宝，线下nfc是银联。
 A2：参考一下apple pay分析流程，大致差不多的  
   
 二：高德纳技术成熟度模型  
-![图片：2017-06-28 10:50:46](http://wechat.lixf.cn/img/2017/20170628_105046.png)  
+![图片：2017-06-28 10:50:46](http://static.cocolian.org/img/2017/20170628_105046.png)  
   
 三：APP支付  
 Q：app支付页面上，客户再次支付时，显示上次一次支付时用的卡号，这个是怎么做到的？  

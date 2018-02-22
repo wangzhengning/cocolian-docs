@@ -4,7 +4,7 @@ title:      "20170616-信用评分模型"
 date:       2017-06-16 19:00:00                                           
 author:     "PaymentGroup"      
 tag:		[publish]   
-header-img: "img/post-bg-wechat.jpg"                                           
+                                          
 ---        
   
 > 本文档来自“支付产品技术交流群”在2017年6月16日的讨论，以及6月17日的专题分享。   

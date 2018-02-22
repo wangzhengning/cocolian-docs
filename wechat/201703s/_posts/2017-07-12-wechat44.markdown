@@ -9,7 +9,7 @@ header-img: "img/post-bg-wechat.jpg"
   
 ## 主题一： 卡bin  
   
-[银联2017最新卡bin表](http://wechat.lixf.cn/attach/BIN20170512.xls)  
+[银联2017最新卡bin表](http://static.cocolian.org/attach/BIN20170512.xls)  
   
 ## 主题二： 爬虫  
 Q1：请问下群里的各位技术大牛，是否有用爬虫爬取过最高法提供的全国失信被执行人的名单？  

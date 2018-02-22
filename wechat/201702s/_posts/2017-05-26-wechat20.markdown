@@ -4,7 +4,7 @@ title:      "20170526-支付账务系统设计"
 date:       2017-05-26 12:00:00                                     
 author:     "PaymentGroup"              
 tag:		[publish]   
-header-img: "img/post-bg-wechat.jpg"                                     
+                                    
 ---                         
       
 > 本文档从“支付产品技术交流群”的2017年5月26日聊天记录整理出来，感谢@happycoral 同学的整理工作。       
@@ -16,7 +16,7 @@ header-img: "img/post-bg-wechat.jpg"
 ### 1.1 账务系统的设计思路  
   
 我们账务系统和会计系统是分开的，账务是基于我们开展的业务而设计，根据支付业务进行账务处理；而会计系统是面向于财务的复式记账。先简单说明下账务系统的上下文环境及系统边界：  
-![20170526_193649](http://wechat.lixf.cn/img/2017/20170526_193649.png)  
+![20170526_193649](http://static.cocolian.org/img/2017/20170526_193649.png)  
   
 这里面，业务系统不仅包括支付业务的处理系统，还包括会员系统。会员系统在领域模型设计上，主要就是三户模型，当然每个公司的的三户模型可能也不一样。这里表达的意思是会员系统里的账户和账务系统是有个映射关系的，会员的账户对外暴露。  
   
@@ -279,7 +279,7 @@ Q：C是平台？
 > 以下讨论是针对5月25日分享主题渠道管理和渠道接入的Q&A  
   
 Q：这个状态机你们是怎么做的？规则引擎+流程引擎做的么？我在考虑微引擎，实在不行自己写一个。  
-![20170525_221354](http://wechat.lixf.cn/img/2017/20170525_221354.png)  
+![20170525_221354](http://static.cocolian.org/img/2017/20170525_221354.png)  
 A：类似流程引擎的，也是代码实现的  
   
 Q：代码写也比较简单，也就那有限的状态切换再加上行为调用，商户通知也是在这层消息驱动的吧？  
@@ -469,18 +469,18 @@ A：一天8次
   
 关于Lambda详细介绍参考：[数据系统架构——Lambda architecture(Lambda架构)](http://blog.csdn.net/lvsaixia/article/details/51778487)  
   
-![lambda](http://wechat.lixf.cn/img/2017/20170526_152021.png)  
+![lambda](http://static.cocolian.org/img/2017/20170526_152021.png)  
   
 Q：有没有哪位已经应用到系统中的，谈谈有没有什么坑，我打算用在风控系统中用这个架构  
   
 A：Netflix不是有一套基于lambda的推荐架构吗，阿里  现在用的这个  
   
-![20170526_152513](http://wechat.lixf.cn/img/2017/20170526_152513.png)  
+![20170526_152513](http://static.cocolian.org/img/2017/20170526_152513.png)  
   
 ## 4.7 认证支付和快捷支付的区别？  
    
-![IMG_5625.JPG](http://wechat.lixf.cn/img/2017/IMG_5625.JPG)  
-![IMG_5626.JPG](http://wechat.lixf.cn/img/2017/IMG_5626.JPG)  
+![IMG_5625.JPG](http://static.cocolian.org/img/2017/IMG_5625.JPG)  
+![IMG_5626.JPG](http://static.cocolian.org/img/2017/IMG_5626.JPG)  
 -   
   
 Q：认证支付和快捷支付到底有什么区别啊，我看用户填写身份信息和银行卡信息是一样的  

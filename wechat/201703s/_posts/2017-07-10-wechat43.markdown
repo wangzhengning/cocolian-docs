@@ -39,7 +39,7 @@ A3：出款为啥银企直联，直接代付啊
   
 Q:spirng cloud里的东西有没有哪位朋友用过  Feign 这个组件？这个服务在Eureka中找不到，什么原因阿?  
   
-![164407](http://wechat.lixf.cn/img/2017/20170710_164407.png)  
+![164407](http://static.cocolian.org/img/2017/20170710_164407.png)  
   
 就是这个声明在Eureka中找不到  
   

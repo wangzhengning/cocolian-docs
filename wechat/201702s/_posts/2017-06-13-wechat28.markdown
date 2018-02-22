@@ -4,7 +4,7 @@ title:      "20170613-工行的互联网支付平台"
 date:       2017-06-13 19:00:00                                         
 author:     "PaymentGroup"         
 tag:		[hidden]                               
-header-img: "img/post-bg-wechat.jpg"                                         
+                                        
 ---       
   
 ## 一、专题分享- 工行的互联网支付平台介绍  

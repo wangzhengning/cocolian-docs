@@ -4,7 +4,7 @@ title:      "聊天记录2017-05-13未整理版"
 date:       2017-05-13 12:00:00                
 author:     "PaymentGroup"            
 tag:		[publish]   
-header-img: "img/post-bg-wechat.jpg"                
+               
 ---              
       
 8:09:51	[Fintech早餐会 2017/5/13 ](http://mp.weixin.qq.com/s?__biz=MzU3NDA1OTI4MQ==&mid=2247483687&idx=1&sn=27ee5a847cf5ae20875cc40fcb0adfe0&chksm=fd396759ca4eee4f3dee70a1be46b81b2dfd00f276e0bec6f08aeec97738c5a6292c306b6197&mpshare=1&scene=1&srcid=0513d2rqE6OjOSvSFN0gpmdc#rd)   

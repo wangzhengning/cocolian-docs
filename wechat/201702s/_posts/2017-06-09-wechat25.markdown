@@ -4,7 +4,7 @@ title:      "20170609-备付金报备"
 date:       2017-06-09 19:00:00                                       
 author:     "PaymentGroup"      
 tag:		[publish]   
-header-img: "img/post-bg-wechat.jpg"                                       
+                                      
 ---     
   
 ## 一、	主题分享：备付金报备  
@@ -101,7 +101,7 @@ header-img: "img/post-bg-wechat.jpg"
 - 表2_2支付机构管理账户情况统计表.xls  
 - 表2_2_2支付机构管理账户情况统计表.xls  
   
-点击这里下载所有模板： [备付金报表模板下载](http://wechat.lixf.cn/attach/provisions.zip)  
+点击这里下载所有模板： [备付金报表模板下载](http://static.cocolian.org/attach/provisions.zip)  
   
   
 ### 1.7 重要公式  

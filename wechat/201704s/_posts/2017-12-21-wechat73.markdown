@@ -11,8 +11,8 @@ header-img: "img/post-bg-wechat.jpg"
 ## 一、主题分享
 
 央行206号文和302号文对Ⅱ、Ⅲ类进一步规范，对于具体的发文内容，我会在群里发给大家。
-- [中国人民银行“银发〔2016〕261号”通知](http://wechat.lixf.cn/attach/261.doc)  
-- [央行302号文](http://wechat.lixf.cn/attach/302.doc)  
+- [中国人民银行“银发〔2016〕261号”通知](http://static.cocolian.org/attach/261.doc)  
+- [央行302号文](http://static.cocolian.org/attach/302.doc)  
 
 今晚我的分享分以下几点：  
 1.开立Ⅱ、Ⅲ数量；  
@@ -40,7 +40,7 @@ header-img: "img/post-bg-wechat.jpg"
 **三、Ⅱ、Ⅲ开立流程**
 
 
-![账户开户流程图](http://wechat.lixf.cn/img/2017/20171221_193958.png)
+![账户开户流程图](http://static.cocolian.org/img/2017/20171221_193958.png)
 
 1. 注册；
 2. 输入信息；
@@ -81,8 +81,8 @@ header-img: "img/post-bg-wechat.jpg"
 **八、Ⅱ、Ⅲ类户的目前的一些应用场景** 
 
 当前主要应用到的场景就是生活、微贷。
-![场景1](http://wechat.lixf.cn/img/2017/20171221_195600.png)
-![场景2](http://wechat.lixf.cn/img/2017/20171221_195805.png)
+![场景1](http://static.cocolian.org/img/2017/20171221_195600.png)
+![场景2](http://static.cocolian.org/img/2017/20171221_195805.png)
 
 
 ## 二、问答模块
