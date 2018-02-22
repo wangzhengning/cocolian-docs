@@ -27,6 +27,7 @@ highlighter: rouge
 permalink: pretty
 # paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+keep_files: ["img","font","css","atach","scss","js","design"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
@@ -78,6 +79,7 @@ featured-tags: false                     # whether or not using Feature-Tags
 modules: 
   dev : "开发环境配置"
   infra : "基础设施建设"
-  manual: "用户手册"
+  manual : "用户手册"
   member : "会员服务"
   payment : "交易核心"
+  wechat : "分享记录"

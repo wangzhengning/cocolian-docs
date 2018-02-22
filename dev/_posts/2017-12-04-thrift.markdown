@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: dev
 title: "安装Apache Thrift"
 subtitle: "Dev Config"
 date: 2017-12-04 12:00:00

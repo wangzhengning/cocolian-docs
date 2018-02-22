@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: member 
 title: "创建账户"  
 subtitle: "CIF-1001"  
 date: 2017-01-06 20:00:00  

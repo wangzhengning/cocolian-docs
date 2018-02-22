@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: member 
 title: "用户服务接口文档"  
 subtitle: "jigsaw-rpc-user-api"  
 date: 2017-01-02 20:00:00  

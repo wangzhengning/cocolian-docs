@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: dev
 title: "文档编写规范"
 subtitle: "指南"
 date: 2017-10-08 12:00:00

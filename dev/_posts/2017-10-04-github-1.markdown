@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: dev
 title: "GitHub工作流程"
 subtitle: "GitHub-1"
 date: 2017-10-04 12:00:00

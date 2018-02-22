@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: member 
 title: "激活账户"  
 subtitle: "CIF-1001"  
 date: 2017-01-08 20:00:00  

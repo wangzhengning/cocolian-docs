@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: infra 
 title: "安装sonarqube"  
 subtitle: "jigsaw-payment-infra"  
 date: 2017-11-03 20:00:00  

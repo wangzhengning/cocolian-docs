@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: dev
 title: "Jigsaw Payment计划功能清单[讨论稿]"  
 subtitle: "需求文档"  
 date: 2017-10-15 12:00:00  

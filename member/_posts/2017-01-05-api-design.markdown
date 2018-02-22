@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: member 
 title: "会员服务接口"  
 date: 2017-01-05 20:00:00  
 author: "shamphone"  

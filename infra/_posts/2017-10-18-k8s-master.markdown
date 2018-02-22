@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: infra 
 title: "Kubeadm安装Kubernetes指南(Master)"  
 subtitle: "infra文档"  
 date: 2017-10-17 12:00:00  
@@ -53,7 +53,7 @@ Server:
 docker默认使用docker.io的源，国内访问慢，容易出错。修改为国内的源：
 
 访问 [阿里云的开发者平台](http://dev.aliyun.com/search.html),登录后，进入管理中心，首次登录会让用户设置密码。然后就会看到如下页面：
-![aliyun](http://doc.jigsaw.lixf.cn/img/in-post/aliyun-docker.png)
+![aliyun](http://static.cocolian.org/img/in-post/aliyun-docker.png)
 阿里云为每个人分配一个加速器地址。 我的地址是 https://n76bgciz.mirror.aliyuncs.com 
 修改 /etc/docker/daemon.json 
 

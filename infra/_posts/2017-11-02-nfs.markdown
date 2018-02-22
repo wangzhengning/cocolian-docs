@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: infra 
 title: "安装nfs"  
 subtitle: "jigsaw-payment-infra"  
 date: 2017-11-02 20:00:00  

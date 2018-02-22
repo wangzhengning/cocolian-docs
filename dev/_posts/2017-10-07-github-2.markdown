@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: dev
 title: "Jigsaw Payment模块分工"  
 subtitle: "GitHub-2"  
 date: 2017-10-07 12:00:00  

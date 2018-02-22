@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: dev
 title: "开发环境配置指南-Centos版"
 subtitle: "Dev Config"
 date: 2017-12-02 12:00:00

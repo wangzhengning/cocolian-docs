@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: member 
 title: "获取账户信息"  
 subtitle: "CIF-1001"  
 date: 2017-01-09 20:00:00  

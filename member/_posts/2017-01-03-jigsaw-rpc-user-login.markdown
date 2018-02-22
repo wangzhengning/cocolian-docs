@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: member  
 title: "用户登录业务"  
 subtitle: "jigsaw-rpc-user-login"  
 date: 2017-01-03 20:00:00  

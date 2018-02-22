@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: infra 
 title: "Jigsaw Payment线上环境清单"
 subtitle: "infra文档"
 date: 2017-10-16 12:00:00

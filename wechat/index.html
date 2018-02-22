@@ -1,0 +1,32 @@
+---
+layout: page
+title: "支付微信群最新分享"
+---
+{% assign posts = site.categories['wechat'] | sort : "date" | reversed %}
+{% for post in  posts limit: 20 %}
+	{% assign  display = false  %}
+		{% for tag in post.tags %}
+			{% if tag == "publish"  %} {% assign display = true %}  {%endif %}
+		{% endfor %}
+	{% if display %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:200 }}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+	{% endif %}
+{% endfor %}

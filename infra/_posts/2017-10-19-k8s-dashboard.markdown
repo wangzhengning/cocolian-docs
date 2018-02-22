@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: infra 
 title: "Kubernetes Dashboard安装指南"  
 subtitle: "infra文档"  
 date: 2017-10-20 12:00:00  

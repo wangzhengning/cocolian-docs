@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: infra  
 title: "OpenVPN 安装指南"  
 subtitle: "infra文档"  
 date: 2017-10-17 12:00:00  

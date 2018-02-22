@@ -1,16 +1,15 @@
-.post-container {
-    padding-right: 15px;
-	width: 100%;
-	margin-left: 50px;
-}
-
-.post-list {
-	list-style: none;
-}
 
 aside.content-aside {
 	display:none;
 }
+header.intro-header{
+	padding: 10px 10px 5px 10px;
+}
+
+article.post-content{
+	padding: 10px 10px 5px 10px;
+}
+
 @media (min-width: 768px) {
 	aside.content-aside {
 		display: block;
@@ -18,12 +17,42 @@ aside.content-aside {
 		left: 0px;
 		top: 80px;
 	}
+	header.intro-header{
+		padding: 10px 10px 5px 320px;
+	}
+	article.post-content{
+		padding: 5px 10px 5px 320px;
+	}
+
 }
+.post_footer{ 
+	display: table; 
+	table-layout: fixed; 
+	width: 100%; 
+	list-style: none; 
+	margin:0px; 
+	padding:0px; 
+} 
+.post_footer li { 
+	display: table-cell; 
+	text-align: center;
+}
+.post_footer li.left-sep { 
+	border-left: 1px dashed #a0a0a0
+}
+
+.post-list {
+	list-style: none;
+}
+
+
 
 aside.content-aside ul{
 	list-style: none;
 }
-
+aside.content-aside li{
+	margin-left:-26px;
+}
 ul.main_container {
 	list-style: none outside none; 
 	padding: 10px;
