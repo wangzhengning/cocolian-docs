@@ -2,12 +2,14 @@
 layout: page
 description: "来自微信群‘支付产品技术交流群’的聊天记录整理"
 ---
-
-{% for post in site.categories['201702s']%}
+{% assign posts = site.categories['wechat'] | sort:'date' %}
+{% for post in  posts %}
 	{% assign  display = false  %}
+	{% if post.date contains page.month %}
 		{% for tag in post.tags %}
 			{% if tag == "publish"  %} {% assign display = true %}  {%endif %}
 		{% endfor %}
+	{% endif %}
 	{% if display %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">

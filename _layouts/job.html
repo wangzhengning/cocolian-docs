@@ -6,17 +6,8 @@ layout: default
     header.intro-header{
         position: relative;
 		height: 240px;
-        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
     }
 
-    {% if page.header-mask %}
-    header.intro-header .header-mask{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: rgba(0,0,0, {{ page.header-mask }});
-    }
-    {% endif %}
    .post_footer{ 
 		display: table; 
 		table-layout: fixed; 
@@ -67,10 +58,10 @@ layout: default
 				<hr/>
 				<ul class="post_footer">
 				   <li>长按或者扫描二维码来打赏，感谢支持群管理工作！<br/>
-						<img src="http://wechat.lixf.cn/img/reward/jigsaw.jpg" /> 
+						<img src="http://static.cocolian.org/img/reward/jigsaw.jpg" /> 
 				   </li>
 				    <li class="left-sep">请扫码关注“凤凰牌老熊”的微信公众号。<br/>
-						<img src="http://wechat.lixf.cn/img/reward/weixin.jpg" /> 
+						<img src="http://static.cocolian.org/img/reward/weixin.jpg" /> 
 					</li>
 				</ul>
 				<ul class="post_footer">

@@ -3,10 +3,9 @@ layout: default
 ---
 <aside class="content-aside">
 <ul>
-{% assign cat = page.categories | last %}
-{% assign posts =  site.categories[cat] | sort:"date" %}
+{% assign posts =  site.categories["monthly"] | sort:"month" %}
 {% for post in posts  %}
-<li><a href="{{ post.url | prepend: site.baseurl }}">{% if post.chapter %}{{ post.chapter }}&nbsp;&nbsp;{% endif %} {{ post.title }}</a></li>
+<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 </aside>

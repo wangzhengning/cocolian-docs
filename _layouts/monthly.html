@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "最新分享记录"
+description: "来自微信群‘支付产品技术交流群’的聊天记录整理"
 ---
 
 <aside class="content-aside">
@@ -25,13 +25,17 @@ title: "最新分享记录"
 <article class="post-content"> 
     <!-- Post Container -->
             <div class="post-container">
-{% assign posts = site.categories['wechat'] | sort : "date" | reverse %}
-{% for post in posts limit:20 %}
+
+{% assign posts = site.categories['wechat'] | sort:'date' %}
+{% for post in  posts %}
 	{% assign  display = false  %}
+	{% assign postMonth = post.date | date: "%Y-%m" %}
+	{% if postMonth == page.month %}
 		{% for tag in post.tags %}
 			{% if tag == "publish"  %} {% assign display = true %}  {%endif %}
 		{% endfor %}
-	{% if display %}
+	{% endif %}
+    {% if display %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
@@ -54,4 +58,24 @@ title: "最新分享记录"
 	{% endif %}
 {% endfor %}
 
+		<hr/>              
+		<ul class="pager">
+			{% if page.previous.url %}
+			<li class="previous">
+				<a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+				Previous<br>
+				<span>{{page.previous.title}}</span>
+				</a>
+			</li>
+			{% endif %}
+			{% if page.next.url %}
+			<li class="next">
+				<a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+				Next<br>
+				<span>{{page.next.title}}</span>
+				</a>
+			</li>
+			{% endif %}
+		</ul>				
+	</div>  
 </article>
