@@ -4,7 +4,6 @@ title:      "20180209-代收付系统重构的一些实践"
 date:       2018-02-09 12:00:00
 author:     "PaymentGroup"
 tag:		[publish] 
-header-img: "img/post-bg-wechat.jpg"
 ---
 
 

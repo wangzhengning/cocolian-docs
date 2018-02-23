@@ -4,7 +4,6 @@ title:      "20180207-网贷平台放款流程"
 date:       2018-02-07 12:00:00
 author:     "PaymentGroup"
 tag:		[publish] 
-header-img: "img/post-bg-wechat.jpg"
 ---
 
 

@@ -4,7 +4,6 @@ title:      "20180208-分账模式合规解析"
 date:       2018-02-08 12:00:00
 author:     "PaymentGroup"
 tag:		[publish] 
-header-img: "img/post-bg-wechat.jpg"
 ---
 
    
