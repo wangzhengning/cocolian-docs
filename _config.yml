@@ -26,7 +26,7 @@ encoding: UTF-8
 highlighter: rouge
 permalink: pretty
 # paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md", "bash"]
 keep_files: ["img","font","css","atach","scss","js","design"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
