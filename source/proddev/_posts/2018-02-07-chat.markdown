@@ -4,7 +4,6 @@ title:      "2018-02-07-WeChat"
 date:       2018-02-07 12:00:00
 author:     "PaymentGroup"
 tag:		  [chat]
-header-img: "img/post-bg-wechat.jpg"
 ---
 > 14:59:54  北京一张泽雄  
    
@@ -110,17 +109,17 @@ header-img: "img/post-bg-wechat.jpg"
    
 [强]  
    
-> 16:26:41  阿烨  
+> 16:26:41  pangning  
    
 。  
    
-> 16:26:56  阿烨  
+> 16:26:56  pangning  
    
 段子手  
    
 > 17:02:01  熊烽.doc  
    
-![2018-02-07 17:02:01](http://wechat.lixf.cn/img/20180207_170201.png) 
+![2018-02-07 17:02:01](http://static.cocolian.org/img/20180207_170201.png) 
    
 > 17:02:22  许null洋  
    
@@ -158,7 +157,7 @@ Airwallex (空中云汇)&amp;#160; 这家公司有了解的么？
    
 人呢  
    
-> 17:41:14  James payzero  
+> 17:41:14  方子骥 payzero james  
    
 @Doni_美团_产品?加个微信，我们也能做他们家所有的事情。  
    
@@ -176,7 +175,7 @@ Airwallex (空中云汇)&amp;#160; 这家公司有了解的么？
    
 > 19:14:36  一抹sunshine  
    
-![2018-02-07 19:14:36](http://wechat.lixf.cn/img/20180207_191436.png) 
+![2018-02-07 19:14:36](http://static.cocolian.org/img/20180207_191436.png) 
    
 > 19:14:38  一抹sunshine  
    

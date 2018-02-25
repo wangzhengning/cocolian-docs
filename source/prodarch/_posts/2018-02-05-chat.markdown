@@ -4,7 +4,6 @@ title:      "2018-02-05-WeChat"
 date:       2018-02-05 12:00:00
 author:     "PaymentGroup"
 tag:		  [chat]
-header-img: "img/post-bg-wechat.jpg"
 ---
 > 06:46:27  我  
    
@@ -80,7 +79,7 @@ header-img: "img/post-bg-wechat.jpg"
    
 > 10:48:39  付云-农业-开发-成都  
    
-![2018-02-05 10:48:39](http://wechat.lixf.cn/img/20180205_104839.png) 
+![2018-02-05 10:48:39](http://static.cocolian.org/img/20180205_104839.png) 
    
 > 10:57:26  姚雪峰-通联-产品-上海  
    
@@ -108,7 +107,7 @@ header-img: "img/post-bg-wechat.jpg"
    
 > 10:59:35  付云-农业-开发-成都  
    
-![2018-02-05 10:59:35](http://wechat.lixf.cn/img/20180205_105935.png) 
+![2018-02-05 10:59:35](http://static.cocolian.org/img/20180205_105935.png) 
    
 > 11:01:14  隔壁老王  
    
@@ -172,7 +171,7 @@ ok,thanks
    
 > 12:48:02  聚合支付_程昱  
    
-![2018-02-05 12:48:02](http://wechat.lixf.cn/img/20180205_124802.png) 
+![2018-02-05 12:48:02](http://static.cocolian.org/img/20180205_124802.png) 
    
 > 12:48:15  聚合支付_程昱  
    
@@ -192,7 +191,7 @@ ok,thanks
    
 > 13:45:50  艾梅-沃支付业务风控  
    
-![2018-02-05 13:45:50](http://wechat.lixf.cn/img/20180205_134550.png) 
+![2018-02-05 13:45:50](http://static.cocolian.org/img/20180205_134550.png) 
    
 > 13:46:02  艾梅-沃支付业务风控  
    
@@ -228,7 +227,7 @@ ok,thanks
    
 > 13:49:38  艾梅-沃支付业务风控  
    
-![2018-02-05 13:49:38](http://wechat.lixf.cn/img/20180205_134938.png) 
+![2018-02-05 13:49:38](http://static.cocolian.org/img/20180205_134938.png) 
    
 > 13:50:08  龚晓冬  
    
@@ -280,7 +279,7 @@ ok,thanks
    
 > 14:53:32  Jaesper  
    
-![2018-02-05 14:53:32](http://wechat.lixf.cn/img/20180205_145332.png) 
+![2018-02-05 14:53:32](http://static.cocolian.org/img/20180205_145332.png) 
    
 > 14:56:01  胖民工-成都-金信服-打杂  
    
@@ -408,7 +407,7 @@ ping++居然也没牌照
    
 > 17:20:01  周萍Juntin  
    
-![2018-02-05 17:20:01](http://wechat.lixf.cn/img/20180205_172001.png) 
+![2018-02-05 17:20:01](http://static.cocolian.org/img/20180205_172001.png) 
    
 > 17:20:04  周萍Juntin  
    

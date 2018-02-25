@@ -4,7 +4,6 @@ title:      "2018-02-08-WeChat"
 date:       2018-02-08 12:00:00
 author:     "PaymentGroup"
 tag:		  [chat]
-header-img: "img/post-bg-wechat.jpg"
 ---
 > 08:43:16  陆训-51信用卡-开发  
    

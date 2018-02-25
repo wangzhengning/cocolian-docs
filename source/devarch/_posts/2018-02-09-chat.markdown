@@ -4,7 +4,6 @@ title:      "2018-02-09-WeChat"
 date:       2018-02-09 12:00:00
 author:     "PaymentGroup"
 tag:		  [chat]
-header-img: "img/post-bg-wechat.jpg"
 ---
 > 10:26:21  北京一张泽雄  
    
@@ -128,11 +127,11 @@ https://mp.weixin.qq.com/s/vzNph6EDVFiYBKzS7AHiVA
    
 > 11:48:40  横烟秋  
    
-![2018-02-09 11:48:40](http://wechat.lixf.cn/img/20180209_114840.png) 
+![2018-02-09 11:48:40](http://static.cocolian.org/img/20180209_114840.png) 
    
 > 11:49:12  横烟秋  
    
-![2018-02-09 11:49:12](http://wechat.lixf.cn/img/20180209_114912.png) 
+![2018-02-09 11:49:12](http://static.cocolian.org/img/20180209_114912.png) 
    
 > 11:50:43  地平线-文思-产品  
    
@@ -272,7 +271,7 @@ Android和ios系统支持。客户端开发同学清楚
    
 > 20:53:21  钟鸿敏  
    
-![2018-02-09 20:53:21](http://wechat.lixf.cn/img/20180209_205321.png) 
+![2018-02-09 20:53:21](http://static.cocolian.org/img/20180209_205321.png) 
    
 > 21:01:24  欧鹏程  
    

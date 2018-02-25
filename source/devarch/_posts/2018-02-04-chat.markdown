@@ -4,7 +4,6 @@ title:      "2018-02-04-WeChat"
 date:       2018-02-04 12:00:00
 author:     "PaymentGroup"
 tag:		  [chat]
-header-img: "img/post-bg-wechat.jpg"
 ---
 > 20:15:40  Leo Qin  
    

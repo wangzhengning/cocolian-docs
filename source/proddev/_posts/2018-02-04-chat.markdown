@@ -4,7 +4,6 @@ title:      "2018-02-04-WeChat"
 date:       2018-02-04 12:00:00
 author:     "PaymentGroup"
 tag:		  [chat]
-header-img: "img/post-bg-wechat.jpg"
 ---
 > 00:00:25  北京一张泽雄  
    
@@ -96,7 +95,7 @@ ps.我自己收1w
    
 > 13:42:45  我  
    
-![2018-02-04 13:42:45](http://wechat.lixf.cn/img/20180204_134245.png) 
+![2018-02-04 13:42:45](http://static.cocolian.org/img/20180204_134245.png) 
    
 > 13:43:08  我  
    

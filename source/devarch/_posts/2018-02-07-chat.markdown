@@ -4,7 +4,6 @@ title:      "2018-02-07-WeChat"
 date:       2018-02-07 12:00:00
 author:     "PaymentGroup"
 tag:		  [chat]
-header-img: "img/post-bg-wechat.jpg"
 ---
 > 08:17:11  张问-平安付  
    
@@ -224,7 +223,7 @@ O__O 世界的底层算法
    
 > 10:00:49  玩物不丧志  
    
-![2018-02-07 10:00:49](http://wechat.lixf.cn/img/20180207_100049.png) 
+![2018-02-07 10:00:49](http://static.cocolian.org/img/20180207_100049.png) 
    
 > 10:00:56  玩物不丧志  
    
@@ -384,7 +383,7 @@ O__O 世界的底层算法
    
 > 12:16:59  田浩沛  
    
-![2018-02-07 12:16:59](http://wechat.lixf.cn/img/20180207_121659.png) 
+![2018-02-07 12:16:59](http://static.cocolian.org/img/20180207_121659.png) 
    
 > 12:17:13  田浩沛  
    
@@ -572,7 +571,7 @@ RP问题
    
 > 18:55:56  我  
    
-![2018-02-07 18:55:56](http://wechat.lixf.cn/img/20180207_185556.png) 
+![2018-02-07 18:55:56](http://static.cocolian.org/img/20180207_185556.png) 
    
 > 18:56:00  我  
    
@@ -688,7 +687,7 @@ RP问题
    
 > 19:21:20  乾橙科技_Summer 梁夏  
    
-![2018-02-07 19:21:20](http://wechat.lixf.cn/img/20180207_192120.png) 
+![2018-02-07 19:21:20](http://static.cocolian.org/img/20180207_192120.png) 
    
 > 19:21:23  侯哥  
    
