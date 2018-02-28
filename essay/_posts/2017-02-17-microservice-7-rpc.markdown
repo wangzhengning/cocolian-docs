@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "微服务与RPC"
 subtitle: "从SSH单体应用到微服务架构-7"
 date: 2017-02-17 12:00:00
@@ -102,7 +102,7 @@ RetryUntilElapsed
 ```hbs
 机房区域-部门-服务类型-服务名称-服务器地址
 ```
-[![zookeeper组织](http://static.cocolian.org/img/in-post/rpc-zookeeper.jpg)]( http://static.cocolian.org/img/in-post/rpc-zookeeper.jpg )
+[![zookeeper组织](http://blog.lixf.cn/img/in-post/rpc-zookeeper.jpg)]( http://blog.lixf.cn/img/in-post/rpc-zookeeper.jpg )
 
 由于在zookeeper上的注册和发现有一定的延迟，所以在实现上也得注意，当服务启动成功后，才能注册到zookeeper上；当服务要下线或者重启前，需要先断开同zookeeper的连接，再停止服务。
 
@@ -178,7 +178,7 @@ message Boy {
 Netflix Hystrix提供不错的熔断和限流的实现，参考其在[GitHub上的项目介绍](https://github.com/Netflix/Hystrix/)。这里简单说下熔断和限流实现原理。 
 
 熔断一般采用电路熔断器模式(Circuit Breaker Patten)。当某个服务发生错误，每秒错误次数达到阈值时，不再响应请求，直接返回服务器忙的错误给调用方。 延迟一段时间后，尝试开放50%的访问，如果错误还是高，则继续熔断；否则恢复到正常情况。
-[![rpc-circuit](http://static.cocolian.org/img/in-post/rpc-circuit.jpg)](http://static.cocolian.org/img/in-post/rpc-circuit.jpg)
+[![rpc-circuit](http://blog.lixf.cn/img/in-post/rpc-circuit.jpg)](http://blog.lixf.cn/img/in-post/rpc-circuit.jpg)
 
 限流指按照访问方、IP地址或者域名等方式对服务访问进行限制，一旦超过给定额度，则禁止其访问。 除了使用Hystrix，如果要自己实现，可以考虑使用使用[Guava RateLimiter]( http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/util/concurrent/RateLimiter.html)
 
@@ -190,11 +190,11 @@ Netflix Hystrix提供不错的熔断和限流的实现，参考其在[GitHub上�
 
 针对实体服务，读写分离是提升性能的第一步。 实现读写分离一般有两种方式：
 1. 在同构数据库上使用主从复制的方式： 一般数据库，比如MySQL、HBase、Mongodb等，都提供主从复制功能。数据写入主库，读取、检索等操作都从从库上执行，实现读写分离。这种方式实现简单，无需额外开发数据同步程序。一般来说，对写入有事务要求的数据库，在读取上的性能会比较差。虽然可以通过增加从库的方式来sharding请求，但这也会导致成本增加。 
-[![rpc-ms](http://static.cocolian.org/img/in-post/rpc-ms.jpg)](http://static.cocolian.org/img/in-post/rpc-ms.jpg)
+[![rpc-ms](http://blog.lixf.cn/img/in-post/rpc-ms.jpg)](http://blog.lixf.cn/img/in-post/rpc-ms.jpg)
 
 2. 在异构数据库上进行读写分离。发挥不同数据库的优势，通过消息机制或者其他方式，将数据从主库同步到从库。 比如使用MySQL作为主库来写入，数据写入时投递消息到消息服务器，同步程序接收到消息后，将数据更新到读库中。可以使用Redis，Couchbase等内存数据库作为读库，用来支持根据ID来读取；使用Elastic作为从库，支持搜索。 
 
-[![rpc-ms](http://static.cocolian.org/img/in-post/rpc-services.jpg)](http://static.cocolian.org/img/in-post/rpc-services.jpg)
+[![rpc-ms](http://blog.lixf.cn/img/in-post/rpc-services.jpg)](http://blog.lixf.cn/img/in-post/rpc-services.jpg)
 
 **缓存使用**
 

@@ -1,5 +1,5 @@
 ---
-layout:     post
+layout:     essay
 title:      "支付行业词汇表"
 subtitle:   "支付行业词汇表"
 date:       2016-08-02 12:00:00

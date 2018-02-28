@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "支付清结算之账户和账务处理"
 subtitle: "支付清结算-4"
 date: 2017-02-03 12:00:00
@@ -80,14 +80,14 @@ tags: [支付清结算]
 这是反映特殊经济业务的账户， 本文暂不涉及。
 
 **账户体系**
-[![账户体系](http://static.cocolian.org/img/in-post/clearing-act-arch.jpg)](http://static.cocolian.org/img/in-post/clearing-act-arch.jpg)
+[![账户体系](http://blog.lixf.cn/img/in-post/clearing-act-arch.jpg)](http://blog.lixf.cn/img/in-post/clearing-act-arch.jpg)
 
 
 ## 二、账户结构
 
 如前述文章介绍，我们采用复式借贷记账法。对于分户账，或者说明细账，如下示例：
 
-[![账户结构](http://static.cocolian.org/img/in-post/clearing-tb-accounting.jpg)](http://static.cocolian.org/img/in-post/clearing-tb-accounting.jpg)
+[![账户结构](http://blog.lixf.cn/img/in-post/clearing-tb-accounting.jpg)](http://blog.lixf.cn/img/in-post/clearing-tb-accounting.jpg)
 
 在这个实例中， 账户中账务相关的结构包括：  
 
@@ -99,7 +99,7 @@ tags: [支付清结算]
 
 参考 [账户设计](http://blog.lixf.cn/essay/2016/10/08/account-1/) 一文， 总的来说，账户的结构如下图所示，包括基本信息、关联实体、权限控制、余额和账务相关信息。
 
-[![账户结构](http://static.cocolian.org/img/in-post/clearing-accounts.jpg)](http://static.cocolian.org/img/in-post/clearing-accounts.jpg)
+[![账户结构](http://blog.lixf.cn/img/in-post/clearing-accounts.jpg)](http://blog.lixf.cn/img/in-post/clearing-accounts.jpg)
 
 在存储上，账务相关信息一般是和账户其他信息相互独立处理，处理账务相关信息的子系统被称为账务子系统或者记账子系统。 
 
@@ -122,27 +122,27 @@ tags: [支付清结算]
 5.  支付系统发送消息异步通知会计系统进行记账。  
 
 这5个步骤都是线上的流程，在此过程中，各个子系统之间的交互如下图所示。 我们逐步分析这里涉及到的对象。 
-[![记账流程](http://static.cocolian.org/img/in-post/clearing-accounting.jpg)](http://static.cocolian.org/img/in-post/clearing-accounting.jpg)
+[![记账流程](http://blog.lixf.cn/img/in-post/clearing-accounting.jpg)](http://blog.lixf.cn/img/in-post/clearing-accounting.jpg)
 
 ## 四、支付订单
 
 这个流程中，首先生成的是支付订单。这是一个比较简单的订单，仅涉及到一个商家和一个商品。 在比较复杂的电商场景中，一个订单会涉及到多个商家、多种商品以及对应的优惠活动。也就是，一个总订单会被拆分为多个子订单。这部分内容将在后续的订单系统设计一文中详细介绍。 而订单中和资金相关的内容，都需要在账户体系中建立对应的科目和账户。在请求支付时，只会将总订单提交支付，拆分子订单是在订单系统中完成的。
 
-[![支付订单](http://static.cocolian.org/img/in-post/clearing-order.jpeg)](http://static.cocolian.org/img/in-post/clearing-order.jpeg)
+[![支付订单](http://blog.lixf.cn/img/in-post/clearing-order.jpeg)](http://blog.lixf.cn/img/in-post/clearing-order.jpeg)
 
   
 针对上述场景，为了简化处理，假定老熊公司当天总共完成了三笔会员卡交易，支付订单如下：
 
-[![支付订单](http://static.cocolian.org/img/in-post/clearing-tb-orders.jpg)](http://static.cocolian.org/img/in-post/clearing-tb-orders.jpg)
+[![支付订单](http://blog.lixf.cn/img/in-post/clearing-tb-orders.jpg)](http://blog.lixf.cn/img/in-post/clearing-tb-orders.jpg)
 
 ## 五、支付记录
 
 在这个流程中，订单系统向支付系统请求支付时，支付系统将产生支付记录（支付订单）。 支付记录内容比较多，这些数据是后续进行记账的基础。 
-[![支付记录](http://static.cocolian.org/img/in-post/clearing-record.jpeg)](http://static.cocolian.org/img/in-post/clearing-record.jpeg)
+[![支付记录](http://blog.lixf.cn/img/in-post/clearing-record.jpeg)](http://blog.lixf.cn/img/in-post/clearing-record.jpeg)
 
 上述的三个订单，两笔通过工行支付，一笔通过支付宝支付，其产生的支付记录如下，此处省略了其他和记账无关的字段内容：
 
-[![支付记录](http://static.cocolian.org/img/in-post/clearing-tb-record.jpg)](http://static.cocolian.org/img/in-post/clearing-tb-record.jpg)
+[![支付记录](http://blog.lixf.cn/img/in-post/clearing-tb-record.jpg)](http://blog.lixf.cn/img/in-post/clearing-tb-record.jpg)
 
 这里需要注意的几个属性：
 
@@ -173,7 +173,7 @@ tags: [支付清结算]
 
 这3条记录是通过事务处理一次生成。当天发生的三笔交易，产生的记账内容如下：
 
-[![支付记账](http://static.cocolian.org/img/in-post/clearing-tb-accounting-2.jpg)](http://static.cocolian.org/img/in-post/clearing-tb-accounting-2.jpg)
+[![支付记账](http://blog.lixf.cn/img/in-post/clearing-tb-accounting-2.jpg)](http://blog.lixf.cn/img/in-post/clearing-tb-accounting-2.jpg)
 
 实际实现上，科目一列，使用账号ID来替代。 每个账户的本期发生额，可以在另一个表中单独异步计算。 
 
@@ -182,7 +182,7 @@ tags: [支付清结算]
 在会计上，对账分三个部分：账证核对、账账核对和账实核对，做到账证相符、账账相符和账实相符。在电商支付系统中，需要完成的对账工作包括内部对账、外部对账和资金对账。 
 其中外部对账又分为和支付渠道的对账、和商户的对账以及和用户的对账。 这里简单介绍每个对账流程以及对记账的影响，详细的对账和轧账流程，将在下一篇文章中说明。 
 
-[![对账](http://static.cocolian.org/img/in-post/clearing-checking.jpeg)](http://static.cocolian.org/img/in-post/clearing-checking.jpeg)
+[![对账](http://blog.lixf.cn/img/in-post/clearing-checking.jpeg)](http://blog.lixf.cn/img/in-post/clearing-checking.jpeg)
 
 **内部对账**
 
@@ -198,7 +198,7 @@ tags: [支付清结算]
 接收到工行对账单后，按照对账单生成凭证：
 
 
-[![对账](http://static.cocolian.org/img/in-post/clearing-tb-checking.jpg)](http://static.cocolian.org/img/in-post/clearing-tb-checking.jpg)
+[![对账](http://blog.lixf.cn/img/in-post/clearing-tb-checking.jpg)](http://blog.lixf.cn/img/in-post/clearing-tb-checking.jpg)
 
 注意上述的日期、凭证号，以及借贷关系。 
 

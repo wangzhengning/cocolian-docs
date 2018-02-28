@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "支付清结算之电商侧处理"
 subtitle: "支付清结算-3"
 date: 2017-01-24 12:00:00

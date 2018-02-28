@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "支付清结算之渠道侧处理"
 subtitle: "支付清结算-2"
 date: 2017-01-15 12:00:00
@@ -153,7 +153,7 @@ tags: [支付清结算]
 
 对电商来说，由于不能直接访问央行的这些接口，对接银行，通过银行来访问央行的接口，是主要的提现方式。 但不同的银行，针对不同的提现场景，收费不一样。所以在具体实现提现的时候，还需要有提现路由（打款路由），从费率、支持的额度、到账时间等多个维度来评估和选择提现渠道。
 
-[![跨行打款](http://static.cocolian.org/img/in-post/clearing-stages.jpg)](http://static.cocolian.org/img/in-post/clearing-stages.jpg)
+[![跨行打款](http://blog.lixf.cn/img/in-post/clearing-stages.jpg)](http://blog.lixf.cn/img/in-post/clearing-stages.jpg)
 
 ### 第三方支付渠道
 支付宝、微信等第三方支付公司一般也都提供代付服务，可以是通过文件来实现批量代付，也可以通过接口来实现提现。

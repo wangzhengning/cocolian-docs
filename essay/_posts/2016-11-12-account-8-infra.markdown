@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "支付系统的基础设施建设"
 subtitle: "支付系统设计-8"
 date: 2016-11-12 12:00:00
@@ -19,7 +19,7 @@ tags: [支付系统]
 怎么度量支付系统基础设施建设的成熟度？我们没法从部署了多少个软件，使用了多少台机器这样硬性指标来考察。敏捷开发的一些最新理念可以帮助我们定性地度量这个进度。
 软件开发过程包括编码，构建，集成，测试，交付（预发布），部署。我们可以从这流程的自动化程度来度量基础设施建设的阶段。
 
-![Image of version control](http://static.cocolian.org/img/in-post/inf-ci.png)
+![Image of version control](http://blog.lixf.cn/img/in-post/inf-ci.png)
 
 持续集成、持续交付和持续部署，分别对应自动化软件过程的三个阶段。持续集成实现了编译、发布、集成编译的自动化，并最终自动部署到集成测试环境。在测试完成后，需要人工验证和上线。 而持续交付则更进一步，在实现自动测试基础上，能够实现自动部署到预发布环境。在准线上环境确认达到可以上线的要求后，人工部署到线上环境。 持续部署是自动化的最终目标，开发完成后，能够自动地完成验证并实施到线上的系统。
 
@@ -28,7 +28,7 @@ tags: [支付系统]
 # 版本控制
 
 版本控制所有自动化工作的基础。国内大部分公司已经完成了从subversion到git的改造，git也成为版本控制的标配了。支付系统在版本控制上和其他系统并无太多的差异。这里需要介绍的是针对微服务架构的版本控制。 我们知道对版本控制来说，代码合并是一个很难避免的噩梦。 而微服务化可以很好的解决这个问题，由于服务的粒度小，每次变更一个人就可以搞定。每个服务有都可以独立上线，避免修改冲突。 这样版本控制就相对来说比较简单：
-![Image of version control](http://static.cocolian.org/img/in-post/inf-version.png)
+![Image of version control](http://blog.lixf.cn/img/in-post/inf-version.png)
 
 # 代码审核
 
@@ -43,7 +43,7 @@ tags: [支付系统]
 # 日志搜集与分析
 
 开发同学不碰线上系统，这是支付系统的原则。那线上系统出问题了怎么办？开发人员总是依赖日志来排查问题，一个日志汇总系统是支付平台必备的基础设施。考虑到日志最终都需要归并到一个日志仓库中，这个仓库可以有很多用途，特别是日常维护中的日志查询工作。多数指标可以在日志上完成计算的。 借助这个系统，也可以完成监控：
-![zabbix 监控](http://static.cocolian.org/img/in-post/monitor-2.png)
+![zabbix 监控](http://blog.lixf.cn/img/in-post/monitor-2.png)
 
 日志通过Apache Flume来收集，通过Apache Kafka来汇总，一般最后日志都归档到Elastic中。 统计分析工作也可以基于Elastic来做，但这个不推荐。 使用Apache Spark 的 Streaming组件来接入Apache Kafka 完成监控指标的提取和计算，将结果推送到Zabbix服务器上，就可以实现可扩展的监控。
 Apache Flume和Logstash都可以用于日志收集，从实际使用来看，两者在性能上并无太大差异。Flume是java系统，Logstash是ruby系统。使用中都会涉及到对系统的扩展，这就看那个语言你能hold住了。
@@ -52,7 +52,7 @@ Apache Flume和Logstash都支持日志直接入库，即写入HDFS，Elastic等�
 # 系统监控
 
 现在基本上 Zabbix 成为监控的标配了。 一个常规的 Zabbix 监控实现， 是在被监控的机器上部署Zabbix Agent，从日志中收集所需要的数据，分析出监控指标，发送到zabbix服务器上。
-![zabbix 监控](http://static.cocolian.org/img/in-post/monitor-1.png)
+![zabbix 监控](http://blog.lixf.cn/img/in-post/monitor-1.png)
 这种方式要求每个机器上部署 Zabbix 客户端，并配置数据收集脚本。Zabbix的部署可以作为必装软件随操作系统一起安装。
 
 # 持续集成

@@ -1,5 +1,5 @@
 ---
-layout:     post
+layout:     essay
 title:      "重构中的内部准备工作"
 subtitle:   "从SSH单体应用到微服务架构-3"
 date:       2016-08-06 12:00:00

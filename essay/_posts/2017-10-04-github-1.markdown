@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "GitHub工作流程"
 subtitle: "GitHub-1"
 date: 2017-10-04 12:00:00
@@ -28,17 +28,17 @@ Jigsaw项目采用Fork & Pull的工作流程。 下面的工作流程是在Jigsa
 
 进入GitHub的[Jigsaw代码库 https://github.com/jigsaw-projects/jigsaw-payment](https://github.com/jigsaw-projects/jigsaw-payment)，单击“Fork”按​​钮来创建自己的Github帐户上的代码库克隆：
 
-![github-1](http://static.cocolian.org/img/in-post/github-1.png)
+![github-1](http://blog.lixf.cn/img/in-post/github-1.png)
 
 访问这将在自己的帐户上创建一个该代码库的复制：
 
-![github-2](http://static.cocolian.org/img/in-post/github-2.png)
+![github-2](http://blog.lixf.cn/img/in-post/github-2.png)
 
 ## 三、clone本地版本
 
 选择 SSH URL,那样它会自动使用你自己的SSH密钥，而不用每次在git pull或者push时询问你的用户名和密码。下一步，我们将克隆一份代码库到本地计算机。
 首先注意在自己的github空间下，进入jigsaw-payment的分支。选择SSH方式，点击右侧按钮复制地址：
-![github-3](http://static.cocolian.org/img/in-post/github-3.png)
+![github-3](http://blog.lixf.cn/img/in-post/github-3.png)
 
 在本地建立一个工作文件夹，比如d:\workspace，用来做开发工作。在windows下，用Git Bash,对应的地址是/d/workspace
 
@@ -119,11 +119,11 @@ To github.com:shamphone/jigsaw-payment.git
 
 
 进入我们fork的代码库的GitHub页面，选择为这个新功能建立的分支，然后点击Pull Request按钮：
-![github-4](http://static.cocolian.org/img/in-post/github-4.png)
+![github-4](http://blog.lixf.cn/img/in-post/github-4.png)
 
 
 提交Pull请求后，页面将直接跳转到原始库的Pull请求页面，我们将看到我们提交的Pull请求，作为一个新的问题，以及作为一个新的pull请求。
-![github-5](http://static.cocolian.org/img/in-post/github-5.png)
+![github-5](http://blog.lixf.cn/img/in-post/github-5.png)
 
 在经过讨论后，fork的代码库的作者可能想为这个新功能增加一些新的改动。在这种场景下，我们需要在本地计算机上checkout这个同样的分支，修改，提交，并推送回GitHub。当我们再次访问原代码库的pull请求页面的时候，会发现上次提交的Pull请求已经自动更新了。
 
@@ -136,7 +136,7 @@ To github.com:shamphone/jigsaw-payment.git
 如果你是代码审核人员，你将有两种方式来合并收到的Pull请求。
 
 直接在GitHub上合并：如果我们想直接在GitHub上进行合并，必须确保没有冲突。原始库的所有者可以通过简单地点击Merge Pull Request按钮来进行合并：
-![github-6](http://static.cocolian.org/img/in-post/github-6.png)
+![github-6](http://blog.lixf.cn/img/in-post/github-6.png)
 
 在本地计算机上进行合并：另外一种情况，合并的时候可能会遇到冲突，点击上部的Info图标，GitHub有非常清晰的指导，怎么从贡献者的分支上下拉代码变更到本地，合并并解决冲突。
 

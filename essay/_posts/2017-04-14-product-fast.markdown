@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "快捷支付产品"
 subtitle: "支付系统设计-4"
 date: 2017-04-14 12:00:00
@@ -30,7 +30,7 @@ tags: [支付系统]
 
 ## 二、绑卡流程
 怎么绑卡？我们知道对接银行有两种途径，直接对接银行接口和通过银联来间接对接。这两种情况下绑卡处理也不同。 直观的，电商网站会在用户后台提供一个绑卡的入口，让用户直接绑卡。以支付宝绑卡流程为例，我们可以体验下:
-[![alipay-1](http://static.cocolian.org/img/in-post/alipay-all.PNG)]( http://static.cocolian.org/img/in-post/alipay-all.PNG )
+[![alipay-1](http://blog.lixf.cn/img/in-post/alipay-all.PNG)]( http://blog.lixf.cn/img/in-post/alipay-all.PNG )
 
 这里有如下要点：
 
@@ -46,7 +46,7 @@ tags: [支付系统]
 
 针对用户不同状态，绑卡流程上有区别。当然，绑卡是安全操作，要求用户必须登录到系统中。为了避免和服务器端的交互被劫持，所有操作必须在安全协议中进行，即使用https。
 
-[![fast-bind](http://static.cocolian.org/img/in-post/fast-bind.jpg)]( http://static.cocolian.org/img/in-post/fast-bind.jpg )
+[![fast-bind](http://blog.lixf.cn/img/in-post/fast-bind.jpg)]( http://blog.lixf.cn/img/in-post/fast-bind.jpg )
 
 **1. 输入卡号**  
 用户输入卡号，系统对卡号执行初步验证。 验证的依据是卡bin和LUHN算法。参见[支付系统之银行卡支付](http://blog.lixf.cn/essay/2016/10/12/account-3-bank/)。
@@ -74,7 +74,7 @@ tags: [支付系统]
 ## 三、扣款流程
 
 在完成签约后，支付处理就相对简单不少。扣款流程如下：
-[![fast-pay-1](http://static.cocolian.org/img/in-post/fast-pay.jpg)]( http://static.cocolian.org/img/in-post/fast-pay.jpg )
+[![fast-pay-1](http://blog.lixf.cn/img/in-post/fast-pay.jpg)]( http://blog.lixf.cn/img/in-post/fast-pay.jpg )
 
 流程要点：  
 1. 订单系统生成订单后，请求支付系统执行支付；   
@@ -93,12 +93,12 @@ tags: [支付系统]
 ## 四、解约流程
 
 解约流程一般是由用户自己发起。当然，存储在本地的签约信息只是被设置为无效，而不是实际删除。 解约时，还需要注意相关的订单是否都已经完成。
-[![fast-pay-1](http://static.cocolian.org/img/in-post/fast-unbind.jpg)]( http://static.cocolian.org/img/in-post/fast-unbind.jpg )
+[![fast-pay-1](http://blog.lixf.cn/img/in-post/fast-unbind.jpg)]( http://blog.lixf.cn/img/in-post/fast-unbind.jpg )
 
 ## 五、退款流程
 
 没有平白无故的退款。支付都是由交易调起的，那退款就都对应的由退货发起的。 针对已经扣款成功的交易执行退款。如果交易还在进行中，比如渠道侧还没有返回结果，则执行退款会导致状态不可预知。
-[![fast-refund-1](http://static.cocolian.org/img/in-post/fast-refund.jpg)]( http://static.cocolian.org/img/in-post/fast-refund.jpg )
+[![fast-refund-1](http://blog.lixf.cn/img/in-post/fast-refund.jpg)]( http://blog.lixf.cn/img/in-post/fast-refund.jpg )
 
 注意，退款的钱并不一定立即到账。不同银行、不同渠道到账时间不一样。 
 

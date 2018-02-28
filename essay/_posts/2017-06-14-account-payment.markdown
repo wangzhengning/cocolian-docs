@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "收单记账"
 subtitle: "支付清结算-5"
 date: 2017-06-14 12:00:00
@@ -30,7 +30,7 @@ tags: [支付清结算]
 注意， 在这里，渠道（银行）从小明账户上的扣款并不是直接到渠道的收单账户上。
 
 这5个步骤都是线上的流程，在此过程中，各个子系统之间的交互如下图所示。 我们逐步分析这里涉及到的对象。 
-[![记账流程](http://static.cocolian.org/img/in-post/clearing-accounting.jpg)](http://static.cocolian.org/img/in-post/clearing-accounting.jpg)
+[![记账流程](http://blog.lixf.cn/img/in-post/clearing-accounting.jpg)](http://blog.lixf.cn/img/in-post/clearing-accounting.jpg)
 
 
 ## 二、账户设置
@@ -48,21 +48,21 @@ tags: [支付清结算]
 
 这个流程中，首先生成的是支付订单。这是一个比较简单的订单，仅涉及到一个商家和一个商品。 在比较复杂的电商场景中，一个订单会涉及到多个商家、多种商品以及对应的优惠活动。也就是，一个总订单会被拆分为多个子订单。这部分内容将在后续的订单系统设计一文中详细介绍。 而订单中和资金相关的内容，都需要在账户体系中建立对应的科目和账户。在请求支付时，只会将总订单提交支付，拆分子订单是在订单系统中完成的。
 
-[![支付订单](http://static.cocolian.org/img/in-post/clearing-order.jpeg)](http://static.cocolian.org/img/in-post/clearing-order.jpeg)
+[![支付订单](http://blog.lixf.cn/img/in-post/clearing-order.jpeg)](http://blog.lixf.cn/img/in-post/clearing-order.jpeg)
 
   
 针对上述场景，为了简化处理，假定老熊公司当天总共完成了三笔会员卡交易，支付订单如下：
 
-[![支付订单](http://static.cocolian.org/img/in-post/clearing-tb-orders.jpg)](http://static.cocolian.org/img/in-post/clearing-tb-orders.jpg)
+[![支付订单](http://blog.lixf.cn/img/in-post/clearing-tb-orders.jpg)](http://blog.lixf.cn/img/in-post/clearing-tb-orders.jpg)
 
 ## 三、支付记录
 
 在这个流程中，订单系统向支付系统请求支付时，支付系统将产生支付记录（支付订单）。 支付记录内容比较多，这些数据是后续进行记账的基础。 
-[![支付记录](http://static.cocolian.org/img/in-post/clearing-record.jpeg)](http://static.cocolian.org/img/in-post/clearing-record.jpeg)
+[![支付记录](http://blog.lixf.cn/img/in-post/clearing-record.jpeg)](http://blog.lixf.cn/img/in-post/clearing-record.jpeg)
 
 上述的三个订单，两笔通过工行支付，一笔通过支付宝支付，其产生的支付记录如下，此处省略了其他和记账无关的字段内容：
 
-[![支付记录](http://static.cocolian.org/img/in-post/clearing-tb-record.jpg)](http://static.cocolian.org/img/in-post/clearing-tb-record.jpg)
+[![支付记录](http://blog.lixf.cn/img/in-post/clearing-tb-record.jpg)](http://blog.lixf.cn/img/in-post/clearing-tb-record.jpg)
 
 这里需要注意的几个属性：
 
@@ -93,7 +93,7 @@ tags: [支付清结算]
 
 这3条记录是通过事务处理一次生成。当天发生的三笔交易，产生的记账内容如下：
 
-[![支付记账](http://static.cocolian.org/img/in-post/clearing-tb-accounting-2.jpg)](http://static.cocolian.org/img/in-post/clearing-tb-accounting-2.jpg)
+[![支付记账](http://blog.lixf.cn/img/in-post/clearing-tb-accounting-2.jpg)](http://blog.lixf.cn/img/in-post/clearing-tb-accounting-2.jpg)
 
 实际实现上，科目一列，使用账号ID来替代。 每个账户的本期发生额，可以在另一个表中单独异步计算。 
 
@@ -102,7 +102,7 @@ tags: [支付清结算]
 在会计上，对账分三个部分：账证核对、账账核对和账实核对，做到账证相符、账账相符和账实相符。在电商支付系统中，需要完成的对账工作包括内部对账、外部对账和资金对账。 
 其中外部对账又分为和支付渠道的对账、和商户的对账以及和用户的对账。 这里简单介绍每个对账流程以及对记账的影响，详细的对账和轧账流程，将在下一篇文章中说明。 
 
-[![对账](http://static.cocolian.org/img/in-post/clearing-checking.jpeg)](http://static.cocolian.org/img/in-post/clearing-checking.jpeg)
+[![对账](http://blog.lixf.cn/img/in-post/clearing-checking.jpeg)](http://blog.lixf.cn/img/in-post/clearing-checking.jpeg)
 
 **内部对账**
 
@@ -118,7 +118,7 @@ tags: [支付清结算]
 接收到工行对账单后，按照对账单生成凭证：
 
 
-[![对账](http://static.cocolian.org/img/in-post/clearing-tb-checking.jpg)](http://static.cocolian.org/img/in-post/clearing-tb-checking.jpg)
+[![对账](http://blog.lixf.cn/img/in-post/clearing-tb-checking.jpg)](http://blog.lixf.cn/img/in-post/clearing-tb-checking.jpg)
 
 注意上述的日期、凭证号，以及借贷关系。 
 

@@ -1,5 +1,5 @@
 ---
-layout:     post
+layout:     essay
 title:      "为什么要重构到微服务"
 subtitle:   "从SSH单体应用到微服务架构-1"
 date:       2016-08-05 12:00:00
@@ -24,7 +24,7 @@ tags:		[微服务]
 ## 原有架构
 
 从技术角度看，原有系统是一个基于SSH架构的传统实现，软件架构整体上是大家所熟知的多层Java软件架构：  
-[![Image of Legacy System](http://static.cocolian.org/img/in-post/arch-legacy.png)](http://static.cocolian.org/img/in-post/arch-legacy.png)
+[![Image of Legacy System](http://blog.lixf.cn/img/in-post/arch-legacy.png)](http://blog.lixf.cn/img/in-post/arch-legacy.png)
 
 代码让人看的非常怀旧，虽然开发人员和我说是4年前开发的，但这熟悉的SSH架构，可是妥妥10年前的东西。使用Apache Struts做展示层，对数据访问层做个简单封装实现业务逻辑层，基于Spring 的AOP以及Hibernate实现数据访问。
 数据保存在MySQL中，单库多表的结构。
@@ -47,7 +47,7 @@ tags:		[微服务]
 ### 功能问题
 
 从功能模块上来看，并没有区分对端的服务以及对运营管理系统的服务，仅实现了支付系统的基本功能：  
-[![Image of Legacy System](http://static.cocolian.org/img/in-post/legacy_arch.png)](http://static.cocolian.org/img/in-post/legacy_arch.png)
+[![Image of Legacy System](http://blog.lixf.cn/img/in-post/legacy_arch.png)](http://blog.lixf.cn/img/in-post/legacy_arch.png)
 
 
 ### 实施问题

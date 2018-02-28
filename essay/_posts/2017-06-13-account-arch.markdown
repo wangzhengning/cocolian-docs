@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "账户体系"
 subtitle: "支付清结算-4"
 date: 2017-06-13 12:00:00
@@ -117,14 +117,14 @@ tags: [支付清结算]
 一般支付系统为了简化处理，一开始仅设置资产类、负债类和共同类账户。 随着公司的发展，可以逐步增加其他的科目设置。 
 
 **账户体系**
-[![账户体系](http://static.cocolian.org/img/in-post/clearing-act-arch.jpg)](http://static.cocolian.org/img/in-post/clearing-act-arch.jpg)
+[![账户体系](http://blog.lixf.cn/img/in-post/clearing-act-arch.jpg)](http://blog.lixf.cn/img/in-post/clearing-act-arch.jpg)
 
 
 ## 四、账户结构
 
 如前述文章介绍，我们采用复式借贷记账法。对于分户账，或者说明细账，如下示例：
 
-[![账户结构](http://static.cocolian.org/img/in-post/clearing-tb-accounting.jpg)](http://static.cocolian.org/img/in-post/clearing-tb-accounting.jpg)
+[![账户结构](http://blog.lixf.cn/img/in-post/clearing-tb-accounting.jpg)](http://blog.lixf.cn/img/in-post/clearing-tb-accounting.jpg)
 
 在这个实例中， 账户中账务相关的结构包括：  
 
@@ -136,7 +136,7 @@ tags: [支付清结算]
 
 参考 [账户设计](http://blog.lixf.cn/essay/2016/10/08/account-1/) 一文， 总的来说，账户的结构如下图所示，包括基本信息、关联实体、权限控制、余额和账务相关信息。
 
-[![账户结构](http://static.cocolian.org/img/in-post/clearing-accounts.jpg)](http://static.cocolian.org/img/in-post/clearing-accounts.jpg)
+[![账户结构](http://blog.lixf.cn/img/in-post/clearing-accounts.jpg)](http://blog.lixf.cn/img/in-post/clearing-accounts.jpg)
 
 在存储上，账务相关信息一般是和账户其他信息相互独立处理，处理账务相关信息的子系统被称为账务子系统或者记账子系统。 
 

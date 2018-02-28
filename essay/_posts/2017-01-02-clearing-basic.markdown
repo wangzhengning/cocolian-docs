@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "账户和账务"
 subtitle: "支付清结算-1"
 date: 2017-01-02 12:00:00
@@ -105,7 +105,7 @@ tags: [支付清结算]
 
 六大会计要素指明了需要记账的scope，但毕竟粒度还是太大了。为了更详细地了解公司财务情况，引入会计科目来对会计对象进行第二层次的划分。使用IT的语言来说，会计科目其实就是一个分类体系，用来分门别类地记账。 在实现上，他也是一个编号+名称，IT俗称字典表。 从定义上来说，会计科目是指一个涵义明确、概念清楚、简明扼要、通俗易懂的**标准名称**。
 会计科目按照经济内容的性质不同，可以分为资产类科目、负债类科目、所有者权益类科目、损益类科目，成本类科目，有些金融企业还有资产负债共同类科目。在每一类会计科目下，还可以继续细分，详细内容可以参考2016年财政部发布的新会计准则。 会计科目和要素之间的关系：
-[![会计科目和要素](http://static.cocolian.org/img/in-post/clearing-kemu.jpg)]( http://static.cocolian.org/img/in-post/clearing-kemu.jpg)
+[![会计科目和要素](http://blog.lixf.cn/img/in-post/clearing-kemu.jpg)]( http://blog.lixf.cn/img/in-post/clearing-kemu.jpg)
 会计科目还分为总账科目和明细科目。从IT角度，可以认为总账科目是一级分类，而明细科目则是这个一级分类下的二级、三级，甚至更多级别的详细的科目。 记账时，会同时记录到总账、明细科目。
 在电商的支付系统中，一般会设置如下科目：
 
@@ -132,7 +132,7 @@ tags: [支付清结算]
 # 记账凭证
 想想在以前没有电脑的时候，去买公交卡，公交公司阿姨会认真地记录你买的卡的卡号、买卡人的姓名、卡的面值等信息，运气好的时候还会给个发票。 一般来说，阿姨会将购买记录登记到一个账册上，形成记账凭证，并在这里会登记发票号码。在现在高科技时代，这个凭证还是少不了了。
 先说明细账，记录内容如下：
-[![detail account](http://static.cocolian.org/img/in-post/clearing-detail.jpg)]( http://static.cocolian.org/img/in-post/clearing-detail.jpg)
+[![detail account](http://blog.lixf.cn/img/in-post/clearing-detail.jpg)]( http://blog.lixf.cn/img/in-post/clearing-detail.jpg)
 这里详细记录每一条交易信息，当然，通过计算机系统，可以记录更多详情，包括时间、地点等。
 
 # 会计分录和记账
@@ -147,7 +147,7 @@ tags: [支付清结算]
 
 如上， 银行存款、服务成本、主营业务收入，属于总账科目，而工行收款、会员卡、工行手续费，属于明细科目。 这里采用的是复式记账法中借贷记账法。 对应的账户结构如下：
 
-[![detail account](http://static.cocolian.org/img/in-post/clearing-account.jpg)]( http://static.cocolian.org/img/in-post/clearing-account.jpg)
+[![detail account](http://blog.lixf.cn/img/in-post/clearing-account.jpg)]( http://blog.lixf.cn/img/in-post/clearing-account.jpg)
 
 借贷复式记账法的特点是：
 

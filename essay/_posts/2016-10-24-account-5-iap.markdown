@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "支付系统之应用内支付"
 subtitle: "支付系统设计-5"
 date: 2016-10-24 12:00:00

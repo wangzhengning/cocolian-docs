@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "支付路由设计"
 subtitle: "支付系统设计-9"
 date: 2017-02-06 12:00:00
@@ -28,7 +28,7 @@ tags: [Fintech]
 ## 软件架构
 
 上述流程，在实现上，参考的架构设计如下：  
-[![支付路由架构](http://static.cocolian.org/img/in-post/route-arch.jpg)](http://static.cocolian.org/img/in-post/route-arch.jpg)
+[![支付路由架构](http://blog.lixf.cn/img/in-post/route-arch.jpg)](http://blog.lixf.cn/img/in-post/route-arch.jpg)
 
 支付路由并不会直接对接前端的支付产品或者后端的支付渠道，它是[支付网关](http://blog.lixf.cn/essay/2016/11/02/account-7-gateway/)的一部分。如果是基于微服务的架构，支付路由作为一个独立的服务，被支付网关所调用。 
 
@@ -36,7 +36,7 @@ tags: [Fintech]
 
 路由规则是支付路由的核心。在规则设置上，需要和公司的业务、支付服务的scope来综合考虑。 这里讲述的是通用的规则设计，供具体实现时参考。 
 
-[![支付路由规则](http://static.cocolian.org/img/in-post/route-rules.jpg)](http://static.cocolian.org/img/in-post/route-rules.jpg)
+[![支付路由规则](http://blog.lixf.cn/img/in-post/route-rules.jpg)](http://blog.lixf.cn/img/in-post/route-rules.jpg)
 
 **产品类型**
 当然，路由时首选需要考虑渠道可以支持的支付产品。

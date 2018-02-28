@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: "在线支付流程简介"
 subtitle: "支付概述-01"
 date: 2017-04-01 12:00:00
@@ -14,10 +14,10 @@ tags: [Fintech]
 
 我们以收银台为例，详细说明支付的正确打开方式。 当用户提交订单后，就会被引导到收银台上。
 以某东为例，手机上是这样的：  
-[![京东PC收银台](http://static.cocolian.org/img/in-post/cashier-phone-jd.png)](http://static.cocolian.org/img/in-post/cashier-phone-jd.png)
+[![京东PC收银台](http://blog.lixf.cn/img/in-post/cashier-phone-jd.png)](http://blog.lixf.cn/img/in-post/cashier-phone-jd.png)
 
 PC上是这样的：  
-[![京东收银台](http://static.cocolian.org/img/in-post/cashier-jd.png)](http://static.cocolian.org/img/in-post/cashier-jd.png)
+[![京东收银台](http://blog.lixf.cn/img/in-post/cashier-jd.png)](http://blog.lixf.cn/img/in-post/cashier-jd.png)
 
 从这里我们可以看出，用户进入收银台之后，首先需要选择默认的**支付方式**。 
 
@@ -28,7 +28,7 @@ PC上是这样的：
 > 支付应用指提供给最终用户在特定场景下使用的产品，比如扫码收银、二维码支付、打赏、众筹、POS支付、生活缴费、信用卡返款、手机充值等。 这些应用是建立在支付产品的基础之上，直接面向最终的用户提供服务。 
 
 每个支付应用可以用的支付方式是不一样的。比如说，扫码收银，可能仅支持微信和支付宝。POS支付，仅支持银行卡。而信用卡返款，只能从其他的借记卡上去扣款。 支付应用的设计和公司的业务有关，并需要考虑在公司业务场景下的用户支付体验。目前应用最全的数支付宝，可以参观下支付宝的应用（截止至2017年2月15日）：  
-[![支付宝](http://static.cocolian.org/img/in-post/arch-product.png)](http://static.cocolian.org/img/in-post/arch-product.png)
+[![支付宝](http://blog.lixf.cn/img/in-post/arch-product.png)](http://blog.lixf.cn/img/in-post/arch-product.png)
 
 在收银台这个应用中，在呈现支付方式时，哪些支付方式可以提供给当前场景下的用户来使用，哪个方式应该排在前面，这在支付系统中，是通过**引导路由**来实现的。 
 
@@ -50,7 +50,7 @@ PC上是这样的：
 
 > 支付产品指将支付通道打包成满足某特定支付场景需求的商品，比如信用卡快捷、信用卡Moto等。 
 
-[![支付产品](http://static.cocolian.org/img/in-post/arch-pay-product.jpg)](http://static.cocolian.org/img/in-post/arch-pay-product.jpg)
+[![支付产品](http://blog.lixf.cn/img/in-post/arch-pay-product.jpg)](http://blog.lixf.cn/img/in-post/arch-pay-product.jpg)
 
 在这里我们把涉及到的几个概念都做了定义。 当然，这些定义仅仅是从约定俗成的角度来描述，不具有学术意义。 不同的公司，对这些名称叫法还不完全一致。 比如支付通道，有些叫渠道，有些公司叫网关。这里统一一下称呼，避免混淆。 总的来说，支付系统是把支付通道提供的“支付产品” 使用支付路由来封装成业务需要的“支付产品”。这就是支付的核心流程。支付路由在其中起着关键作用。
 
