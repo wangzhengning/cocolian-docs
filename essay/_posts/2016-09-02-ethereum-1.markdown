@@ -1,0 +1,388 @@
+---
+layout: post
+title: "码农的区块链：搭建一个私有区块链环境"
+subtitle: "区块链开发-1"
+date: 2016-09-02 12:00:00
+author: "shamphone"
+header-img: "img/home-bg-post.jpg"
+catalog: true
+tags: [Ethereum]
+---
+
+> 这篇文章参考[区块链技术指南](https://yeasy.gitbooks.io/blockchain_guide/content/ethereum/install.html)。但原文是Happy flow。这里把我安装过程中碰到的坑也都记录下来。我使用的是Ubuntu 14.10。这是以太坊推荐的版本。 
+
+最近在研究区块链。打算先搭建一个测试环境开始运行。这里记录整个搭建过程，供后来人参考。 
+整体上，分为三个步骤，安装相关软件，初始化系统，建立集群，以及最后一步，挖矿。
+我们采用的是以太坊，相对其他区块链，这是一个成熟的环境。 虽然近期有硬分支的事件，对企业应用来说，功能上还算是比较完善的。 
+
+
+##  安装部署
+
+### 1.安装 Go 环境
+
+如果机器无法上外网，还得配置一下代理。 Ubuntu配置代理的方式网上很多，这里不介绍。
+
+```hbs
+  curl -O https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz
+  tar -C /usr/local -xzf go1.5.1.linux-amd64.tar.gz
+  mkdir -p ~/go; echo "export GOPATH=$HOME/go" >> ~/.bashrc
+  echo "export PATH=$PATH:$HOME/go/bin:/usr/local/go/bin" >> ~/.bashrc
+  source ~/.bashrc
+```
+
+### 2.安装 ethereum
+
+
+```hbs
+  sudo apt-get install software-properties-common
+  sudo add-apt-repository -y ppa:ethereum/ethereum
+  sudo add-apt-repository -y ppa:ethereum/ethereum-dev
+  sudo apt-get update
+  sudo apt-get install ethereum
+```
+
+
+在执行  `sudo add-apt-repository -y ppa:ethereum/ethereum`的时候碰到这个问题：
+
+```hbs
+  root@ubuntu-KVM:~# sudo add-apt-repository -y ppa:ethereum/ethereum
+  Cannot add PPA: 'ppa:ethereum/ethereum'.
+   Please check that the PPA name or format is correct.
+```
+
+
+按照[Ask Ubuntu](http://askubuntu.com/questions/429803/cannot-add-ppa-please-check-that-the-ppa-name-or-format-is-correct) 的意见，修改为：
+
+```hbs
+  sudo apt-get install software-properties-common
+  sudo -E add-apt-repository -y ppa:ethereum/ethereum
+  sudo -E add-apt-repository -y ppa:ethereum/ethereum-dev
+  sudo apt-get update
+  sudo apt-get install ethereum
+```
+
+
+
+
+### 3.安装 solc 编译器
+
+
+```hbs
+
+  sudo add-apt-repository ppa:ethereum/ethereum-qt
+  sudo add-apt-repository ppa:ethereum/ethereum
+  sudo apt-get update
+  sudo apt-get install cpp-ethereum
+
+```
+
+同样的，如果碰到PPA Name错误的警示，则执行如下操作：
+
+```hbs
+
+  sudo -E add-apt-repository ppa:ethereum/ethereum-qt
+  sudo -E add-apt-repository ppa:ethereum/ethereum
+  sudo apt-get update
+  sudo apt-get install cpp-ethereum
+
+```
+
+这样相关软件已经安装完毕。 
+
+## 搭建私链
+
+### 1.启动geth服务
+
+
+```hbs
+
+  geth --datadir "/root/chain" console
+
+```
+
+
+其中 datadir用于指定数据目录。这个目录不能够预先创建，否则命令会失败。 执行结果如下：
+
+![Image of Start Geth](http://static.cocolian.org/img/in-post/eth-1.png)
+
+### 2.创建账号
+
+执行之后，进入`geth`的交互模式。 接着建立一个账号，然后退出。 这个账号用于执行创世操作。 然后`exit`退出
+
+
+```rubby
+> personal.newAccount("密码");
+ "0xea5c99831c2e4a0e094facdbac1befcf6c92e543"
+> exit
+```
+
+
+### 3.创建创世区块
+
+编译创建创世区块所需要的脚本， 注意alloc下的key需要和上述的账号保持一致。
+
+
+```rubby
+  {
+  "alloc": {
+      "0xea5c99831c2e4a0e094facdbac1befcf6c92e543": {
+      "balance": "1000"
+    }
+  },
+ 
+  "nonce": "0x0000000000000042",
+  "difficulty": "0x020000",
+  "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "coinbase": "0x0000000000000000000000000000000000000000",
+  "timestamp": "0x00",
+  "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "extraData": "CNNMoney Jack Ma interview: Wars start when trade stops, 20160902",
+  "gasLimit": "0xffffffff"
+  }
+```
+
+
+各个参数的含义如下：
+
+- **mixhash**：与nonce配合用于挖矿，由上一个区块的一部分生成的hash。注意他和nonce的设置需要满足以太坊的Yellow paper, 4.3.4. Block Header Validity, (44)章节所描述的条件。.
+
+- **nonce**: nonce就是一个64位随机数，用于挖矿，注意他和mixhash的设置需要满足以太坊的Yellow paper, 4.3.4. Block Header Validity, (44)章节所描述的条件。
+
+- **difficulty**: 设置当前区块的难度，如果难度过大，cpu挖矿就很难，这里设置较小难度
+
+- **alloc**: 用来预置账号以及账号的以太币数量，因为私有链挖矿比较容易，所以我们不需要预置有币的账号，需要的时候自己创建即可以。
+
+- **coinbase**: 矿工的账号，随便填
+
+- **timestamp**: 设置创世块的时间戳
+
+- **parentHash**: 上一个区块的hash值，因为是创世块，所以这个值是0
+
+- **extraData**: 附加信息，随便填，可以填你的个性信息
+
+- **gasLimit**: 该值设置对GAS的消耗总量限制，用来限制区块能包含的交易信息总和，因为我们是私有链，所以填最大。
+
+
+创建数据存放地址并初始化创世块
+
+```hbs
+geth  --datadir "/root/chain" init genesis.json 
+```
+
+
+执行结果如下：
+![Image of creating genesis ](http://static.cocolian.org/img/in-post/eth-2.png)
+
+### 4.启动私链
+
+执行如下脚本
+
+```hbs
+geth --identity "phoenix"  --rpc  --rpccorsdomain "*" --datadir "/root/chain" --port "30303"  --rpcapi "db,eth,net,web3" --networkid 98888 console
+```
+
+
+各参数说明如下：
+
+- **identity** ：区块链的标示，随便填写，用于标示目前网络的名字
+
+- **init** ：指定创世块文件的位置，并创建初始块
+
+- **datadir** ：设置当前区块链网络数据存放的位置
+
+- **port**：网络监听端口,默认是8080
+
+- **rpc**：启动rpc通信，可以进行智能合约的部署和调试。它在geth中通常被默认激活。
+
+- **rpcapi**： 设置允许连接的rpc的客户端，一般为db,eth,net,web3
+
+- **networkid**： 设置当前区块链的网络ID，用于区分不同的网络，是一个数字
+
+- **console**：启动命令行模式，可以在Geth中执行命令
+
+此外，还可以使用如下参数：
+
+- **nodiscover** : 使用这个命令可以确保你的节点不会被非手动添加你的人发现。否则，你的节点可能被陌生人的区块链无意添加，如果他和你有相同的初始文件和网络ID。
+
+- **maxpeers** : 如果你不希望其他人连接到你的测试链，可以使用maxpeers 0。反之，如果你确切知道希望多少人连接到你的节点，你也可以通过调整数字来实现。
+
+- **rpcapi** : 这个命令可以决定允许什么API通过RPC进入。在默认情况下，geth可以在RPC激活web3界面。请注意在RPC/IPC界面提供API，会使每个可以进入这个界面（例如dapp’s）的人都有权限访问这个API。注意你激活的是哪个API。Geth会默认激活IPC界面上所有的API，以及RPC界面上的db,eth,net和web3 API。
+
+- **rpccorsdomain** : 这个可以指示什么URL能连接到你的节点来执行RPC定制端任务。务必谨慎，输入一个特定的URL而不是wildcard ( * )，后者会使所有的URL都能连接到你的RPC实例。
+
+
+
+启动后界面如下，光标停留在最后的命令行上，可以执行以太坊命令。
+可以看到`Listening on [::]:30303`和`Welcome to the Geth JavaScript console!`的提示，说明已经启动成功
+
+> 注意：如果想将Ubuntu作为永久区块链节点使用，当使用`nohup`命令时，Geth启动参数`console`必须去掉，否则Geth会自动停止。
+
+执行结果如下：
+![Image of startup ](http://static.cocolian.org/img/in-post/eth-3.png)
+
+### 5.查看节点信息
+
+常用命令：
+
+- **net.listening**：查看网络是否在监听； 
+- **admin.peers**: 查看当前连接的节点。 目前还是空的。 
+- **admin.nodeInfo**：查看当前节点的信息。
+
+执行：
+
+```rubby
+> admin.nodeInfo
+```
+
+得到当前节点信息如下：
+
+```rubby
+
+{
+  enode: "enode://dfd047d64a3d8c9d9c2834bc8c3bbf41a79e6797956fa99469b872d97a7978e4e7a6d9605ec6e77164515f6f09d979999ca3ef91eebcd2a6c91ebdfe167de094@[::]:30303",
+  id: "dfd047d64a3d8c9d9c2834bc8c3bbf41a79e6797956fa99469b872d97a7978e4e7a6d9605ec6e77164515f6f09d979999ca3ef91eebcd2a6c91ebdfe167de094",
+  ip: "::",
+  listenAddr: "[::]:30303",
+  name: "Geth/v1.5.0-unstable/linux/go1.5.1/phoenix",
+  ports: {
+    discovery: 30303,
+    listener: 30303
+  },
+  protocols: {
+    eth: {
+      difficulty: 131072,
+      genesis: "0xaab381212b8108c488c8d21c06042a9081b94bfb87665110520d3c295626e79b",
+      head: "0xaab381212b8108c488c8d21c06042a9081b94bfb87665110520d3c295626e79b",
+      network: 98888
+    }
+  }
+}
+
+```
+
+注意enode节点，这是当前节点的标识。 后续会用到这个值。 
+
+### 6.查看账户信息
+
+在创建创世节点时，我们创建了个默认账户。可以通过如下命令查看账户余额。
+
+```rubby
+
+> eth.accounts
+["0x4b691e86c622127ed8e1d49899ad8c1d19834327"]
+> primary=eth.accounts[0]
+"0x4b691e86c622127ed8e1d49899ad8c1d19834327"
+> balance = web3.fromWei(eth.getBalance(primary), "ether");
+20
+
+```
+
+
+## 配置第二台私链服务器
+
+第二台私链服务器，需要把第一台的步骤基本都要重复一遍。两台服务器配置一样才可以通讯。 需要改变的地方是：
+
+1. 第三步创建genesis.json的时候，完全使用第一台服务器的配置，不要用新建的account来创建。 
+
+2. 需要将第一台服务器添加到静态节点列表中。 
+
+### 7.添加静态节点列表
+
+在{datadir}下添加文件 static-nodes.json,内容如下：
+
+```rubby
+[
+"enode://dfd047d64a3d8c9d9c2834bc8c3bbf41a79e6797956fa99469b872d97a7978e4e7a6d9605ec6e77164515f6f09d979999ca3ef91eebcd2a6c91ebdfe167de094@第一个节点的IP地址:30303"
+]
+```
+
+执行如下脚本启动节点：
+
+```hbs
+geth --identity "phoenix"  --rpc  --rpccorsdomain "*" --datadir "/root/chain" --port "30303"  --rpcapi "db,eth,net,web3" --networkid 98888 console
+```
+
+启动成功后，查看当前连接的节点：
+
+```rubby
+
+> admin.peers
+[{
+    caps: ["eth/62", "eth/63"],
+    id: "dfd047d64a3d8c9d9c2834bc8c3bbf41a79e6797956fa99469b872d97a7978e4e7a6d9605ec6e77164515f6f09d979999ca3ef91eebcd2a6c91ebdfe167de094",
+    name: "Geth/v1.5.0-unstable/linux/go1.5.1/phoenix",
+    network: {
+      localAddress: "10.15.244.204:56808",
+      remoteAddress: "10.15.244.203:30303"
+    },
+    protocols: {
+      eth: {
+        difficulty: 131072,
+        head: "0xaab381212b8108c488c8d21c06042a9081b94bfb87665110520d3c295626e79b",
+        version: 63
+      }
+    }
+}]
+
+```
+
+## 挖矿
+
+激动人心的时刻到了。 作为一个伪金融圈人士，最大的梦想，古时候叫拥有一个聚宝盆，现在叫拥有一个印钞权，在数字货币时代，叫拥有一个挖矿机。 
+自己搭建的区块链，想怎么挖就怎么挖吧。 
+
+私链启动起来之后，挖矿其实很简单了。 首先必须保证的有一个账号：
+
+```hbs
+
+> eth.accounts
+["0x1b39aa2446de648dd6928a759c542690cc32757b"]
+> eth.getBalance(eth.accounts[0]).toNumber();
+0
+
+```
+
+账号里没钱。 那就开始挖吧。挖矿其实很简单，一个命令就开始了。默认的，挖到的钱，都放在当前账号中。如果有多个账号，默认的放到第一个账号中。 
+在geth环境下，运行：
+
+```hbs
+
+> miner.start();
+
+```
+
+或者运行命令行：
+
+```hbs
+
+geth --mine --minerthreads=4
+
+```
+
+minerthreads用来指定运行的线程数。默认为当前CPU的核数。 如果有多个账号，可以指定挖矿收入放到第几个账号，注意编号是从0开始的：
+
+```hbs
+
+miner.setEtherbase(eth.accounts[0])
+
+```
+
+或者命令行执行：
+
+```hbs
+
+geth --etherbase 0 --mine  2>> geth.log // 0 is index: first account by creation order OR
+geth --etherbase '0x1b39aa2446de648dd6928a759c542690cc32757b' --mine 2>> geth.log
+
+```
+
+半小时后，查看下账户余额：
+
+```hbs
+
+> eth.getBalance(eth.accounts[0]).toNumber();
+1.5971875e+21
+
+```
+
+话说， e+21，那是多大的数字啊？？一辈子还没见过这么多钱。 头条的同学们，记得帮忙点赞啊。 

@@ -1,0 +1,176 @@
+---
+layout: post
+title: "在以太坊上私链上实现一个简单的交易"
+subtitle: "区块链开发-2"
+date: 2016-09-04 12:00:00
+author: "shamphone"
+header-img: "img/home-bg-post.jpg"
+catalog: true
+tags: [Ethereum]
+---
+
+> 本文是针对以太坊开发入门的教程。 纯开发人员版本。关于以太坊相关概念，比如合约、交易、以太币等，参考[官方文档](https://github.com/ethereum/go-ethereum/wiki/Contracts-and-Transactions)，或者[中文版](http://wangxiaoming.com/blog/archives/)
+
+本文假定你已经看过上一篇文档[码农的区块链：搭建一个私有区块链环境](http://blog.lixf.cn/essay/2016/09/02/ethereum-1/)。
+
+## 运行环境
+
+这个实例是在三台机器上运行，dev011, dev012,dev013。
+在这三台机器上启动以太坊。注意将其他两台机器加入到静态节点名单static-nodes.json中：
+
+```hbs
+[
+ "enode://{dev011的node id}@{dev011的IP地址}:{dev011的端口号，30303}",
+ "enode://{dev012的node id}@{dev012的IP地址}:{dev012的端口号，30303}",
+ "enode://{dev013的node id}@{dev013的IP地址}:{dev013的端口号，30303}",
+]
+
+```
+
+启动服务：
+
+```hbs
+
+geth --identity "phoenix" --verbosity 1  --maxpeers 20  --rpc  --rpccorsdomain "*" --datadir "/root/chain" --port "30303"  --rpcapi "db,eth,net,web3" --networkid "98888" console
+
+```
+
+在每个机器上运行查看是否能看到其他两台服务器：
+
+```hbs
+
+> admin.peers
+[{
+    caps: ["eth/62", "eth/63"],
+    id: "d9230e177da4d43c59b72267fc65bdedde7fe91c4c992de8af84cec3a701a90f51c8aa49f43b2afc6a08dc3e73c13061cb685f7a69a52c807d781d0605aef247",
+    name: "Geth/v1.5.0-unstable/linux/go1.5.1/phoenix",
+    network: {
+      localAddress: "10.15.244.204:36507",
+      remoteAddress: "10.15.244.205:30303"
+    },
+    protocols: {
+      eth: {
+        difficulty: 693825985,
+        head: "0xe9c3959532c3ac7d9a754e3214ebf4dd5c056de8637e2d0e50c07fcc9b2d6971",
+        version: 63
+      }
+    }
+}, {
+    caps: ["eth/62", "eth/63"],
+    id: "dfd047d64a3d8c9d9c2834bc8c3bbf41a79e6797956fa99469b872d97a7978e4e7a6d9605ec6e77164515f6f09d979999ca3ef91eebcd2a6c91ebdfe167de094",
+    name: "Geth/v1.5.0-unstable/linux/go1.5.1/phoenix",
+    network: {
+      localAddress: "10.15.244.204:57515",
+      remoteAddress: "10.15.244.203:30303"
+    },
+    protocols: {
+      eth: {
+        difficulty: 188851762,
+        head: "0x27d7e2703c49e4f33fc37dd3ca8e79286005a09b4ba55cda1af1c9f8c9715c98",
+        version: 63
+      }
+    }
+}]
+
+```
+
+
+## 启动挖矿
+
+在dev013机器上开始挖矿，准备记账：
+
+```hbs
+> miner.start()
+true
+```
+
+## 执行转账
+
+我们使用dev011和dev012上的账户执行转账操作。输出账户在dev012上，先看看这个账户的余额，解锁账户，执行转账操作。
+
+```hbs
+
+> eth.getBalance('0x1b39aa2446de648dd6928a759c542690cc32757b')
+4.7405156e+21
+> personal.unlockAccount('0x1b39aa2446de648dd6928a759c542690cc32757b')
+Unlock account 0x1b39aa2446de648dd6928a759c542690cc32757b
+Passphrase: 
+true
+> eth.sendTransaction({from:'0x1b39aa2446de648dd6928a759c542690cc32757b', to:'0x4b691e86c622127ed8e1d49899ad8c1d19834327',value:web3.toWei(1,"ether")})
+
+```
+
+这个交易并不会立即生效，可通过这个命令来看看还未被记账的交易：
+
+```hbs
+> eth.getBlock("pending", true).transactions
+[{
+    blockHash: "0x6d4772cc2025f52cf1727f1404ba27362d015b31f8de5bd2140d3c7a0d9890a0",
+    blockNumber: 3151,
+    from: "0x1b39aa2446de648dd6928a759c542690cc32757b",
+    gas: 90000,
+    gasPrice: 20000000000,
+    hash: "0xd5960b0742e29c63a6c678cb8480c85d28d70a25c53a68d9047db0e2e7f59180",
+    input: "0x",
+    nonce: 25,
+    r: "0x7a55c4e3d3bd55c8ba057d66d60c8d4e323c6d8443fee8cec57066bc2b02cb95",
+    s: "0x4cf036d913b48586d8fbc6e3219ab5a722582e2b7c4cef999ff1d3f345f16ae9",
+    to: "0x4b691e86c622127ed8e1d49899ad8c1d19834327",
+    transactionIndex: 0,
+    v: "0x1b",
+    value: 1000000000000000000
+}]
+
+```
+
+这表明矿工还没有将这个交易记录到账上。 几分钟后，在运行这个命令：
+
+```hbs
+> eth.getBlock("pending", true).transactions
+[]
+
+```
+
+这说明交易已经生效。我们看一下账户余额：
+
+```hbs
+> eth.getBalance('0x1b39aa2446de648dd6928a759c542690cc32757b')
+4.73951518e+21
+
+```
+
+可以看到，钱已经被转走了。
+
+## 币值计算
+
+总共花了多少钱？ 这里涉及到以太币的单位换算。 以太坊有两个币单位：
+
+1. ether， 即常说的以太币。
+2. wei，这是最小单位的币值。 
+
+1个ether = 1e18, 即10的18次方个 wei。
+
+他们之间的转换通过web3.fromWei({wei币值}, "ether") 和 web3.toWei({ether币值},"ether")来进行。 
+
+```hbs
+
+> eth.getBalance('0x1b39aa2446de648dd6928a759c542690cc32757b').toString(10)
+"4739515180000000000000"
+> web3.fromWei(eth.getBalance('0x1b39aa2446de648dd6928a759c542690cc32757b'), "ether")
+4739.51518
+
+```
+
+上述账号， 交易前和交易后，转换成ether，支出是：
+
+```hbs
+
+4740.5156 - 4739.51518 = 1.00042
+
+```
+
+其中 1 ether 是转走的以太币， 0.00042 是gas费用，支付给矿工的。 
+
+这是最简单的转账操作，后续给大家介绍以太坊的核心合约是怎么操作的。 
+
+头条的同学们，记得帮忙点赞啊。 
