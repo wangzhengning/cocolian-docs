@@ -1,6 +1,6 @@
 ---
 layout: 	essay
-title: 		"附： 现有系统做微服务架构改进经验分享"
+title: 		"附：微服务架构改进经验分享"
 subtitle: 	"2016年11月29日在Docker社区的讲稿"
 date: 		2016-11-29 12:00:00
 author: 	"shamphone"
