@@ -1,12 +1,11 @@
 ---
-layout: essay
-title: "码农的区块链：搭建一个私有区块链环境"
-subtitle: "区块链开发-1"
-date: 2016-09-02 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [Ethereum]
+layout: 	essay
+title: 		"搭建一个私有区块链环境"
+subtitle: 	"区块链开发-1"
+date: 		2016-09-02 12:00:00
+author: 	"shamphone"
+chapter:	"7.1"
+
 ---
 
 > 这篇文章参考[区块链技术指南](https://yeasy.gitbooks.io/blockchain_guide/content/ethereum/install.html)。但原文是Happy flow。这里把我安装过程中碰到的坑也都记录下来。我使用的是Ubuntu 14.10。这是以太坊推荐的版本。 
@@ -103,7 +102,7 @@ tags: [Ethereum]
 
 其中 datadir用于指定数据目录。这个目录不能够预先创建，否则命令会失败。 执行结果如下：
 
-![Image of Start Geth](http://blog.lixf.cn/img/in-post/eth-1.png)
+![Image of Start Geth](http://static.cocolian.org/img/in-post/eth-1.png)
 
 ### 2.创建账号
 
@@ -171,7 +170,7 @@ geth  --datadir "/root/chain" init genesis.json
 
 
 执行结果如下：
-![Image of creating genesis ](http://blog.lixf.cn/img/in-post/eth-2.png)
+![Image of creating genesis ](http://static.cocolian.org/img/in-post/eth-2.png)
 
 ### 4.启动私链
 
@@ -218,7 +217,7 @@ geth --identity "phoenix"  --rpc  --rpccorsdomain "*" --datadir "/root/chain" --
 > 注意：如果想将Ubuntu作为永久区块链节点使用，当使用`nohup`命令时，Geth启动参数`console`必须去掉，否则Geth会自动停止。
 
 执行结果如下：
-![Image of startup ](http://blog.lixf.cn/img/in-post/eth-3.png)
+![Image of startup ](http://static.cocolian.org/img/in-post/eth-3.png)
 
 ### 5.查看节点信息
 

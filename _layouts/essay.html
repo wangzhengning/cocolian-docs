@@ -2,14 +2,21 @@
 layout: default
 ---
 <aside class="content-aside">
-
+<ul class="post-list">
+{% assign posts = site.categories['essay'] | sort:'chapter'%}
+{% for post in posts %}
+{% unless  post.status  %}
+<li>{{ post.chapter}}.  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% endunless  %}
+{% endfor %}
+</ul>
 </aside>
 <header class="intro-header">
 	<div class="post-heading">                  
 		<h1>{{ page.title }}</h1>                
 		<ul class="meta">
-			<li><i class="icon-sitemap"></i>{% for pcat in page.categories%}{{site.modules[pcat]}}{% endfor%}  </li>
-			<li><i class="icon-user"></i>{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}  </li>
+			<li><i class="icon-sitemap"></i>现代支付系统设计</li>
+			<li><i class="icon-user"></i>凤凰牌老熊</li>
 			<li><i class="icon-time"></i>{{ page.date | date: "%Y-%m-%d" }}</li>
 		</ul>                
 	</div>           

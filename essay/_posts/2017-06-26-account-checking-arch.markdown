@@ -1,12 +1,11 @@
 ---
-layout: essay
-title: "对账"
-subtitle: "支付系统设计-2"
-date: 2017-06-26 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [支付系统]
+layout: 	essay
+title: 		"对账"
+subtitle: 	"支付系统设计-2"
+date: 		2017-06-26 12:00:00
+author: 	"shamphone"
+chapter:	"3.9"
+status:		"unfinished"
 ---
 
 > 2017-02-16， 补充对账系统架构图
@@ -20,7 +19,7 @@ tags: [支付系统]
 > 对账指对前一个清算周期内的交易信息进行核对，以确保交易信息的一致性和正确性。 
 
 既然是对账，那首先回答的问题就是对什么账？ 从会计角度来说，对账主要包括4个内容：
-[![对账单](http://blog.lixf.cn/img/in-post/checking-cate.png)](http://blog.lixf.cn/img/in-post/checking-cate.png)
+[![对账单](http://static.cocolian.org/img/in-post/checking-cate.png)](http://static.cocolian.org/img/in-post/checking-cate.png)
 
 - 账账核对：指各种账簿之间的数据是相符的。 
 - 账证核对：指将各种账簿和会计凭证进行核对，确保数据相符。
@@ -101,10 +100,10 @@ tags: [支付系统]
 
 5. 商品名称,商户数据包,手续费,费率：这些是可选验证。
 
-[![微信对账单](http://blog.lixf.cn/img/in-post/account-1-wechart.png)](http://blog.lixf.cn/img/in-post/account-1-wechart.png)
+[![微信对账单](http://static.cocolian.org/img/in-post/account-1-wechart.png)](http://static.cocolian.org/img/in-post/account-1-wechart.png)
 
 而某宝的对账单，是文本格式的，用空格隔开。他们家的就简单很多，只有商户订单号，交易流水号，交易时间，支付时间，付款方，交易金额，交易类型，交易状态这些字段。
-[![某宝对账单](http://blog.lixf.cn/img/in-post/account-1-baifubao.png)](http://blog.lixf.cn/img/in-post/account-1-baifubao.png)
+[![某宝对账单](http://static.cocolian.org/img/in-post/account-1-baifubao.png)](http://static.cocolian.org/img/in-post/account-1-baifubao.png)
 
 由于每个渠道的账单格式都不尽相同， 在得到账单后，下一步是对账单做标准化处理，这样轧帐以及后续工作就可以统一处理了。
 标准化后的账单数据可以放在文件系统或者数据库中。这取决于交易数据量。每天百万以上的量，还是使用文件系统，比较合适。数据库操作相对比较慢，也浪费资源。
@@ -151,7 +150,7 @@ tags: [支付系统]
 ## 二、对账架构
 
 基于微服务的对账系统实现的一个参考架构如下：
-[![arch](http://blog.lixf.cn/img/in-post/checking-arch.jpg)](http://blog.lixf.cn/img/in-post/checking-arch.jpg)
+[![arch](http://static.cocolian.org/img/in-post/checking-arch.jpg)](http://static.cocolian.org/img/in-post/checking-arch.jpg)
 
 ### 2.1 对账单下载
 

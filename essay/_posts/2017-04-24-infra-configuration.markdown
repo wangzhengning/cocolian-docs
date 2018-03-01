@@ -1,12 +1,11 @@
 ---
-layout: essay
-title: "配置管理系统设计和选型"
-subtitle: "支付系统设计"
-date: 2017-04-24 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [支付系统]
+layout: 	essay
+title: 		"配置管理系统设计和选型"
+subtitle: 	"支付系统设计"
+date: 		2017-04-24 12:00:00
+author: 	"shamphone"
+chapter:	"6.4"
+status:		"unfinished"
 ---
 
 配置管理是每个系统中必不可少的一个组件，同时也往往是考察系统架构设计和程序员开发能力的一个重要方面。我们从当前配置管理实现机制演化来分析在支付系统以及微服务中应该如何对配置管理进行选型，以及如何选择合适的参数管理组件。 

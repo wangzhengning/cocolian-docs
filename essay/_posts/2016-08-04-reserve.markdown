@@ -4,9 +4,8 @@ title:      "备付金与自有资金"
 subtitle:   "备付金与自有资金的区别与使用"
 date:       2016-08-04 12:00:00
 author:     "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog:	true
-tags:		[Fintech]
+chapter:	"8.1"
+status:		"unfinished"
 
 ---
 

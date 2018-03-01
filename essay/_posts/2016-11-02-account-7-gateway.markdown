@@ -1,19 +1,16 @@
 ---
-layout: essay
-title: "支付网关的设计"
-subtitle: "支付系统设计-7"
-date: 2016-11-02 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [支付系统]
-
+layout: 	essay
+title: 		"支付网关的设计"
+subtitle: 	"支付系统设计-7"
+date: 		2016-11-02 12:00:00
+author: 	"shamphone"
+chapter:	"2.2"
 ---
 
 在支付系统中，支付网关和支付渠道的对接是最核心的功能。其中支付网关是对外提供服务的接口，所有需要渠道支持的资金操作都需要通过网关分发到对应的渠道模块上。一旦定型，后续就很少，也很难调整。而支付渠道模块是接收网关的请求，调用渠道接口执行真正的资金操作。每个渠道的接口，传输方式都不尽相同，所以在这里，支付网关相对于支付渠道模块的作用，类似设计模式中的wrapper，封装各个渠道的差异，对网关呈现统一的接口。而网关的功能是为业务提供通用接口，一些和渠道交互的公共操作，也会放置到网关中。
 
  支付网关在支付系统参考架构图中的位置如下图所示：  
-[![Gateway Position](http://blog.lixf.cn/img/in-post/gateway-pos.jpg)](http://blog.lixf.cn/img/in-post/gateway-pos.jpg)
+[![Gateway Position](http://static.cocolian.org/img/in-post/gateway-pos.jpg)](http://static.cocolian.org/img/in-post/gateway-pos.jpg)
 
 ## 功能概述
 
@@ -21,7 +18,7 @@ tags: [支付系统]
 
 一般来说，支付主流程会涉及到如下模块：
 
-[![Image of Portal System](http://blog.lixf.cn/img/in-post/gateway-arch-2.jpg)](http://blog.lixf.cn/img/in-post/gateway-arch-2.jpg)
+[![Image of Portal System](http://static.cocolian.org/img/in-post/gateway-arch-2.jpg)](http://static.cocolian.org/img/in-post/gateway-arch-2.jpg)
 
 1. 商户侧应用发起支付请求。注意，这个请求一般是从服务器端发起的。比如用户在手机端提交“立即支付”按钮后，商户的服务器端会先生成订单，然后请求支付网关执行支付。   
 2. 支付请求被发送到支付（API)网关上。网关对这个请求进行一些通用的处理，比如QPS控制、验签等，然后根据支付请求的场景（网银、快捷、外卡等），调用对应的支付产品。   
@@ -40,7 +37,7 @@ tags: [支付系统]
 对外接口采用统一参数的方式，参考[APP请求参数说明](https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.8jvvbW&treeId=193&articleId=105465&docType=1)。
 接口参数分为三层： 公共参数、业务参数、还有业务扩展参数。 其中公共参数是各个请求接口中公用的。 
 
-[![Alipay](http://blog.lixf.cn/img/in-post/gateway-alipay.png)](http://blog.lixf.cn/img/in-post/gateway-alipay.png)
+[![Alipay](http://static.cocolian.org/img/in-post/gateway-alipay.png)](http://static.cocolian.org/img/in-post/gateway-alipay.png)
 
 业务相关的参数，通过特定的规则拼接再biz_content上。最后将参数生成签名，放到sign字段中。 
 
@@ -55,7 +52,7 @@ tags: [支付系统]
 **PayPal**
 
 PayPal是标准的Restful设计，将支付中涉及到的对象，如Payment， Order， Credit Card等，以资源的形式，支持通过Restful API来操作。 
-[![Paypal](http://blog.lixf.cn/img/in-post/gateway-paypal.jpg)](http://blog.lixf.cn/img/in-post/gateway-paypal.jpg)
+[![Paypal](http://static.cocolian.org/img/in-post/gateway-paypal.jpg)](http://static.cocolian.org/img/in-post/gateway-paypal.jpg)
 PayPal的定位以及设计目标和国内第三方支付平台不同，它以支持国际营收为主。对国内应用来说，其易用性和支付宝、微信支付相比还稍逊一些，不过Paypal一直是支付API设计的典范。 
 
 对电商支付平台来说，其定位更接近于一个聚合支付。聚合多种支付方式，为公司各个业务提供支持。 在这里，支付网关和支付产品的设计尤为关键。合理的接口设计能够大大降低支付渠道对接的开发工作量。一般支付产品不会超过10个，而根据公司的规模，对接的支付渠道超过100个都有可能。

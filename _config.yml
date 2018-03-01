@@ -87,3 +87,4 @@ modules:
   prodarch : "支付产品架构群"
   proddev : "支付产品技术群"
   nlp : "自然语言处理"
+  essay : "现代支付系统设计"

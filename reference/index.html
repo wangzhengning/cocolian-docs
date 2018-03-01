@@ -1,9 +1,11 @@
 ---
-layout: page
-description: "来自微信群‘支付产品技术交流群’的聊天记录整理"
+layout: category
+title: "他山之石"
+description: "可以攻玉"
+header-img: "img/about-lixf.jpg"
 ---
 
-{% for post in site.categories.merged %}
+{% for post in site.categories.reference %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
@@ -24,7 +26,6 @@ description: "来自微信群‘支付产品技术交流群’的聊天记录整
 </div>
 <hr>
 {% endfor %}
-
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
 <ul class="pager">

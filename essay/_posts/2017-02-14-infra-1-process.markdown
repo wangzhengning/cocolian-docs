@@ -1,18 +1,15 @@
 ---
-layout: essay
-title: "微服务开发的软件过程"
-subtitle: "从SSH单体应用到微服务架构-6"
-date: 2017-02-14 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [微服务]
-
+layout: 	essay
+title: 		"微服务开发的软件过程"
+subtitle: 	"从SSH单体应用到微服务架构-6"
+date: 		2017-02-14 12:00:00
+author: 	"shamphone"
+chapter:	"5.6"
 ---
 
 >  不少同学询问到如何实施微服务，特别是对项目数量增加的担忧。 在支付渠道设计一文中提到，可以按照渠道来划分项目，一个渠道一个项目，有同学认为这会导致项目太多无法管理。 本文要回答这个问题，在微服务中，我们是如何管理项目的，即微服务的软件过程。 
 
-[支付系统基础设施建设](http://blog.lixf.cn/essay/2016/11/12/account-8-infra/)一文简单描述了持续集成的所需要的基础软件。这里我们从软件过程的角度，详细介绍这些步骤。 支持持续集成所需要的基础软件，在该文中有介绍，请大家务必先阅读。 这里我们以基于jira的过程管理为例来讲述。 关于Jira软件本身介绍、相对Redmine的优势等问题，请大家自行查阅资料，不在本文介绍范围。 
+[支付系统基础设施建设](/essay/2016/11/12/account-8-infra/)一文简单描述了持续集成的所需要的基础软件。这里我们从软件过程的角度，详细介绍这些步骤。 支持持续集成所需要的基础软件，在该文中有介绍，请大家务必先阅读。 这里我们以基于jira的过程管理为例来讲述。 关于Jira软件本身介绍、相对Redmine的优势等问题，请大家自行查阅资料，不在本文介绍范围。 
 ·
 
 ## 从案例开始
@@ -26,7 +23,7 @@ tags: [微服务]
 
 
 Jira原是设计来进行Bug跟踪的系统，后来系统功能逐步完善后，被广泛适用于软件过程管理。Jira优势在于简单，好用。 这里就不介绍Jira的具体使用。 使用Jira进行软件项目管理，首先需要定义任务的处理流程。 以下是一个参考流程：  
-[![overview](http://blog.lixf.cn/img/in-post/process-overall.png)](http://blog.lixf.cn/img/in-post/process-overall.png)
+[![overview](http://static.cocolian.org/img/in-post/process-overall.png)](http://static.cocolian.org/img/in-post/process-overall.png)
 
 在这个流程中，需要区分两个概念：任务和子任务。 每个任务对应一个完整的业务需求，比如对账、对接工行借记卡、获取个人优惠券列表接口。这些业务需求每个都是可以独立测试的。子任务设置相对比较简单，每个子任务对应这在本次任务执行中需要修改的开发项目。 比如对接工行借记卡，会涉及到：  
 
@@ -41,7 +38,7 @@ Jira原是设计来进行Bug跟踪的系统，后来系统功能逐步完善后�
 
 这样，针对任务和子任务，会设置不同的属性：
 
-[![task](http://blog.lixf.cn/img/in-post/process-task.png)](http://blog.lixf.cn/img/in-post/process-task.png)
+[![task](http://static.cocolian.org/img/in-post/process-task.png)](http://static.cocolian.org/img/in-post/process-task.png)
 
 
 ### 1.1 需求管理
@@ -76,7 +73,7 @@ Jira也是一个不错的需求管理工具。产品经理可以通过Jira来执
 ### 1.5 启动子任务开发
  
 子任务的启动和执行，是整个流程的核心工作。 
-[![启动子任务开发](http://blog.lixf.cn/img/in-post/process-start-task.png)](http://blog.lixf.cn/img/in-post/process-start-task.png)
+[![启动子任务开发](http://static.cocolian.org/img/in-post/process-start-task.png)](http://static.cocolian.org/img/in-post/process-start-task.png)
 
 这里如果是使用git/gitlab来做版本控制，整个流程的要点在于：  
 
@@ -96,25 +93,25 @@ Jira也是一个不错的需求管理工具。产品经理可以通过Jira来执
 子任务开发完成后，即可提测。子任务提测时，将触发Jenkins进行测试环境部署。 
 测试有两种方式：自动测试和人工测试。尽量采用自动测试，使得开发人员能够及时发现问题。 
 所有子任务完成后，主任务可以提测。主任务提测后，如果是人工测试，则测试人员介入开始执行测试任务；如果是自动测试，则开始运行集成测试脚本。 
-[![提测](http://blog.lixf.cn/img/in-post/process-test.png)](http://blog.lixf.cn/img/in-post/process-test.png)
+[![提测](http://static.cocolian.org/img/in-post/process-test.png)](http://static.cocolian.org/img/in-post/process-test.png)
 测试通过后， 既可以准备上线。 
 
 ### 1.7 预部署和全部署
 
 一般上线会分为两步，预部署和全部署。预部署的目的是先验证系统在线上环境运行是否正常，减少回滚成本。特别是在部署服务器特别多的情况下，先部署1-2台机器，可以在线上验证本次上线是否可以。 验证通过后，既可以执行全部署。 
 注意，预部署和全部署都是针对子任务而言。
-[![上线](http://blog.lixf.cn/img/in-post/process-onboard.png)](http://blog.lixf.cn/img/in-post/process-onboard.png)
+[![上线](http://static.cocolian.org/img/in-post/process-onboard.png)](http://static.cocolian.org/img/in-post/process-onboard.png)
 少数公司会要求上线前进行审批，但这样做是不利于流程自动化的。 一天几十次上线，谁能知道这是不是可以上。 但有一点很重要，系统上线前，必须通知到相关的使用方。如果出现问题，使用方可以尽快知悉。
 
 ## 二、项目文件结构
 
 开发参考目录结构：
-[![目录结构](http://blog.lixf.cn/img/in-post/process-dir.jpg)](http://blog.lixf.cn/img/in-post/process-dir.jpg)
+[![目录结构](http://static.cocolian.org/img/in-post/process-dir.jpg)](http://static.cocolian.org/img/in-post/process-dir.jpg)
 
 从这个目录里面我们可以看到，和项目相关的部署用脚本，需要由项目开发人员自己来维护，用以保证部署工作能够自动执行。包括验证项目部署成功的脚本。 
 验证项目是否部署成功，一种方式是在日志中打桩，grep到这个日志，即意味着系统成功启动；一种方式是调用接口来验证是否成功。 
 
 部署目录参考：  
-[![目录结构](http://blog.lixf.cn/img/in-post/process-deploy.png)](http://blog.lixf.cn/img/in-post/process-deploy.png)
+[![目录结构](http://static.cocolian.org/img/in-post/process-deploy.png)](http://static.cocolian.org/img/in-post/process-deploy.png)
 
 总之，微服务项目的管理核心理念在于“自动化”，消除人为因素。人管代码，代码管机器，最终目标是要实现自动上线。 消除人工测试，取代以自动化测试；消除人工验证，取代以自动验证；消除人工部署，取代以自动化部署。 这样，再多的项目，也能够很好的进行管理。 

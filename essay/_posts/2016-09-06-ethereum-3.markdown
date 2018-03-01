@@ -1,12 +1,11 @@
 ---
-layout: essay
-title: "在以太坊上私链上实现一个简单的合约"
-subtitle: "区块链开发-3"
-date: 2016-09-06 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [Ethereum]
+layout: 	essay
+title: 		"实现一个简单的合约"
+subtitle: 	"区块链开发-3"
+date: 		2016-09-06 12:00:00
+author: 	"shamphone"
+chapter:	"7.3"
+
 ---
 
 > 本文是针对以太坊开发入门的教程。 纯开发人员版本。关于以太坊相关概念，比如合约、交易、以太币等，参考[官方文档](https://github.com/ethereum/go-ethereum/wiki/Contracts-and-Transactions)，或者[中文版](http://wangxiaoming.com/blog/archives/)
@@ -17,8 +16,8 @@ tags: [Ethereum]
 
 如何安装环境，挖矿，参考前两篇文章：
 
-- [码农的区块链：搭建一个私有区块链环境](http://blog.lixf.cn/essay/2016/09/02/ethereum-1/)
-- [在以太坊上私链上实现一个简单的交易](http://blog.lixf.cn/essay/2016/09/04/ethereum-2/)
+- [码农的区块链：搭建一个私有区块链环境](/essay/2016/09/02/ethereum-1/)
+- [在以太坊上私链上实现一个简单的交易](/essay/2016/09/04/ethereum-2/)
 
 ##  安装solidity
 

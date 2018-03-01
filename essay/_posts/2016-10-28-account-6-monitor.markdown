@@ -1,18 +1,16 @@
 ---
-layout: essay
-title: "支付系统的监控与报警"
-subtitle: "支付系统设计-6"
-date: 2016-10-28 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [支付系统]
+layout: 	essay
+title: 		"支付系统的监控与报警"
+subtitle: 	"支付系统设计-6"
+date: 		2016-10-28 12:00:00
+author: 	"shamphone"
+chapter:	"6.6"
 ---
 
 关于监控，在各个技术网站，几乎都是一搜一大把。几个大的互联网公司，也都有开发自己的监控系统。 关于这方面也有不少分享。 这里介绍针对支付系统的监控和报警，但大部分内容，应该来说，对其他系统也是通用的 。
 
 现在基本上 Zabbix 成为监控的标配了。 一个常规的 Zabbix 监控实现， 是在被监控的机器上部署Zabbix Agent，从日志中收集所需要的数据，分析出监控指标，发送到zabbix服务器上。
-！[zabbix 监控](http://blog.lixf.cn/img/in-post/monitor-1.png)
+！[zabbix 监控](http://static.cocolian.org/img/in-post/monitor-1.png)
 这种方式要求每个机器上部署 Zabbix 客户端，并配置数据收集脚本。Zabbix的部署可以作为必装软件随操作系统一起安装。
 
 # 系统监控
@@ -107,7 +105,7 @@ Tomcat监控| 	最大线程数、当前线程数、繁忙线程数| 	JMX
 
 实际上对一个业务来说，大部分系统监控的指标是类似的，而按照这种方式，每个指标在各个被监控系统中还需要单独写脚本实现，工作量大。针对这种情况，可以采用日志集中监控的方式来处理。
 考虑到日志最终都需要归并到一个日志仓库中，这个仓库可以有很多用途，特别是日常维护中的日志查询工作。多数指标可以在日志上完成计算的。 借助这个系统，也可以完成监控：
-！[zabbix 监控](http://blog.lixf.cn/img/in-post/monitor-2.png)
+！[zabbix 监控](http://static.cocolian.org/img/in-post/monitor-2.png)
 
 日志通过Apache Flume来收集，通过Apache Kafka来汇总，一般最后日志都归档到Elastic中。 统计分析工作也可以基于Elastic来做，但这个不推荐。 使用Apache Spark 的 Streaming组件来接入Apache Kafka 完成监控指标的提取和计算，将结果推送到Zabbix服务器上，就可以实现可扩展的监控。 这个架构的优势在于：
 

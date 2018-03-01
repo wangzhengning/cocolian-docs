@@ -1,12 +1,10 @@
 ---
-layout: essay
-title: "快捷支付产品"
-subtitle: "支付系统设计-4"
-date: 2016-10-20 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [支付系统]
+layout: 	essay
+title: 		"快捷支付产品"
+subtitle: 	"支付系统设计-4"
+date: 		2016-10-20 12:00:00
+author: 	"shamphone"
+chapter:	"2.3.2"
 ---
 
 快捷支付指用户在电商网站上执行支付时，不需要输入卡信息，仅根据短信或者其他的验证方式确认身份后，就可以执行扣款的支付方式。 这是目前电商网站采用的主要支付方式。
@@ -28,7 +26,7 @@ tags: [支付系统]
 但我们知道，绑卡对用户和商户来说都存在巨大风险。如果说用户绑卡是图省事，那商户为什么要做这个事？首先当然是提升用户体验了，让用户花钱更容易。其次，提升支付成功率。使用网银支付成功率在20%左右，银联直联成功率一般在50%左右，银行卡直联可以提升到70%左右。这是相当可观的数据。所以，当你看到绑卡送洗衣粉之类做法时，不需要担心商家会不会赔本。  
 
 怎么绑卡？我们知道对接银行有两种途径，直接对接银行接口和通过银联来间接对接。这两种情况下绑卡处理也不同。  直观的，电商网站会在用户后台提供一个绑卡的入口，让用户直接绑卡。以支付宝绑卡流程为例，我们可以体验下:
-[![alipay-1](http://blog.lixf.cn/img/in-post/alipay-all.PNG)]( http://blog.lixf.cn/img/in-post/alipay-all.PNG )
+[![alipay-1](http://static.cocolian.org/img/in-post/alipay-all.PNG)]( http://static.cocolian.org/img/in-post/alipay-all.PNG )
 
 这里有如下要点：
 

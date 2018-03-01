@@ -1,12 +1,11 @@
 ---
-layout: essay
-title: "虚机安装与配置"
-subtitle: "支付系统基础架构-1"
-date: 2017-10-08 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [支付系统]
+layout: 	essay
+title: 		"虚机安装与配置"
+subtitle: 	"支付系统基础架构-1"
+date: 		2017-10-08 12:00:00
+author: 	"shamphone"
+chapter:	"6.3"
+
 ---
 
 ## 安装Centos 

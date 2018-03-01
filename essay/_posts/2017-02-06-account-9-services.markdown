@@ -1,20 +1,18 @@
 ---
-layout: essay
-title: "支付路由设计"
-subtitle: "支付系统设计-9"
-date: 2017-02-06 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [Fintech]
+layout: 	essay
+title: 		"支付路由设计"
+subtitle: 	"支付系统设计-9"
+date: 		2017-02-06 12:00:00
+author: 	"shamphone"
+chapter:	"2.4"
 
 ---
 
 >  春节后回来，工作重点转到现有系统的微服务改进上。继续支付系统设计的话题。 在此也特别感谢大家对凤凰牌老熊的公众号的关注和支持，祝大家新的一年工作顺利，万事如意。 
 
-接着回到支付系统设计的主题。阅读本文之前，有必要回顾下[支付系统设计]( http://blog.lixf.cn/essay/2016/08/08/payment-arch/ )这篇文章。后续我们将深入到支付系统各个模块的设计，本文首先介绍支付核心模块支付路由的设计。 
+接着回到支付系统设计的主题。阅读本文之前，有必要回顾下[支付系统设计]( /essay/2016/08/08/payment-arch/ )这篇文章。后续我们将深入到支付系统各个模块的设计，本文首先介绍支付核心模块支付路由的设计。 
 
-从[支付系统设计]( http://blog.lixf.cn/essay/2016/08/08/payment-arch/ )一文我们可以知道，用户在前端选择一种支付方式，比如使用招行借记卡来支付后，系统不一定就是调用招行的接口来执行支付。支付宝、百付宝等第三方支付平台以及银联等，都支持招行借记卡支付。 这种将支付方式落地到具体的支付接口的模块，就是支付路由。 
+从[支付系统设计]( /essay/2016/08/08/payment-arch/ )一文我们可以知道，用户在前端选择一种支付方式，比如使用招行借记卡来支付后，系统不一定就是调用招行的接口来执行支付。支付宝、百付宝等第三方支付平台以及银联等，都支持招行借记卡支付。 这种将支付方式落地到具体的支付接口的模块，就是支付路由。 
 
 ## 设计目标
 
@@ -28,15 +26,15 @@ tags: [Fintech]
 ## 软件架构
 
 上述流程，在实现上，参考的架构设计如下：  
-[![支付路由架构](http://blog.lixf.cn/img/in-post/route-arch.jpg)](http://blog.lixf.cn/img/in-post/route-arch.jpg)
+[![支付路由架构](http://static.cocolian.org/img/in-post/route-arch.jpg)](http://static.cocolian.org/img/in-post/route-arch.jpg)
 
-支付路由并不会直接对接前端的支付产品或者后端的支付渠道，它是[支付网关](http://blog.lixf.cn/essay/2016/11/02/account-7-gateway/)的一部分。如果是基于微服务的架构，支付路由作为一个独立的服务，被支付网关所调用。 
+支付路由并不会直接对接前端的支付产品或者后端的支付渠道，它是[支付网关](/essay/2016/11/02/account-7-gateway/)的一部分。如果是基于微服务的架构，支付路由作为一个独立的服务，被支付网关所调用。 
 
 ## 计算因子
 
 路由规则是支付路由的核心。在规则设置上，需要和公司的业务、支付服务的scope来综合考虑。 这里讲述的是通用的规则设计，供具体实现时参考。 
 
-[![支付路由规则](http://blog.lixf.cn/img/in-post/route-rules.jpg)](http://blog.lixf.cn/img/in-post/route-rules.jpg)
+[![支付路由规则](http://static.cocolian.org/img/in-post/route-rules.jpg)](http://static.cocolian.org/img/in-post/route-rules.jpg)
 
 **产品类型**
 当然，路由时首选需要考虑渠道可以支持的支付产品。

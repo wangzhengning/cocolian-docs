@@ -1,27 +1,23 @@
 ---
-layout: essay
-title: "支付产品服务的设计"
-subtitle: "支付系统设计-11"
-date: 2017-03-19 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [支付系统]
+layout: 	essay
+title: 		"支付产品服务的设计"
+subtitle: 	"支付系统设计-11"
+date: 		2017-03-19 12:00:00
+author: 	"shamphone"
+chapter:	"2.3"
 
 ---
-关于支付系统相关概念、支付主流程设计，请参考之前的文章：
-1. [支付路由设计](http://blog.lixf.cn/essay/2017/02/06/account-9-services/)
-2. [支付网关设计](http://blog.lixf.cn/essay/2016/11/02/account-7-gateway/)
+
 
 本文接支付网关设计部分， 介绍支付产品模块的设计。 支付产品模块是按照支付场景来为业务方提供支付服务。这个模块一般位于支付网关之后，支付渠道之前。 它根据支付能力将不同的支付渠道封装成统一的接口，通过支付网关来对外提供服务。所以，从微服务的角度，支付产品本身也是一个代理模式的微服务，它透过支付网关响应业务方请求， 进行一些统一处理后，分发到不同的支付渠道去执行，最后将执行结果做处理后，通过支付网关再回传给业务方。 
 
 支付产品在支付系统参考架构图中的位置如下图所示：  
-[![Position](http://blog.lixf.cn/img/in-post/product-pos.jpg)](http://blog.lixf.cn/img/in-post/product-pos.jpg)
+[![Position](http://static.cocolian.org/img/in-post/product-pos.jpg)](http://static.cocolian.org/img/in-post/product-pos.jpg)
 
 ## 产品分类
 
 在不同的公司由于接入渠道和应用的差异，对支付产品分类略有不同。综合支付场景和流程，支付产品可以分为如下几类：
-[![Product Category](http://blog.lixf.cn/img/in-post/product-category.jpg)](http://blog.lixf.cn/img/in-post/product-category.jpg)
+[![Product Category](http://static.cocolian.org/img/in-post/product-category.jpg)](http://static.cocolian.org/img/in-post/product-category.jpg)
 
 支付产品是由支付系统对支付渠道进行封装而对业务方提供的支付能力。整体上来说，可以提供如下支付产品：
 
@@ -60,7 +56,7 @@ tags: [支付系统]
 ## 模块功能
 
 支出产品根据其支付能力，对外提供不同的功能。整体上来说，一般支付产品需要提供如下接口： 
-[![Product Category](http://blog.lixf.cn/img/in-post/product-functions.jpg)](http://blog.lixf.cn/img/in-post/product-functions.jpg)
+[![Product Category](http://static.cocolian.org/img/in-post/product-functions.jpg)](http://static.cocolian.org/img/in-post/product-functions.jpg)
 **签约和解约**  
 
 在快捷支付、代扣等产品中，用户在使用前，需要先完成签约。签约可以在渠道侧进行，一般第三方支付采用这种方式，当电商需要接入时，让第三方给授权。 银行和银联的签约一般是在电商侧进行， 电商侧负责收集用户的信息，调用银行和银联的接口进行签约。签约后，后续的支付行为就使用签约号来进行，无需再输入个人信息。 
@@ -103,7 +99,7 @@ tags: [支付系统]
 ## 业务流程
 
 上述操作，除了对账、查单外，每个操作实现的主流程，一般会包括参数校验，支付路由，生成订单，风险评估，调用渠道服务，更新订单和发送消息这7步，对于一些比较复杂的服务，还会涉及到异步同通知处理的步骤。
-[![Product workflow](http://blog.lixf.cn/img/in-post/product-workflow.jpg)](http://blog.lixf.cn/img/in-post/product-workflow.jpg)
+[![Product workflow](http://static.cocolian.org/img/in-post/product-workflow.jpg)](http://static.cocolian.org/img/in-post/product-workflow.jpg)
 **1. 执行参数校验**
 
 所有的支付操作，都需要对输入执行参数校验，避免接口受到攻击。
@@ -111,7 +107,7 @@ tags: [支付系统]
 - 验证输入参数中各字段的有效性验证，比如用户ID,商户ID,价格，返回地址等参数。
 - 验证账户状态。交易主体、交易对手等账户的状态是处于可交易的状态。
 - 验证订单：如果涉及到预单，还需要验证订单号的有效性，订单状态是未支付。为了避免用户缓存某个URL地址，还需要校验下单时间和支付时间是否超过预定的间隔。
-- 验证签名。签名也是为了防止支付接口被伪造。 一般签名是使用分发给商户的key来对输入参数拼接成的字符串做MD5 Hash或者RSA加密，然后作为一个参数随其他参数一起提交到服务器端。如[支付网关设计](http://blog.lixf.cn/essay/2017/03/15/account-10-gateway/)所介绍，签名验证也可以在网关中统一完成。 
+- 验证签名。签名也是为了防止支付接口被伪造。 一般签名是使用分发给商户的key来对输入参数拼接成的字符串做MD5 Hash或者RSA加密，然后作为一个参数随其他参数一起提交到服务器端。如[支付网关设计](/essay/2017/03/15/account-10-gateway/)所介绍，签名验证也可以在网关中统一完成。 
 
 **2. 根据支付路由寻找合适的支付服务**
 

@@ -1,12 +1,10 @@
 ---
-layout: essay
-title: "快捷支付产品"
-subtitle: "支付系统设计-4"
-date: 2017-04-14 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [支付系统]
+layout: 	essay
+title: 		"快捷支付产品"
+subtitle: 	"支付系统设计-4"
+date: 		2017-04-14 12:00:00
+author: 	"shamphone"
+chapter:	"2.3.2"
 ---
 
 快捷支付指用户在电商网站上执行支付时，不需要输入卡信息，仅根据短信或者其他的验证方式确认身份后，就可以执行扣款的支付方式。 这是目前电商网站采用的主要支付方式。
@@ -30,7 +28,7 @@ tags: [支付系统]
 
 ## 二、绑卡流程
 怎么绑卡？我们知道对接银行有两种途径，直接对接银行接口和通过银联来间接对接。这两种情况下绑卡处理也不同。 直观的，电商网站会在用户后台提供一个绑卡的入口，让用户直接绑卡。以支付宝绑卡流程为例，我们可以体验下:
-[![alipay-1](http://blog.lixf.cn/img/in-post/alipay-all.PNG)]( http://blog.lixf.cn/img/in-post/alipay-all.PNG )
+[![alipay-1](http://static.cocolian.org/img/in-post/alipay-all.PNG)]( http://static.cocolian.org/img/in-post/alipay-all.PNG )
 
 这里有如下要点：
 
@@ -46,10 +44,10 @@ tags: [支付系统]
 
 针对用户不同状态，绑卡流程上有区别。当然，绑卡是安全操作，要求用户必须登录到系统中。为了避免和服务器端的交互被劫持，所有操作必须在安全协议中进行，即使用https。
 
-[![fast-bind](http://blog.lixf.cn/img/in-post/fast-bind.jpg)]( http://blog.lixf.cn/img/in-post/fast-bind.jpg )
+[![fast-bind](http://static.cocolian.org/img/in-post/fast-bind.jpg)]( http://static.cocolian.org/img/in-post/fast-bind.jpg )
 
 **1. 输入卡号**  
-用户输入卡号，系统对卡号执行初步验证。 验证的依据是卡bin和LUHN算法。参见[支付系统之银行卡支付](http://blog.lixf.cn/essay/2016/10/12/account-3-bank/)。
+用户输入卡号，系统对卡号执行初步验证。 验证的依据是卡bin和LUHN算法。参见[支付系统之银行卡支付](/essay/2016/10/12/account-3-bank/)。
 当然，还有些系统会提供扫卡识码的功能，比如微信支付。 扫码识别的准确率可以达到99%，有些卡的卡号颜色和背景色一致的，就会识别出错。 如果用户没细看，进入下一步，就会报告错误了，这种错误还比较难发现。自动识别卡号，还需要考虑在识别错误时如何圆过去的问题。
 
 **2. 获取卡信息**  
@@ -67,14 +65,14 @@ tags: [支付系统]
 **4. 执行绑卡**  
 用户输入短信验证码并确认绑卡，服务器端将用户实名信息以及短信验证码组合形成报文，发送给银行，执行签约操作。银行侧签约成功后，返回签约号给商户。
 这一个处理逻辑放在支付渠道侧介绍。银行会返回如下结果：  
-1. 签约成功：这意味着可以建立签约关系。而签约关系在支付系统中则通过虚拟账户来表示。 具体的账户设计参见[账户模型](http://blog.lixf.cn/essay/2016/10/08/account-1/)。    
+1. 签约成功：这意味着可以建立签约关系。而签约关系在支付系统中则通过虚拟账户来表示。 具体的账户设计参见[账户模型](/essay/2016/10/08/account-1/)。    
 2. 重复签约： 按照业务考虑是否支持重复签约。 一般针对一个银行卡仅保留一个签约关系，建立一个虚拟账户。     
 3. 签约失败： 需要提示具体失败原因。   
 
 ## 三、扣款流程
 
 在完成签约后，支付处理就相对简单不少。扣款流程如下：
-[![fast-pay-1](http://blog.lixf.cn/img/in-post/fast-pay.jpg)]( http://blog.lixf.cn/img/in-post/fast-pay.jpg )
+[![fast-pay-1](http://static.cocolian.org/img/in-post/fast-pay.jpg)]( http://static.cocolian.org/img/in-post/fast-pay.jpg )
 
 流程要点：  
 1. 订单系统生成订单后，请求支付系统执行支付；   
@@ -93,12 +91,12 @@ tags: [支付系统]
 ## 四、解约流程
 
 解约流程一般是由用户自己发起。当然，存储在本地的签约信息只是被设置为无效，而不是实际删除。 解约时，还需要注意相关的订单是否都已经完成。
-[![fast-pay-1](http://blog.lixf.cn/img/in-post/fast-unbind.jpg)]( http://blog.lixf.cn/img/in-post/fast-unbind.jpg )
+[![fast-pay-1](http://static.cocolian.org/img/in-post/fast-unbind.jpg)]( http://static.cocolian.org/img/in-post/fast-unbind.jpg )
 
 ## 五、退款流程
 
 没有平白无故的退款。支付都是由交易调起的，那退款就都对应的由退货发起的。 针对已经扣款成功的交易执行退款。如果交易还在进行中，比如渠道侧还没有返回结果，则执行退款会导致状态不可预知。
-[![fast-refund-1](http://blog.lixf.cn/img/in-post/fast-refund.jpg)]( http://blog.lixf.cn/img/in-post/fast-refund.jpg )
+[![fast-refund-1](http://static.cocolian.org/img/in-post/fast-refund.jpg)]( http://static.cocolian.org/img/in-post/fast-refund.jpg )
 
 注意，退款的钱并不一定立即到账。不同银行、不同渠道到账时间不一样。 
 
@@ -117,7 +115,7 @@ tags: [支付系统]
 
 由于快捷支付是常用的一个通道，其带来的问题是，如果这个通道出问题了，应该怎么办？回顾之前的文章，我们提到过，银行卡快捷支付不仅仅只有发卡行的通道，银联、第三方支付也都可以提供银行卡快捷支付接口。就发卡行来说，也不仅仅总行通道，很多发卡行的各省分行，由于历史因素，手头也有通道资源。 这也为我们实现通道切换提供了可能。
 切换支付通道最大的问题是如何解决签约。 比如用户原来使用工行快捷支付接口来完成工行借记卡支付。某一天，工行通知接口要维护，不可用了，这就需要提前把工行接口切到其他备用通道，比如银联接口。 当然，直接切换是不行的，和银联还没签约呢。 那如何处理备用通道？ 关于备用通道的签约时间。可以在用户签约到主通道时，同时签约到备用通道，这种情况要求备用通道必须是无短信验证的，否则一次签约发两条短信，用户必须会怀疑的。还可以在第一次支付的时候签约，这时候将签约支付短信一并发出，避免影响用户体验。
-关于通道选择，参考[支付路由设计](http://blog.lixf.cn/essay/2017/02/06/account-9-services/)一文。 
+关于通道选择，参考[支付路由设计](/essay/2017/02/06/account-9-services/)一文。 
 
 ## 八、接口实现
 

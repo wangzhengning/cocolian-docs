@@ -1,12 +1,10 @@
 ---
-layout: essay
-title: "银行卡支付"
-subtitle: "支付系统设计-3"
-date: 2016-10-12 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [支付系统]
+layout: 	essay
+title: 		"银行卡支付"
+subtitle: 	"支付系统设计-3"
+date: 		2016-10-12 12:00:00
+author: 	"shamphone"
+chapter:	"2.3.1"
 ---
 
 ## 银行卡支付

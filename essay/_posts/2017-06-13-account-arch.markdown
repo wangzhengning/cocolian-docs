@@ -1,12 +1,10 @@
 ---
-layout: essay
-title: "账户体系"
-subtitle: "支付清结算-4"
-date: 2017-06-13 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [支付清结算]
+layout: 	essay
+title: 		"账户体系"
+subtitle: 	"支付清结算-4"
+date: 		2017-06-13 12:00:00
+author: 	"shamphone"
+chapter:	"3.5"
 
 ---
 
@@ -14,7 +12,7 @@ tags: [支付清结算]
 
 ## 一、会计科目
 
-如[上文](http://blog.lixf.cn/essay/2017/01/02/clearing-basic/)所述, 会计科目是会计对象具体内容内容分类的标志。 会计科目分类，一般按照公司的规模和业务复杂度，划分为3~5级，甚至更多。
+如[上文](/essay/2017/01/02/clearing-basic/)所述, 会计科目是会计对象具体内容内容分类的标志。 会计科目分类，一般按照公司的规模和业务复杂度，划分为3~5级，甚至更多。
  
  **大类别**  
  即按照经济要素，根据我国企业会计制度要求（最新版本为2016年会计科目表），划分为资产类、负债类、所有者权益类、成本类、损益类和共同类六大会计科目。 
@@ -117,14 +115,14 @@ tags: [支付清结算]
 一般支付系统为了简化处理，一开始仅设置资产类、负债类和共同类账户。 随着公司的发展，可以逐步增加其他的科目设置。 
 
 **账户体系**
-[![账户体系](http://blog.lixf.cn/img/in-post/clearing-act-arch.jpg)](http://blog.lixf.cn/img/in-post/clearing-act-arch.jpg)
+[![账户体系](http://static.cocolian.org/img/in-post/clearing-act-arch.jpg)](http://static.cocolian.org/img/in-post/clearing-act-arch.jpg)
 
 
 ## 四、账户结构
 
 如前述文章介绍，我们采用复式借贷记账法。对于分户账，或者说明细账，如下示例：
 
-[![账户结构](http://blog.lixf.cn/img/in-post/clearing-tb-accounting.jpg)](http://blog.lixf.cn/img/in-post/clearing-tb-accounting.jpg)
+[![账户结构](http://static.cocolian.org/img/in-post/clearing-tb-accounting.jpg)](http://static.cocolian.org/img/in-post/clearing-tb-accounting.jpg)
 
 在这个实例中， 账户中账务相关的结构包括：  
 
@@ -134,9 +132,9 @@ tags: [支付清结算]
 
 在实现上，账户的各个属性更新时间并不一致，所以在设计账户表的时候，可以按照更新时机来划分表。
 
-参考 [账户设计](http://blog.lixf.cn/essay/2016/10/08/account-1/) 一文， 总的来说，账户的结构如下图所示，包括基本信息、关联实体、权限控制、余额和账务相关信息。
+参考 [账户设计](/essay/2016/10/08/account-1/) 一文， 总的来说，账户的结构如下图所示，包括基本信息、关联实体、权限控制、余额和账务相关信息。
 
-[![账户结构](http://blog.lixf.cn/img/in-post/clearing-accounts.jpg)](http://blog.lixf.cn/img/in-post/clearing-accounts.jpg)
+[![账户结构](http://static.cocolian.org/img/in-post/clearing-accounts.jpg)](http://static.cocolian.org/img/in-post/clearing-accounts.jpg)
 
 在存储上，账务相关信息一般是和账户其他信息相互独立处理，处理账务相关信息的子系统被称为账务子系统或者记账子系统。 
 

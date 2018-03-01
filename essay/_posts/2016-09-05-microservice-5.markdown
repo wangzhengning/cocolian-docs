@@ -1,28 +1,26 @@
 ---
-layout: essay
-title: "SSH框架微服务改进实战"
-subtitle: "从SSH单体应用到微服务架构-5"
-date: 2016-09-09 12:00:00
-author: "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog: true
-tags: [微服务]
+layout: 	essay
+title: 		"SSH框架微服务改进实战"
+subtitle: 	"从SSH单体应用到微服务架构-5"
+date: 		2016-09-09 12:00:00
+author: 	"shamphone"
+chapter:	"5.5"
 
 ---
 
 本文假定你已经阅读过之前的文章：
 
-- [为什么要重构到微服务](http://blog.lixf.cn/essay/2016/08/05/microservice-1/)
-- [重构中的外部准备工作](http://blog.lixf.cn/essay/2016/08/05/microservice-2/)
-- [重构中的内部准备工作](http://blog.lixf.cn/essay/2016/08/06/microservice-3/)
-- [使用微服务架构重构支付网关](http://blog.lixf.cn/essay/2016/09/01/microservice-4/)
+- [为什么要重构到微服务](/essay/2016/08/05/microservice-1/)
+- [重构中的外部准备工作](/essay/2016/08/05/microservice-2/)
+- [重构中的内部准备工作](/essay/2016/08/06/microservice-3/)
+- [使用微服务架构重构支付网关](/essay/2016/09/01/microservice-4/)
 
-上一篇文章[使用微服务架构重构支付网关](http://blog.lixf.cn/essay/2016/09/01/microservice-4/) 是从横向的角度来分析如何分解服务以及建立微服务之间的关系。这篇文章从纵向详细介绍如何对SSH框架的支付系统实施具体的技改。这里不涉及具体代码写法，重点在于说明方法论。虽然以SSH(Apache Struts + Springframework + Hibernate) 框架为例，也适合各种常用的web架构 (Apache Struts/Spring MVC / Apache Velocity + Springframework + Mybatis/Hibernate) 。
+上一篇文章[使用微服务架构重构支付网关](/essay/2016/09/01/microservice-4/) 是从横向的角度来分析如何分解服务以及建立微服务之间的关系。这篇文章从纵向详细介绍如何对SSH框架的支付系统实施具体的技改。这里不涉及具体代码写法，重点在于说明方法论。虽然以SSH(Apache Struts + Springframework + Hibernate) 框架为例，也适合各种常用的web架构 (Apache Struts/Spring MVC / Apache Velocity + Springframework + Mybatis/Hibernate) 。
 
 ## 选取入手模块
 
 如果遗留系统规模庞大，那应该如何挑选入手点？以支付系统为例，如前文所述，支付系统一般包括账户，交易，订单，优惠券，钱包，支付渠道，清结算，支付网关，运营系统等模块。模块很多，如何选择突破点？ 我们采取的方法是寻找对外依赖最小的模块，由此开始调整。 首先模块依赖关系整理出来。
-[![Image of Portal System](http://blog.lixf.cn/img/in-post/account-dependency.png)](http://blog.lixf.cn/img/in-post/account-dependency.png)
+[![Image of Portal System](http://static.cocolian.org/img/in-post/account-dependency.png)](http://static.cocolian.org/img/in-post/account-dependency.png)
 从上图可以看出来，账户系统在依赖树中是处于树根的位置，对它的调整相对容易。只要保持对外接口不变即可。
 
 
@@ -32,7 +30,7 @@ tags: [微服务]
 - 每一个改进点，需在1~3天内完成，不能超过一个周。  
 - 每次改进，均可直接上线运行，不需要长时间的AB测试。  
 在功能也就是对外接口不变的前提下，开始进行拆分工作。 在结构上，原SSH系统是一个大项目，所有代码分层分模块堆在一起。微服务系统需要将它们拆分。直观的拆分方法是按层，按模块同构的拆分成各个独立运行和维护的系统。由此带来了一系列的调整。在SSH架构下，重构可以采用自上而下的方法进行，这样可以确保每一层的重构都有明确的输入输出，并且是可测试的。
-[![gateway steps](http://blog.lixf.cn/img/in-post/gateway-steps.jpg)](http://blog.lixf.cn/img/in-post/gateway-steps.jpg)
+[![gateway steps](http://static.cocolian.org/img/in-post/gateway-steps.jpg)](http://static.cocolian.org/img/in-post/gateway-steps.jpg)
 整体上，重构分为三个步骤：
 1. 参考原有系统的DAO层和业务逻辑层，实现基础服务，一般是使用RPC来实现. 
 2. 将对外的接口层进行重构，调整为调用RPC服务。
@@ -44,7 +42,7 @@ tags: [微服务]
 在SSH架构下，对API网关一般是通过NGINX的rewtite模块来实现，逻辑简单，人工维护即可。而一旦接口层按照业务来拆分后，网关路由逻辑复杂多了，通过人工维护配置文件难度激增，需要调整成自动注册更新路由的方式。也就是每个服务需要将自己提供的服务和API注册到API网关上， API网关需要自动识别并加载新的路由。
 
 针对这个需求，我们开发了一个connector， 其工作原理如下：
-![Image of Portal System](http://blog.lixf.cn/img/in-post/account-gateway-connector.png)
+![Image of Portal System](http://static.cocolian.org/img/in-post/account-gateway-connector.png)
 
 -  服务在启动完成后，注册到zookeeper上。  
 -  connector监听 zookeeper，一旦有变更，则获取服务列表，更新nginx.conf文件  
@@ -94,7 +92,7 @@ DAO层的重构的工作量比较大。 需要将原来访问数据库的逻辑�
 
 采用消息中间件目前主流的做法，适合于对数据实时性要求不高的场景。 如下图所示，在数据写入的服务中，完成写入后，抛出消息。其他数据库通过接受消息来更新数据。 
 优点是系统灵活，无论是同DC还是跨DC的情况都可以正常工作。 对数据同步的情况，可以通过MQ提供的监控系统也能够了解。 缺点是开发工作量大，数据同步实时性不高。 
-![Image of Database Sync](http://blog.lixf.cn/img/in-post/account_dbsync.png)
+![Image of Database Sync](http://static.cocolian.org/img/in-post/account_dbsync.png)
 
 ## 如果时间不够
 
