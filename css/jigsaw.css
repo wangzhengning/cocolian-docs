@@ -10,6 +10,9 @@ article.post-content{
 	padding: 10px 10px 5px 10px;
 }
 
+span.ref-meta{
+	color: #c0c0c0
+}
 @media (min-width: 768px) {
 	aside.content-aside {
 		display: block;

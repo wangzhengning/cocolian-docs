@@ -1,12 +1,10 @@
 ---      
-layout:     post      
+layout:     reference      
 title:      "中国人民银行关于落实个人银行账户分类管理制度的通知"      
-subtitle:   "银发（2016）302号"      
+subtitle:   "银发〔2016〕302号"      
 date:       2016-11-25 12:00:00      
-author:     "shamphone"      
-header-img: "img/home-bg-post.jpg"      
-catalog:    true      
-tags:       [金融法规]      
+author:     "中国人民银行"       
+tags:       [支付]    
 ---      
       
 > 中国人民银行上海总部，各分行、营业管理部、省会（首府）城市中心支行，深圳市中心支行；国家开发银行，各政策性银行、国有商业银行、股份制商业银行，中国邮政储蓄银行：为进一步落实个人银行账户分类管理制度，现将有关事项通知如下：  

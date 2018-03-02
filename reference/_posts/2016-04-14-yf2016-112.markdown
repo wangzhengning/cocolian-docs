@@ -1,12 +1,10 @@
 ---
-layout:     post
+layout:     reference
 title:      "非银行支付机构风险专项整治工作实施方案"
-subtitle:   "银发【2016】112号"
+subtitle:   "银发〔2016〕112号"
 date:       2016-04-14 12:00:00
-author:     "shamphone"
-header-img: "img/home-bg-post.jpg"
-catalog:    true
-tags:       [金融法规]
+author:     "中国人民银行"
+tags:       [支付] 
 ---
 
 <div class="post-container">

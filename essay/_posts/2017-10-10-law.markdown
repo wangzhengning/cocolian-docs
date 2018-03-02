@@ -1,0 +1,17 @@
+---
+layout:     essay
+title:      "支付相关法规文件汇编"
+subtitle:   "截止2018年3月2日"
+date:       2017-10-09 12:00:00
+author:     "shamphone"
+chapter:	"8.3"
+---
+
+<ul>
+{% assign posts = site.categories['reference'] | sort:'date'%}
+{% for post in posts %}
+{% unless  post.status  %}
+<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <span class="ref-meta"> {{ post.subtitle }} </span> </li>
+{% endunless  %}
+{% endfor %}
+</ul>
