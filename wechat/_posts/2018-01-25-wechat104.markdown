@@ -2,7 +2,7 @@
 layout:     post                                            
 title:      "20180125-支付生态报告摘要"                                                                           
 date:       2018-01-25 19:00:00                                                                           
-author:     "PaymentGroup"                                      
+author:     "支付产品架构群"                                      
 tag:		[publish]                                
 header-img: "img/post-bg-wechat.jpg"                                     
 ---   

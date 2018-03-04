@@ -2,7 +2,7 @@
 layout:     post                                            
 title:      "20180204-银行中间业务"                                                                           
 date:       2018-02-04 19:00:00                                                                           
-author:     "PaymentGroup"                                      
+author:     "支付产品架构群"                                      
 tag:		[publish]                                
 header-img: "img/post-bg-wechat.jpg"                                     
 ---   

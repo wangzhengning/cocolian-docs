@@ -2,7 +2,7 @@
 layout:     post                                                
 title:      "20171227-行业应用-线上无卡收单产品"                                                                               
 date:       2017-12-27 19:00:00                                                                               
-author:     "PaymentGroup"                                          
+author:     "支付产品架构群"                                          
 tag:		[publish]                                    
 header-img: "img/post-bg-wechat.jpg"                                         
 ---     

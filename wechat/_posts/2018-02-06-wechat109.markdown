@@ -2,7 +2,7 @@
 layout:     post                                            
 title:      "20180206-互金行业支付路由实践"                                                                           
 date:       2018-02-06 19:00:00                                                                           
-author:     "PaymentGroup"                                      
+author:     "支付产品架构群"                                      
 tag:		[publish]                                
 header-img: "img/post-bg-wechat.jpg"                                     
 ---   

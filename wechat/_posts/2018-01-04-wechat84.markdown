@@ -2,7 +2,7 @@
 layout:     post                                                
 title:      "20180104-小额贷款的资金渠道[内涵福利]"                                                                               
 date:       2018-01-04 19:00:00                                                                               
-author:     "PaymentGroup"                                          
+author:     "支付产品架构群"                                          
 tag:		[publish]                                    
 header-img: "img/post-bg-wechat.jpg"                                         
 ---

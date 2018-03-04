@@ -2,7 +2,7 @@
 layout:     post 
 title:      "20180211-互联网金融之小额贷款"
 date:       2018-02-11 12:00:00
-author:     "PaymentGroup"
+author:     "支付产品架构群"
 tag:		[publish] 
 ---
 

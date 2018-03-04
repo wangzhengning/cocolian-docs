@@ -2,7 +2,7 @@
 layout:     post                                                
 title:      "20171230-支付系统曾经遇到的坑和解决方案"                                                                               
 date:       2017-12-30 19:00:00                                                                               
-author:     "PaymentGroup"                                          
+author:     "支付产品架构群"                                          
 tag:		[publish]                                    
 header-img: "img/post-bg-wechat.jpg"                                         
 ---

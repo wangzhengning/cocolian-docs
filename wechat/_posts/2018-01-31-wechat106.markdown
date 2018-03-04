@@ -2,7 +2,7 @@
 layout:     post                                            
 title:      "20180131-聚合支付的支付+"                                                                           
 date:       2018-01-31 19:00:00                                                                           
-author:     "PaymentGroup"                                      
+author:     "支付产品架构群"                                      
 tag:		[publish]                                
 header-img: "img/post-bg-wechat.jpg"                                     
 ---   

@@ -2,7 +2,7 @@
 layout:     post 
 title:      "20180205-债券的清结算业务"
 date:       2018-02-05 12:00:00
-author:     "PaymentGroup"
+author:     "支付产品架构群"
 tag:		[publish] 
 header-img: "img/post-bg-wechat.jpg"
 ---

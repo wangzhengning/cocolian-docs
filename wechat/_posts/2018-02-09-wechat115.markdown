@@ -2,7 +2,7 @@
 layout:     post 
 title:      "20180209-代收付系统重构的一些实践"
 date:       2018-02-09 12:00:00
-author:     "PaymentGroup"
+author:     "支付产品架构群"
 tag:		[publish] 
 ---
 

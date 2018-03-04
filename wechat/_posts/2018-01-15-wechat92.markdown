@@ -2,7 +2,7 @@
 layout:     post                                                
 title:      "20180115-B2B资金代理模式的具体应用场景介绍"                                                                               
 date:       2018-01-15 19:00:00  
-author:     "PaymentGroup"      
+author:     "支付产品架构群"      
 tag:		[publish]                                    
 header-img: "img/post-bg-wechat.jpg"        
 ---

@@ -2,7 +2,7 @@
 layout:     post                                                
 title:      "20180101-支付渠道对账及差异处理"                                                                               
 date:       2018-01-01 19:00:00                                                                               
-author:     "PaymentGroup"                                          
+author:     "支付产品架构群"                                          
 tag:		[publish]                                    
 header-img: "img/post-bg-wechat.jpg"                                         
 ---  

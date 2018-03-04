@@ -2,7 +2,7 @@
 layout:     post                                            
 title:      "20180120支付订单处理流程分析"                                                                           
 date:       2018-01-20 19:00:00                                                                           
-author:     "PaymentGroup"                                      
+author:     "支付产品架构群"                                      
 tag:		[publish]                                
 header-img: "img/post-bg-wechat.jpg"                                     
 ---   

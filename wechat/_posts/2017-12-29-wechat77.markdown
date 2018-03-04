@@ -2,7 +2,7 @@
 layout:     post                                                
 title:      "20171229-智能POS"                                                                               
 date:       2017-12-29 19:00:00                                                                               
-author:     "PaymentGroup"                                          
+author:     "支付产品架构群"                                          
 tag:		[publish]                                    
 header-img: "img/post-bg-wechat.jpg"                                         
 ---  

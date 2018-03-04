@@ -2,7 +2,7 @@
 layout:     post                                            
 title:      "20180121-聚合支付与智能POS"                                                                           
 date:       2018-01-21 19:00:00                                                                           
-author:     "PaymentGroup"                                      
+author:     "支付产品架构群"                                      
 tag:		[publish]                                
 header-img: "img/post-bg-wechat.jpg"                                     
 ---   

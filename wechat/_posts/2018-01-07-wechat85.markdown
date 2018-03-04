@@ -2,7 +2,7 @@
 layout:     post                                                
 title:      "20180107-几种身份认证方法及其应用"                                                                               
 date:       2018-01-07 19:00:00                                                                               
-author:     "PaymentGroup"                                          
+author:     "支付产品架构群"                                          
 tag:		[publish]                                    
 header-img: "img/post-bg-wechat.jpg"                                         
 ---

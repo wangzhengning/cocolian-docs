@@ -2,7 +2,7 @@
 layout:     post                                                
 title:      "20180108-第三方支付虚拟账户设计经验"                                                                               
 date:       2018-01-08 19:00:00                                                                               
-author:     "PaymentGroup"                                          
+author:     "支付产品架构群"                                          
 tag:		[publish]                                    
 header-img: "img/post-bg-wechat.jpg"                                         
 ---

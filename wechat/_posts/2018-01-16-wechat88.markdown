@@ -2,7 +2,7 @@
 layout:     post                                                
 title:      "20180116-基于账户存管的招标保证金解决方案"                                                                               
 date:       2018-01-16 19:00:00                                                                               
-author:     "PaymentGroup"                                          
+author:     "支付产品架构群"                                          
 tag:		[publish]                                    
 header-img: "img/post-bg-wechat.jpg"                                         
 ---

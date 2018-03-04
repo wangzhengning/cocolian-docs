@@ -2,7 +2,7 @@
 layout:     post                                            
 title:      "20180128-ERP与电商库存模块的异同"                                                                           
 date:       2018-01-28 19:00:00                                                                           
-author:     "PaymentGroup"                                      
+author:     "支付产品架构群"                                      
 tag:		[publish]                                
 header-img: "img/post-bg-wechat.jpg"                                     
 ---   

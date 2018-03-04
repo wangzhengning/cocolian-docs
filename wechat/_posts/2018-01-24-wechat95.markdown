@@ -2,7 +2,7 @@
 layout:     post                                            
 title:      "20180124-结合个人银行账户分类管理通知谈需求如何落地"                                                                           
 date:       2018-01-24 19:00:00                                                                           
-author:     "PaymentGroup"                                      
+author:     "支付产品架构群"                                      
 tag:		[publish]                                
 header-img: "img/post-bg-wechat.jpg"                                     
 ---   

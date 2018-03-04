@@ -2,7 +2,7 @@
 layout:     post                                                
 title:      "20180111-PCIDSS支付卡行业数据安全标准的合规实践"                                                                               
 date:       2018-01-11 19:00:00  
-author:     "PaymentGroup"      
+author:     "支付产品架构群"      
 tag:		[publish]                                    
 header-img: "img/post-bg-wechat.jpg"        
 ---

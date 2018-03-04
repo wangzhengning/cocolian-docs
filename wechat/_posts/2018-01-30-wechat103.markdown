@@ -2,7 +2,7 @@
 layout:     post                                            
 title:      "20180130-小微商户银联标准二维码接入"                                                                           
 date:       2018-01-30 19:00:00                                                                           
-author:     "PaymentGroup"                                      
+author:     "支付产品架构群"                                      
 tag:		[publish]                                
 header-img: "img/post-bg-wechat.jpg"                                     
 ---   
