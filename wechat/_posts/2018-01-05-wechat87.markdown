@@ -1,7 +1,7 @@
 ---                           
 layout:     post                                                
 title:      "20180105-B2B资金代理业务"                                                                               
-date:       2018-01-09 19:00:00                                                                               
+date:       2018-01-05 19:00:00                                                                               
 author:     "支付产品架构群"                                          
 tag:		[publish]                                    
 header-img: "img/post-bg-wechat.jpg"                                         
