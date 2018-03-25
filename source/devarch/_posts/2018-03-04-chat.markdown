@@ -25,7 +25,7 @@ oracle太贵了
    
 后面都迁移mysql  
    
-> 21:11:26  Z  
+> 21:11:26  Fighting  
    
 支付宝不是OceanBase么  
    
