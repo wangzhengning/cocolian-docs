@@ -7,7 +7,7 @@ date:       2018-02-26 12:00:00
 
 <header class="intro-header">
 	<div class="post-heading">                  
-		<h1>支付产品架构群</h1>                
+		<h1>支付技术架构群</h1>                
 		<ul class="meta">
 			<li><i class="icon-user"></i>聊天原始记录 </li>
 		</ul>                
@@ -16,7 +16,7 @@ date:       2018-02-26 12:00:00
 <!-- Post Content -->
 <article class="post-content"> 
     <div class="post-container"><ul>
-{% assign posts = site.categories['prodarch'] | sort : "date" | reverse %}
+{% assign posts = site.categories['devarch'] | sort : "date" | reverse %}
 {% for post in posts%}
 		<li>		
 		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>，{{ post.content | size }} 
