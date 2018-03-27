@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-01-02-WeChat"
 date:       2018-01-02 12:00:00
-author:     舒俊～产品
+author:     PaymentGroup
 lines:      147 
 tag:		  [chat]
 ---

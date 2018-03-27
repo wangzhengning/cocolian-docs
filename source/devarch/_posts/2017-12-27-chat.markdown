@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2017-12-27-WeChat"
 date:       2017-12-27 12:00:00
-author:     田浩沛-银生宝电子支付公司技术总
+author:     PaymentGroup
 lines:      194 
 tag:		  [chat]
 ---

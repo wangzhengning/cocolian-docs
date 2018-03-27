@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-01-07-WeChat"
 date:       2018-01-07 12:00:00
-author:     suevip-技术经理 畅捷通 北京
+author:     PaymentGroup
 lines:      20 
 tag:		  [chat]
 ---

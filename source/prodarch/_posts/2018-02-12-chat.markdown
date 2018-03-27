@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-02-12-WeChat"
 date:       2018-02-12 12:00:00
-author:     周萍Juntin
+author:     PaymentGroup
 lines:      199 
 tag:		  [chat]
 ---

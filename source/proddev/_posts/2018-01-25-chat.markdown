@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-01-25-WeChat"
 date:       2018-01-25 12:00:00
-author:     田浩沛-银生宝电子支付公司技术总
+author:     Bison-拉卡拉北京网络金融部副总
 lines:      293 
 tag:		  [chat]
 ---

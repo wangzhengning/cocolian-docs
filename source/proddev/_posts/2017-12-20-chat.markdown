@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2017-12-20-WeChat"
 date:       2017-12-20 12:00:00
-author:     stranger-同城旅游支付PL
+author:     PaymentGroup
 lines:      404 
 tag:		  [chat]
 ---

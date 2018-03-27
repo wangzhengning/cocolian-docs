@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-02-05-WeChat"
 date:       2018-02-05 12:00:00
-author:     秋水
+author:     PaymentGroup
 lines:      4 
 tag:		  [chat]
 ---

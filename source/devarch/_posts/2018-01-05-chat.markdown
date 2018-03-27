@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-01-05-WeChat"
 date:       2018-01-05 12:00:00
-author:     韩涛-快捷通渠道经理
+author:     PaymentGroup
 lines:      16 
 tag:		  [chat]
 ---

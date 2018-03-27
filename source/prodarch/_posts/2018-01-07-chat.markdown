@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-01-07-WeChat"
 date:       2018-01-07 12:00:00
-author:     neypal
+author:     PaymentGroup
 lines:      68 
 tag:		  [chat]
 ---

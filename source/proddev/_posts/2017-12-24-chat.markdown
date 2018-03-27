@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2017-12-24-WeChat"
 date:       2017-12-24 12:00:00
-author:     活动小丑-PPTV-产品
+author:     PaymentGroup
 lines:      50 
 tag:		  [chat]
 ---

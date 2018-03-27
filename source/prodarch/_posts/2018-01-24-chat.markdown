@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-01-24-WeChat"
 date:       2018-01-24 12:00:00
-author:     人生若只如初
+author:     陈春瑜
 lines:      345 
 tag:		  [chat]
 ---

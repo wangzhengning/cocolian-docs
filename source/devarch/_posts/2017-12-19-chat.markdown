@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2017-12-19-WeChat"
 date:       2017-12-19 12:00:00
-author:     李秀刚-厦门投融汇CTO
+author:     PaymentGroup
 lines:      165 
 tag:		  [chat]
 ---

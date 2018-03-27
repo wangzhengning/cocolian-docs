@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-02-03-WeChat"
 date:       2018-02-03 12:00:00
-author:     胖民工
+author:     myetta
 lines:      234 
 tag:		  [chat]
 ---

@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-02-18-WeChat"
 date:       2018-02-18 12:00:00
-author:     龚正-滴滴-支付金融
+author:     PaymentGroup
 lines:      2 
 tag:		  [chat]
 ---

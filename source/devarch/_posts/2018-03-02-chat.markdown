@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-03-02-WeChat"
 date:       2018-03-02 12:00:00
-author:     夏志强-快付通-PL
+author:     PaymentGroup
 lines:      6 
 tag:		  [chat]
 ---

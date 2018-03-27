@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-02-21-WeChat"
 date:       2018-02-21 12:00:00
-author:     阿茂-上海百联电商 研发工程师 
+author:     PaymentGroup
 lines:      4 
 tag:		  [chat]
 ---

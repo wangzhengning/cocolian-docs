@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2017-12-18-WeChat"
 date:       2017-12-18 12:00:00
-author:     张泽雄-民生金服 项目总监
+author:     PaymentGroup
 lines:      305 
 tag:		  [chat]
 ---

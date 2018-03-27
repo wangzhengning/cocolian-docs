@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-01-22-WeChat"
 date:       2018-01-22 12:00:00
-author:     熊是老熊
+author:     PaymentGroup
 lines:      20 
 tag:		  [chat]
 ---

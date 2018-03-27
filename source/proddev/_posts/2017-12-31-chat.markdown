@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2017-12-31-WeChat"
 date:       2017-12-31 12:00:00
-author:     槑旭旭 ?微信超級會員
+author:     PaymentGroup
 lines:      110 
 tag:		  [chat]
 ---

@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-03-03-WeChat"
 date:       2018-03-03 12:00:00
-author:     吴生-海辉-支付主管
+author:     PaymentGroup
 lines:      12 
 tag:		  [chat]
 ---

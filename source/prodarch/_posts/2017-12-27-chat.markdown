@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2017-12-27-WeChat"
 date:       2017-12-27 12:00:00
-author:     舒俊～产品
+author:     王松-易宝支付-产品经理-北京
 lines:      568 
 tag:		  [chat]
 ---

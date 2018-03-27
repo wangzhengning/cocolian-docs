@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-03-17-WeChat"
 date:       2018-03-17 12:00:00
-author:     张学刚 京东 计费结算 
+author:     PaymentGroup
 lines:      7 
 tag:		  [chat]
 ---

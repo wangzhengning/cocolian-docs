@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-03-26-WeChat"
 date:       2018-03-26 12:00:00
-author:     闫闯
+author:     余-云支付解决方案与服务
 lines:      182 
 tag:		  [chat]
 ---

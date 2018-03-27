@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-03-08-WeChat"
 date:       2018-03-08 12:00:00
-author:     小七--武爱旗
+author:     PaymentGroup
 lines:      102 
 tag:		  [chat]
 ---

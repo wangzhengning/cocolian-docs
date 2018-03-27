@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-01-26-WeChat"
 date:       2018-01-26 12:00:00
-author:     Kylin
+author:     PaymentGroup
 lines:      137 
 tag:		  [chat]
 ---
