@@ -3,21 +3,6 @@ layout:     source
 title:      "2018-03-18-WeChat"
 date:       2018-03-18 12:00:00
 author:     "PaymentGroup"
+lines:      9 
 tag:		  [chat]
 ---
-> 07:19:37  十年砍柴  
-   
-![2018-03-18 07:19:37](http://static.cocolian.org/img/20180318_071937.png) 
-   
-> 07:19:38  十年砍柴  
-   
-美团在行动  
-   
-> 08:00:54  李雄峰  
-   
-[尴尬]，太没格局了。  
-   
-> 08:03:22  H6H  
-   
-炒作，没意思  
-   

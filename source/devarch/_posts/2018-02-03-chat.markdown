@@ -3,26 +3,6 @@ layout:     source
 title:      "2018-02-03-WeChat"
 date:       2018-02-03 12:00:00
 author:     "PaymentGroup"
+lines:      6 
 tag:		  [chat]
-header-img: "img/post-bg-wechat.jpg"
 ---
-> 09:03:01  李雄峰  
-   
-![2018-02-03 09:03:01](http://wechat.lixf.cn/img/20180203_090301.png) 
-   
-> 09:03:11  李雄峰  
-   
-看历史分享  
-   
-> 09:04:13  十年砍柴  
-   
-[强]  
-   
-> 14:31:37  张百音  
-   
-[强]  
-   
-> 14:51:42  张问-平安付  
-   
-[强]  
-   

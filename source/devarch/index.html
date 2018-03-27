@@ -19,7 +19,7 @@ date:       2018-02-26 12:00:00
 {% assign posts = site.categories['devarch'] | sort : "date" | reverse %}
 {% for post in posts%}
 		<li>		
-		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>，{{ post.content | size }} 
+		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>，<i class="align-justify"/> {{post.lines}},<i class="file-alt"/>  {{ post.content | size }} 
 		</li>
 {% endfor %}
 	</ul></div>
