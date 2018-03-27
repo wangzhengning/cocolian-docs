@@ -3,7 +3,7 @@ layout:     source
 title:      "2018-03-04-WeChat"
 date:       2018-03-04 12:00:00
 author:     PaymentGroup
-lines:      23 
+lines:      29 
 tag:		  [chat]
 ---
 > 20:54:06  徐凌云  
@@ -62,17 +62,29 @@ openresty
    
 mysql不少  
    
+> 21:10:59  徐凌云  
+   
+支付宝后来没改成mysql  
+   
 > 21:10:59  于乐天  
    
 db2  
    
-> 21:10:59  徐凌云  
+> 21:11:00  沪上十三少  
+   
+db2  
+   
+> 21:11:00  徐凌云  
    
 支付宝后来没改成mysql  
    
 > 21:11:13  徐凌云  
    
 oracle太贵了  
+   
+> 21:11:15  沪上十三少  
+   
+后面都迁移mysql  
    
 > 21:11:15  于乐天  
    
@@ -82,11 +94,23 @@ oracle太贵了
    
 支付宝不是OceanBase么  
    
+> 21:11:26  Fighting  
+   
+支付宝不是OceanBase么  
+   
 > 21:21:25  徐凌云  
    
 oceanbase2015年开始切的  
    
+> 21:21:26  徐凌云  
+   
+oceanbase2015年开始切的  
+   
 > 21:21:52  徐凌云  
+   
+之前基本是mysql和部分oracle  
+   
+> 21:21:54  徐凌云  
    
 之前基本是mysql和部分oracle  
    

@@ -3,14 +3,22 @@ layout:     source
 title:      "2017-12-17-WeChat"
 date:       2017-12-17 12:00:00
 author:     PaymentGroup
-lines:      11 
+lines:      18 
 tag:		  [chat]
 ---
 > 09:33:07  Yezhiwei  
    
 两行代码即可实现User实体类的RESTFul风格的所有接口。  
    
+> 09:33:07  Yezhiwei-融汇金信-技术-北京  
+   
+两行代码即可实现User实体类的RESTFul风格的所有接口。  
+   
 > 09:33:08  Yezhiwei  
+   
+Spring-Data-REST轻松搞定RESTfulAPI  
+   
+> 09:33:08  Yezhiwei-融汇金信-技术-北京  
    
 Spring-Data-REST轻松搞定RESTfulAPI  
    
@@ -26,6 +34,10 @@ Spring-Data-REST轻松搞定RESTfulAPI
    
 Feed系统架构与Feed缓存模型  
    
+> 09:41:10  我  
+   
+[强]  
+   
 > 09:41:11  凤凰牌老熊-群主  
    
 [强]  
@@ -34,7 +46,15 @@ Feed系统架构与Feed缓存模型
    
 [强]  
    
+> 09:46:23  Yezhiwei-融汇金信-技术-北京  
+   
+[强]  
+   
 > 19:49:10  宋小宝-掌众-交易  
+   
+有没有招前端工程师的  
+   
+> 19:49:10  时光来过  
    
 有没有招前端工程师的  
    
@@ -50,11 +70,23 @@ Feed系统架构与Feed缓存模型
    
 我帮朋友问的  
    
+> 19:59:24  时光来过  
+   
+我帮朋友问的  
+   
 > 19:59:43  宋小宝-掌众-交易  
    
 [握手]  
    
+> 19:59:43  时光来过  
+   
+[握手]  
+   
 > 20:00:07  宋小宝-掌众-交易  
+   
+北京  
+   
+> 20:00:07  时光来过  
    
 北京  
    

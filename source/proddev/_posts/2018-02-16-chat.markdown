@@ -3,7 +3,7 @@ layout:     source
 title:      "2018-02-16-WeChat"
 date:       2018-02-16 12:00:00
 author:     PaymentGroup
-lines:      24 
+lines:      25 
 tag:		  [chat]
 ---
 > 00:06:33  谭志晖-开联通副总  
@@ -113,6 +113,10 @@ tag:		  [chat]
 > 11:45:24  韩财光  
    
 第一个[呲牙]  
+   
+> 11:45:37  Dilys  
+   
+谢谢老板 老板新年快乐  
    
 > 11:45:37  Dilys-宜信-清结算  
    
