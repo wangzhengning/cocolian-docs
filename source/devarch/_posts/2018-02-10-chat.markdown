@@ -6,3 +6,19 @@ author:     "PaymentGroup"
 lines:      4 
 tag:		  [chat]
 ---
+> 10:31:47  Mr.张  
+   
+@bill在飞?iOS微信先访问iturns唤起微信…  
+   
+> 11:26:43  A??&    kyle  
+   
+微信提供公众号和H5接口  
+   
+> 11:27:40  A??&    kyle  
+   
+根据不同的内核调用不同的接口就好了  
+   
+> 11:30:33  A??&    kyle  
+   
+H5的体验比较差，推荐使用APP和公众号接口  
+   
