@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2017-12-31-WeChat"
 date:       2017-12-31 12:00:00
-author:     "PaymentGroup"
-lines:      124 
+author:     于江宁-银联电子PM
+lines:      118 
 tag:		  [chat]
 ---
 > 01:35:24  肖良光  

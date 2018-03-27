@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-10-WeChat"
 date:       2018-02-10 12:00:00
-author:     "PaymentGroup"
-lines:      218 
+author:     龚晓冬-银商账户-产品-上海
+lines:      214 
 tag:		  [chat]
 ---
 > 00:32:41  田浩沛-银生宝电子支付公司技术总  

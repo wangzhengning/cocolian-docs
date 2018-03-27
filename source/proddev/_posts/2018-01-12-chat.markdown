@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-01-12-WeChat"
 date:       2018-01-12 12:00:00
-author:     "PaymentGroup"
-lines:      128 
+author:     龚晓冬-银商账户-产品-上海
+lines:      118 
 tag:		  [chat]
 ---
 > 07:25:26  张超千-点融网高级PM  

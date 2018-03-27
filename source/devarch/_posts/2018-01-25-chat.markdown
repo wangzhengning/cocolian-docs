@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-01-25-WeChat"
 date:       2018-01-25 12:00:00
-author:     "PaymentGroup"
-lines:      73 
+author:     王伟
+lines:      71 
 tag:		  [chat]
 ---
 > 10:47:00  胡桥-资邦金服-财务核心  

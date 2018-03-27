@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2017-12-22-WeChat"
 date:       2017-12-22 12:00:00
-author:     "PaymentGroup"
-lines:      1136 
+author:     田浩沛-银生宝电子支付公司技术总
+lines:      1106 
 tag:		  [chat]
 ---
 > 07:38:08  Tim-魔线科技-产品总监  

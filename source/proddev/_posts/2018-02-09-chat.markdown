@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-09-WeChat"
 date:       2018-02-09 12:00:00
-author:     "PaymentGroup"
-lines:      469 
+author:     龚晓冬-银商账户-产品-上海
+lines:      439 
 tag:		  [chat]
 ---
 > 08:01:07  武伟会-国家电网新能源-PM  

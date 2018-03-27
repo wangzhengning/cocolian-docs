@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2017-12-19-WeChat"
 date:       2017-12-19 12:00:00
-author:     "PaymentGroup"
-lines:      176 
+author:     李秀刚-厦门投融汇CTO
+lines:      165 
 tag:		  [chat]
 ---
 > 00:03:55  阿茂-上海百联电商 研发工程师   

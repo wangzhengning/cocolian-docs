@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-01-06-WeChat"
 date:       2018-01-06 12:00:00
-author:     "PaymentGroup"
-lines:      59 
+author:     龚晓冬-银商账户-产品-上海
+lines:      53 
 tag:		  [chat]
 ---
 > 00:15:11  槑旭旭 ?微信超級會員  

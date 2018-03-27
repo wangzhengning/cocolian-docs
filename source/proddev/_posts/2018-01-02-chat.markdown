@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-01-02-WeChat"
 date:       2018-01-02 12:00:00
-author:     "PaymentGroup"
-lines:      366 
+author:     田浩沛-银生宝电子支付公司技术总
+lines:      351 
 tag:		  [chat]
 ---
 > 00:19:16  mfb-中科软支付产品负责人  

@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-03-13-WeChat"
 date:       2018-03-13 12:00:00
-author:     "PaymentGroup"
-lines:      368 
+author:     龚晓冬-银商账户-产品-上海
+lines:      344 
 tag:		  [chat]
 ---
 > 06:47:43  李奔-快钱-支付PM  

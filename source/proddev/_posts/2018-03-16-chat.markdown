@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-03-16-WeChat"
 date:       2018-03-16 12:00:00
-author:     "PaymentGroup"
-lines:      212 
+author:     张泽雄-民生金服 项目总监
+lines:      189 
 tag:		  [chat]
 ---
 > 00:57:01  槑旭旭 ?微信超級會員  

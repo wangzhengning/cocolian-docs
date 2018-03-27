@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-03-03-WeChat"
 date:       2018-03-03 12:00:00
-author:     "PaymentGroup"
-lines:      93 
+author:     龚晓冬-银商账户-产品-上海
+lines:      90 
 tag:		  [chat]
 ---
 > 00:37:00  刘洪明-便利蜂支付  

@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-01-19-WeChat"
 date:       2018-01-19 12:00:00
-author:     "PaymentGroup"
-lines:      26 
+author:     宋小宝-掌众-交易
+lines:      22 
 tag:		  [chat]
 ---
 > 06:54:11  李钦珑-深圳优讯-PM  

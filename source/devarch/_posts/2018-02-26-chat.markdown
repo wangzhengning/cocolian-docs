@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-26-WeChat"
 date:       2018-02-26 12:00:00
-author:     "PaymentGroup"
-lines:      57 
+author:     心有灵浠
+lines:      50 
 tag:		  [chat]
 ---
 > 08:05:47  江冬勤+时代兰廷+CTO  

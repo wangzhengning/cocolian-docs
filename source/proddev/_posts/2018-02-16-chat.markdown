@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-16-WeChat"
 date:       2018-02-16 12:00:00
-author:     "PaymentGroup"
-lines:      55 
+author:     韩财光
+lines:      24 
 tag:		  [chat]
 ---
 > 00:06:33  谭志晖-开联通副总  

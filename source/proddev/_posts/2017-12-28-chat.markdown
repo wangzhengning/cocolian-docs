@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2017-12-28-WeChat"
 date:       2017-12-28 12:00:00
-author:     "PaymentGroup"
-lines:      434 
+author:     龚晓冬-银商账户-产品-上海
+lines:      408 
 tag:		  [chat]
 ---
 > 00:02:05  心有灵浠  

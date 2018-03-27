@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-03-15-WeChat"
 date:       2018-03-15 12:00:00
-author:     "PaymentGroup"
-lines:      28 
+author:     王志华 青海银行 负责支付相关系统
+lines:      24 
 tag:		  [chat]
 ---
 > 07:32:12  王志华 青海银行 负责支付相关系统  

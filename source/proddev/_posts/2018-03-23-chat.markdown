@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-03-23-WeChat"
 date:       2018-03-23 12:00:00
-author:     "PaymentGroup"
-lines:      129 
+author:     田浩沛-银生宝电子支付公司技术总
+lines:      112 
 tag:		  [chat]
 ---
 > 00:02:38  胡圣 支付产品经理 猪八戒网  

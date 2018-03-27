@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-01-12-WeChat"
 date:       2018-01-12 12:00:00
-author:     "PaymentGroup"
-lines:      37 
+author:     邵阳-秒贷金-支付开发
+lines:      34 
 tag:		  [chat]
 ---
 > 19:44:19  岩天蘑菇街技术负责人  

@@ -19,7 +19,7 @@ date:       2018-02-26 12:00:00
 {% assign posts = site.categories['prodarch'] | sort : "date" | reverse %}
 {% for post in posts%}
 		<li>		
-		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>，{{ post.content | size }} 
+		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>，<i class="icon-user"></i> {{ post.author }}, <i class="icon-align-justify"></i> {{ post.lines }}
 		</li>
 {% endfor %}
 	</ul></div>

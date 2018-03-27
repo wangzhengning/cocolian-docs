@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-26-WeChat"
 date:       2018-02-26 12:00:00
-author:     "PaymentGroup"
-lines:      141 
+author:     龚晓冬-银商账户-产品-上海
+lines:      137 
 tag:		  [chat]
 ---
 > 08:32:52  龚晓冬-银商账户-产品-上海  

@@ -2,7 +2,7 @@
 layout:     source 
 title:      "2018-03-24-WeChat"
 date:       2018-03-24 12:00:00
-author:     "PaymentGroup"
+author:     王念真
 lines:      12 
 tag:		  [chat]
 ---

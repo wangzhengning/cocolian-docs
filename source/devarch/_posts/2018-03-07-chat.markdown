@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-03-07-WeChat"
 date:       2018-03-07 12:00:00
-author:     "PaymentGroup"
-lines:      20 
+author:     上协
+lines:      19 
 tag:		  [chat]
 ---
 > 09:56:32  胡桥-资邦金服-财务核心  

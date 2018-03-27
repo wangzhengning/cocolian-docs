@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-03-08-WeChat"
 date:       2018-03-08 12:00:00
-author:     "PaymentGroup"
-lines:      146 
+author:     龚晓冬-银商账户-产品-上海
+lines:      140 
 tag:		  [chat]
 ---
 > 06:53:57  张泽雄-民生金服 项目总监  

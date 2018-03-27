@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-26-WeChat"
 date:       2018-02-26 12:00:00
-author:     "PaymentGroup"
-lines:      258 
+author:     前进
+lines:      249 
 tag:		  [chat]
 ---
 > 09:06:21  管静  

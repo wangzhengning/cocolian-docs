@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2017-12-23-WeChat"
 date:       2017-12-23 12:00:00
-author:     "PaymentGroup"
-lines:      6 
+author:     邹刘名
+lines:      3 
 tag:		  [chat]
 ---
 > 14:37:07  余海伟-融数金服-应用架构  

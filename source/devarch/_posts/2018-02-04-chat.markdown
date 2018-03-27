@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-04-WeChat"
 date:       2018-02-04 12:00:00
-author:     "PaymentGroup"
-lines:      88 
+author:     田浩沛-银生宝电子支付公司技术总
+lines:      86 
 tag:		  [chat]
 ---
 > 20:15:40  Leo Qin  

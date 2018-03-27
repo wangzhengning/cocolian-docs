@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-11-WeChat"
 date:       2018-02-11 12:00:00
-author:     "PaymentGroup"
-lines:      38 
+author:     槑旭旭 ?微信超級會員
+lines:      30 
 tag:		  [chat]
 ---
 > 07:17:09  WillYang-嘉联支付-架构师  

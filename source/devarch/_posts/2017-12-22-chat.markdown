@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2017-12-22-WeChat"
 date:       2017-12-22 12:00:00
-author:     "PaymentGroup"
-lines:      231 
+author:     田浩沛-银生宝电子支付公司技术总
+lines:      224 
 tag:		  [chat]
 ---
 > 11:45:39  阿茂-上海百联电商 研发工程师   

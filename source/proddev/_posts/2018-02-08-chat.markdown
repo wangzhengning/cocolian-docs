@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-08-WeChat"
 date:       2018-02-08 12:00:00
-author:     "PaymentGroup"
-lines:      801 
+author:     龚晓冬-银商账户-产品-上海
+lines:      756 
 tag:		  [chat]
 ---
 > 05:47:07  pangning-安邦集团收付团队研发  

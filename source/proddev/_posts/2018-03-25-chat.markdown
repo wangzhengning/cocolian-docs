@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-03-25-WeChat"
 date:       2018-03-25 12:00:00
-author:     "PaymentGroup"
-lines:      30 
+author:     庄浩田-51信用卡支付清算产品
+lines:      26 
 tag:		  [chat]
 ---
 > 12:47:55  龚晓冬-银商账户-产品-上海  

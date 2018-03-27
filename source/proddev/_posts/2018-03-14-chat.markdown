@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-03-14-WeChat"
 date:       2018-03-14 12:00:00
-author:     "PaymentGroup"
-lines:      204 
+author:     龚晓冬-银商账户-产品-上海
+lines:      194 
 tag:		  [chat]
 ---
 > 00:01:06  王向东-卡联科技-PM  

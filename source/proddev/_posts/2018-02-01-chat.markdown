@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-01-WeChat"
 date:       2018-02-01 12:00:00
-author:     "PaymentGroup"
-lines:      145 
+author:     龚晓冬-银商账户-产品-上海
+lines:      138 
 tag:		  [chat]
 ---
 > 00:03:14  淡风林-中移动杭州研发中心PM  

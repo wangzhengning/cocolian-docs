@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-25-WeChat"
 date:       2018-02-25 12:00:00
-author:     "PaymentGroup"
-lines:      27 
+author:     hjywjgs～朱文义
+lines:      24 
 tag:		  [chat]
 ---
 > 17:55:55  我  

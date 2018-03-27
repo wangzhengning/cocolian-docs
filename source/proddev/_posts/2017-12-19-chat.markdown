@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2017-12-19-WeChat"
 date:       2017-12-19 12:00:00
-author:     "PaymentGroup"
-lines:      175 
+author:     张泽雄-民生金服 项目总监
+lines:      163 
 tag:		  [chat]
 ---
 > 09:07:20  钟文帅-移付宝科技-产品经理  

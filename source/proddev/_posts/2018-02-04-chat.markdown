@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-04-WeChat"
 date:       2018-02-04 12:00:00
-author:     "PaymentGroup"
-lines:      271 
+author:     田浩沛-银生宝电子支付公司技术总
+lines:      249 
 tag:		  [chat]
 ---
 > 00:00:25  张泽雄-民生金服 项目总监  

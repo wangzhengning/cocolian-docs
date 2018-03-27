@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-02-27-WeChat"
 date:       2018-02-27 12:00:00
-author:     "PaymentGroup"
-lines:      22 
+author:     张学鸿 宜信 开发 支付结算 
+lines:      20 
 tag:		  [chat]
 ---
 > 10:30:51  张学鸿 宜信 开发 支付结算   

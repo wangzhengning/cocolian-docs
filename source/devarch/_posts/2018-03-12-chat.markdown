@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-03-12-WeChat"
 date:       2018-03-12 12:00:00
-author:     "PaymentGroup"
-lines:      34 
+author:     钟鸿敏
+lines:      31 
 tag:		  [chat]
 ---
 > 13:00:37  秋水  

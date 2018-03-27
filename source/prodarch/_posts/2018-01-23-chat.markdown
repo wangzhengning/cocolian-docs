@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-01-23-WeChat"
 date:       2018-01-23 12:00:00
-author:     "PaymentGroup"
-lines:      183 
+author:     龚晓冬-银商账户-产品-上海
+lines:      169 
 tag:		  [chat]
 ---
 > 10:27:03  小七--武爱旗  

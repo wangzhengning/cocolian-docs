@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-03-05-WeChat"
 date:       2018-03-05 12:00:00
-author:     "PaymentGroup"
-lines:      117 
+author:     龚晓冬-银商账户-产品-上海
+lines:      110 
 tag:		  [chat]
 ---
 > 07:58:39  钟文帅-移付宝科技-产品经理  

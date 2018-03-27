@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-03-04-WeChat"
 date:       2018-03-04 12:00:00
-author:     "PaymentGroup"
-lines:      45 
+author:     田浩沛-银生宝电子支付公司技术总
+lines:      41 
 tag:		  [chat]
 ---
 > 08:57:14  龚正-滴滴-支付金融  

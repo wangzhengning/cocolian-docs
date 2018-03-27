@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-01-19-WeChat"
 date:       2018-01-19 12:00:00
-author:     "PaymentGroup"
-lines:      148 
+author:     田浩沛-银生宝电子支付公司技术总
+lines:      130 
 tag:		  [chat]
 ---
 > 06:54:06  李钦珑-深圳优讯-PM  

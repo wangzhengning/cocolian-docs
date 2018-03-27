@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2017-12-29-WeChat"
 date:       2017-12-29 12:00:00
-author:     "PaymentGroup"
-lines:      318 
+author:     龚晓冬-银商账户-产品-上海
+lines:      292 
 tag:		  [chat]
 ---
 > 08:24:58  孔晓光 丰瑞祥CTO  

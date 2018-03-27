@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2017-12-18-WeChat"
 date:       2017-12-18 12:00:00
-author:     "PaymentGroup"
-lines:      196 
+author:     田浩沛-银生宝电子支付公司技术总
+lines:      184 
 tag:		  [chat]
 ---
 > 00:01:18  郭峰-钱方好近支付PM  

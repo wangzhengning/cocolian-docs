@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2017-12-30-WeChat"
 date:       2017-12-30 12:00:00
-author:     "PaymentGroup"
-lines:      195 
+author:     Bison-拉卡拉北京网络金融部副总
+lines:      176 
 tag:		  [chat]
 ---
 > 00:06:28  槑旭旭 ?微信超級會員  

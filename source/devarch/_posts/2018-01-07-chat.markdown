@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-01-07-WeChat"
 date:       2018-01-07 12:00:00
-author:     "PaymentGroup"
-lines:      6 
+author:     钟鸿敏
+lines:      3 
 tag:		  [chat]
 ---
 > 08:51:09  我  

@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2017-12-23-WeChat"
 date:       2017-12-23 12:00:00
-author:     "PaymentGroup"
-lines:      68 
+author:     龚晓冬-银商账户-产品-上海
+lines:      59 
 tag:		  [chat]
 ---
 > 00:24:12  Max  

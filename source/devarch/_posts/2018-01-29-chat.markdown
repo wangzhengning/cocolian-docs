@@ -2,8 +2,8 @@
 layout:     source 
 title:      "2018-01-29-WeChat"
 date:       2018-01-29 12:00:00
-author:     "PaymentGroup"
-lines:      147 
+author:     田浩沛-银生宝电子支付公司技术总
+lines:      142 
 tag:		  [chat]
 ---
 > 09:54:58  涂智明-柯蓝开发主管  
