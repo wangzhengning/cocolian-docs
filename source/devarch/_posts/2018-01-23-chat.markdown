@@ -3,7 +3,7 @@ layout:     source
 title:      "2018-01-23-WeChat"
 date:       2018-01-23 12:00:00
 author:     PaymentGroup
-lines:      7 
+lines:      5 
 tag:		  [chat]
 ---
 > 20:33:58  MAXZUO  
@@ -14,15 +14,7 @@ tag:		  [chat]
    
 没错  
    
-> 20:35:50  Ping++ micheal 上海 支付   
-   
-没错  
-   
 > 20:35:59  Fighting  
-   
-[机智]你值得拥有  
-   
-> 20:35:59  Ping++ micheal 上海 支付   
    
 [机智]你值得拥有  
    

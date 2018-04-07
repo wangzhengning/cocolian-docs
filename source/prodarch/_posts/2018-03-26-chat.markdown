@@ -494,7 +494,7 @@ https://docs.microsoft.com/en-us/azure/service-fabric/
    
 @袁亮-信邦-架构-杭州 请教一下，gRPC支持模块的热插拔吗？  
    
-> 10:53:10  Gone with the wind  
+> 10:53:10  gone with the wind  
    
 我对微服务只停留在简单使用层面。它比起我们之前用的dubbo/hsf，有什么优势么？  
    
@@ -502,7 +502,7 @@ https://docs.microsoft.com/en-us/azure/service-fabric/
    
 两者没有什么必然关系吧  
    
-> 10:56:49  Gone with the wind  
+> 10:56:49  gone with the wind  
    
 对Istio不太了解，它不是一个soa的解决方案么？帮我们rpc功能和管理？  
    
@@ -558,7 +558,7 @@ esb可以通过消息系统替代
    
 然后改成多进程后，对rpc，消息的需求和依赖程度  
    
-> 11:10:11  Gone with the wind  
+> 11:10:11  gone with the wind  
    
 早期的有esb，到后来没有了。 dubbo时就没有了。 服务发现（zk）、负载均衡、请求路由、故障处理、股则配置、流量控制，熔断处理，全系统日志链路也都有了。 语言绑定确实是个问题，还有公司内部语言统一，个别项目使用thrift。  
    
@@ -570,7 +570,7 @@ esb可以通过消息系统替代
    
 rpc算是soa的一个发展阶段是吧？  
    
-> 11:13:46  Gone with the wind  
+> 11:13:46  gone with the wind  
    
 阿里的帮助文档是这么说的，我的眼界还没到框架层次，最多就是看看代码和实现思路。  
    
@@ -578,7 +578,7 @@ rpc算是soa的一个发展阶段是吧？
    
 @pnfee-人人车-支付财务开发?今天的干货也不少[憨笑]  
    
-> 11:14:56  Gone with the wind  
+> 11:14:56  gone with the wind  
    
 以前阿里有本介绍他们搭建中台的思路也是这意思，也有可能是我不懂误读  
    
@@ -586,7 +586,7 @@ rpc算是soa的一个发展阶段是吧？
    
 soa跟corba的思路相承，把业务模型耦合到远程服务，是一个很差的设计，dubbo就很明显，微服务来源于restful，最重要的解耦了业务和远程服务，更方便一点。  
    
-> 11:15:22  Gone with the wind  
+> 11:15:22  gone with the wind  
    
 我就跟着你们学[呲牙]  
    
@@ -594,11 +594,11 @@ soa跟corba的思路相承，把业务模型耦合到远程服务，是一个很
    
 soa内部転换协议，跟语言也没多大关系  
    
-> 11:20:45  Gone with the wind  
+> 11:20:45  gone with the wind  
    
 ![2018-03-26 11:20:45](http://static.cocolian.org/img/20180326_112045.png) 
    
-> 11:20:45  Gone with the wind  
+> 11:20:45  gone with the wind  
    
 我对soa的理解来自下面这段，对微服务真是不懂，但我业务知识还很薄弱，跟需要补，就先把精力放在业务上了  
    
@@ -606,7 +606,7 @@ soa内部転换协议，跟语言也没多大关系
    
 微服务 也只是推荐restful   具体用dubbo和http还是可以权衡的  
    
-> 11:22:48  Gone with the wind  
+> 11:22:48  gone with the wind  
    
 有好的微服务思想的书 公众号 论坛推荐么[呲牙]  
    
@@ -1034,7 +1034,7 @@ https://blog.csdn.net/piqianming/article/details/79600848
    
 @lg-快手-技术-北京?首先B应用的帐户是否是第三方的账户体系？  
    
-> 21:48:29  Gone with the wind  
+> 21:48:29  gone with the wind  
    
 不进b应用，Ｂ账号的钱从哪体现？  
    

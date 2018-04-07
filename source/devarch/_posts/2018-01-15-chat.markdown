@@ -3,7 +3,7 @@ layout:     source
 title:      "2018-01-15-WeChat"
 date:       2018-01-15 12:00:00
 author:     PaymentGroup
-lines:      21 
+lines:      16 
 tag:		  [chat]
 ---
 > 12:22:27  huh!  
@@ -15,10 +15,6 @@ tag:		  [chat]
 ![2018-01-15 12:22:28](http://static.cocolian.org/img/20180115_122228.png) 
    
 > 12:35:32  吴松福  
-   
-把第一行去掉  
-   
-> 12:35:32  吴松福-投融汇-支付平台分账系统  
    
 把第一行去掉  
    
@@ -58,25 +54,13 @@ ok，问题已解决， mvn clean package -Dmave.skip.test=true -Dspring.profile
    
 ok感谢  
    
-> 16:45:39  泽西  
-   
-toc_biz  
-   
 > 16:45:39  泽西-趋恒-架构师  
    
 toc_biz  
    
-> 19:25:32  Yezhiwei  
-   
-最近对Spark特别感兴趣[嘿哈]，总结了一下[勾引]  
-   
 > 19:25:32  Yezhiwei-融汇金信-技术-北京  
    
 最近对Spark特别感兴趣[嘿哈]，总结了一下[勾引]  
-   
-> 19:25:33  Yezhiwei  
-   
-Spark快速入门-3-Spark的算子总结  
    
 > 19:25:33  Yezhiwei-融汇金信-技术-北京  
    
@@ -90,15 +74,7 @@ Spark快速入门-3-Spark的算子总结
    
 是真的吗  
    
-> 22:52:33  高水平-互金平台架构师  
-   
-是真的吗  
-   
 > 22:52:45  高水平  
-   
-有去过这里没  
-   
-> 22:52:45  高水平-互金平台架构师  
    
 有去过这里没  
    
