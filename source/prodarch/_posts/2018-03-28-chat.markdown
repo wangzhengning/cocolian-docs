@@ -6,7 +6,7 @@ author:     PaymentGroup
 lines:      272 
 tag:		  [chat]
 ---
-> 00:01:15  Gone with the wind  
+> 00:01:15  gone with the wind  
    
 我的支付交易系统的收款单记录和你的清算流水很像  
    

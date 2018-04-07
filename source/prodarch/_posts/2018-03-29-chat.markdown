@@ -322,7 +322,7 @@ https://github.com/leogoing/topibs
    
 签到  
    
-> 19:04:32  Gone with the wind  
+> 19:04:32  gone with the wind  
    
 签到  
    
@@ -630,11 +630,11 @@ T1业务专门单列T1子账户，跟T0子账户作独立区分
    
 不是很理解，代付一定走银联吗  
    
-> 21:50:10  Gone with the wind  
+> 21:50:10  gone with the wind  
    
 @??项志文-平安互金-产品-深圳  项总，我咨询一个小白的问题，这里为什么不是直接冻结T0账户的资金，然后代付成功再划拨到收款账户，而是需要过一下过渡户呢？  
    
-> 21:50:11  Gone with the wind  
+> 21:50:11  gone with the wind  
    
 ![2018-03-29 21:50:11](http://static.cocolian.org/img/20180329_215011.png) 
    
@@ -654,7 +654,7 @@ T1业务专门单列T1子账户，跟T0子账户作独立区分
    
 @??项志文-平安互金-产品-深圳?你们的垫资做授信吗？是否占用风险资产  
    
-> 21:57:57  Gone with the wind  
+> 21:57:57  gone with the wind  
    
 [抱拳]谢谢。  
    
