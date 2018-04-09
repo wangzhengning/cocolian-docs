@@ -1,6 +1,6 @@
 ---  
 layout:     post   
-title:      "20180407-区块链基础知识"  
+title:      "20180407-区块链基础及应用分析"  
 date:       2018-04-07 12:00:00  
 author:     "支付产品架构群"  
 tag:		[publish]   
