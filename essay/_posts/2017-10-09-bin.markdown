@@ -7,4 +7,5 @@ author:     "shamphone"
 chapter:	"8.2"
 ---
 
-- [2017年12月10日版卡表](http://static.cocolian.org/attach/2017年12月10日版卡表.xls)
+- [2017年12月10日版卡表](http://static.cocolian.org/attach/2017年12月10日版卡表.xls)  
+- [2018年04月10日版卡表](http://static.cocolian.org/attach/2018年04月10日版卡表.xls)  
