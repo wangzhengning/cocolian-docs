@@ -6,7 +6,9 @@ layout: default
 <ul class="post-list">
 {% assign posts = site.categories['dev'] | sort:'chapter'%}
 {% for post in posts %}
+{% if post.categories contains page.categories[1]%}
 <li>{{ post.chapter}}.  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% endif %}
 {% endfor %}
 </ul>
 </aside>
