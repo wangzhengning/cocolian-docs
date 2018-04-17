@@ -4,7 +4,7 @@ title: "安装Apache Thrift"
 subtitle: "Dev Config"
 date: 2017-12-04 12:00:00
 author: "shamphone"
-chapter: "1"
+chapter: "04"
 catalog: true
 tag: [devenv]
 ---

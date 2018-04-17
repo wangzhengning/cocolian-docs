@@ -1,0 +1,25 @@
+---
+layout: default
+title: "开发者指南"
+description: "开发者指南"
+---
+<header class="intro-header">
+	<div class="post-heading">                  
+		<h1>{{ page.title }}</h1>                
+		<ul class="meta">
+			<li><i class="icon-sitemap"></i>现代支付系统设计 </li>
+			<li><i class="icon-user"></i>凤凰牌老熊 </li>
+			<li><i class="icon-time"></i>2016-5-1</li>
+		</ul>                
+	</div>           
+</header>
+
+<article class="post-content"> 
+    <!-- Post Container -->
+    <div class="post-container">
+<ul class="post-list" style="list-style:none">>
+{% assign posts = site.categories['env'] | sort : "chapter" %}
+{% for post in posts%}
+	<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.chapter }}  {{ post.title }}</a> </li>
+{% endfor %}
+</ul>

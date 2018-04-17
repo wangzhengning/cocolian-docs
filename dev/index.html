@@ -1,24 +1,46 @@
 ---
 layout: default
-title: "开发者指南"
-description: "开发者指南"
+title: "开发指南"
 ---
+
 <header class="intro-header">
 	<div class="post-heading">                  
 		<h1>{{ page.title }}</h1>                
 		<ul class="meta">
-			<li><i class="icon-sitemap"></i>现代支付系统设计 </li>
+			<li><i class="icon-sitemap"></i>开发指南</li>
 			<li><i class="icon-user"></i>凤凰牌老熊 </li>
-			<li><i class="icon-time"></i>2016-5-1</li>
+			<li><i class="icon-time"></i>2018-4-17</li>
 		</ul>                
 	</div>           
 </header>
 
-<article class="post-content"> 
-    <!-- Post Container -->
-    <div class="post-container">
-<ul class="post-list">
-{% for post in site.categories['dev'] reversed%}
-<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="session_list">
+			<section><header><a href="env/">开发指南</a></header>
+			<article>
+			<ul style="list-style:none">
+		{% assign posts = site.categories['env'] | sort : "chapter" %}
+		{% for post in posts%}
+			<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.chapter }}  {{ post.title }}</a> </li>
+		{% endfor %}
+			</ul>
+			</article>
+			</section>
+		</div>        
+
+		<div class="session_list">
+			<section><header><a href="infra/">运维指南</a></header>
+			<article>
+			<ul style="list-style:none">
+		{% assign posts = site.categories['infra'] | sort : "chapter" %}
+		{% for post in posts %}
+			<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.chapter }}  {{ post.title }}</a> </li>
+		{% endfor %}
+			</ul>
+			</article>
+			</section>
+		</div>        
+	</div>
+</div>

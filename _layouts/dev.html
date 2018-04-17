@@ -4,7 +4,7 @@ layout: default
 
 <aside class="content-aside">
 <ul class="post-list">
-{% assign posts = site.categories['dev'] | sort:'chapter'%}
+{% assign posts = site.categories[post.categories[2]] | sort:'chapter'%}
 {% for post in posts %}
 {% unless  post.status  %}
 <li>{{ post.chapter}}.  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>

@@ -1,12 +1,9 @@
 ---
-layout: post
+layout: dev
 title: "安装文档编制工具-Jekyll"
-subtitle: "Dev Config"
 date: 2017-12-06 12:00:00
 author: "shamphone"
-chapter: "1"
-catalog: true
-tag: [devenv]
+chapter: "06"
 ---
 
 ## 安装 Jekyll
