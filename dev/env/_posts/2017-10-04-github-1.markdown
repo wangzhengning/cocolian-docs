@@ -24,9 +24,9 @@ Pull请求是通过fork一个新的代码库用来独立开发，并将变更贡
 GitHub有两种Pull请求方式：
 - Fork & Pull 方式 – 用于在公共库中，我们没有推送(push)权限。
 - 共享库方式 – 用于私有代码仓库，我们有推送(push)权限。这种情况下没有必要进行fork。
-Jigsaw项目采用Fork & Pull的工作流程。 下面的工作流程是在Jigsaw主库和个人工作库之间的Fork-Pull流程：
+Cocolian项目采用Fork & Pull的工作流程。 下面的工作流程是在Cocolian主库和个人工作库之间的Fork-Pull流程：
 
-进入GitHub的[Jigsaw代码库 https://github.com/jigsaw-projects/jigsaw-payment](https://github.com/jigsaw-projects/jigsaw-payment)，单击“Fork”按​​钮来创建自己的Github帐户上的代码库克隆：
+进入GitHub的[Cocolian代码库 https://github.com/cocolian](https://github.com/cocolian)，选择自己感兴趣的项目， 单击“Fork”按​​钮来创建自己的Github帐户上的代码库克隆：
 
 ![github-1](http://blog.lixf.cn/img/in-post/github-1.png)
 
@@ -37,7 +37,7 @@ Jigsaw项目采用Fork & Pull的工作流程。 下面的工作流程是在Jigsa
 ## 三、clone本地版本
 
 选择 SSH URL,那样它会自动使用你自己的SSH密钥，而不用每次在git pull或者push时询问你的用户名和密码。下一步，我们将克隆一份代码库到本地计算机。
-首先注意在自己的github空间下，进入jigsaw-payment的分支。选择SSH方式，点击右侧按钮复制地址：
+首先注意在自己的github空间下，进入cocolian上对应的项目的分支。选择SSH方式，点击右侧按钮复制地址：
 ![github-3](http://blog.lixf.cn/img/in-post/github-3.png)
 
 在本地建立一个工作文件夹，比如d:\workspace，用来做开发工作。在windows下，用Git Bash,对应的地址是/d/workspace
