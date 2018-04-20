@@ -28,11 +28,12 @@ chapter: 	"00"
 - 熟练使用Eclipse 或者 Intellij  等IDE， 熟悉Java软件开发过程。 
 - 熟悉MySQL数据库的使用， 可以编写常见的SQL语句。  
 - 有github账户，熟悉pull-request流程。 
-如果您满足以上条件， 请访问[cocolian的github项目](https://github.com/cocolian), 确认自己感兴趣并想参与的项目， 在“凤凰牌老熊”微信公众号下留言，说明要加入开发团队。 
 
-之后会有人拉入加入开发微信群。   
-
-入群后，请提供github账户， 我们将把你加入到项目中。 完成后，请在github上确认加入。  
+如果您满足以上条件，请：  
+1. 务必先访问[cocolian的github项目](https://github.com/cocolian), 确认自己感兴趣并想参与的项目。 
+2. 在“凤凰牌老熊”微信公众号下留言，说明要加入开发团队。 
+3. 我们会回复留言告知加入方式，并邀请加入到开发微信群中。    
+4. 入群后，请提供github账户给群主， 我们将把你加入到项目中。完成后，请在github上确认加入。  
 
 
 ## 三、软件过程
