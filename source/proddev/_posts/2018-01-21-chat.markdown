@@ -20,7 +20,7 @@ tag:		  [chat]
    
 > 10:49:56  肖勇  
    
-![2018-01-21 10:49:56](http://static.cocolian.org/img/20180121_104956.png) 
+![2018-01-21 10:49:56](http://static.cocolian.org/img/201801/20180121_104956.png) 
    
 > 11:49:59  韩财光-东软(前)-开发-广州  
    
@@ -136,7 +136,7 @@ IBM区块链物联网系统ADEPT-协议白皮书.pdf
    
 > 13:30:34  Jin He 何瑾  
    
-![2018-01-21 13:30:34](http://static.cocolian.org/img/20180121_133034.png) 
+![2018-01-21 13:30:34](http://static.cocolian.org/img/201801/20180121_133034.png) 
    
 > 13:30:41  Jin He 何瑾  
    
@@ -204,7 +204,7 @@ ibm是这个比较出名点 IBM HyperLedger fabric
    
 > 13:45:14  韩财光-东软(前)-开发-广州  
    
-![2018-01-21 13:45:14](http://static.cocolian.org/img/20180121_134514.png) 
+![2018-01-21 13:45:14](http://static.cocolian.org/img/201801/20180121_134514.png) 
    
 > 15:04:13  龚晓冬  
    

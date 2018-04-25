@@ -8,7 +8,7 @@ tag:		  [chat]
 ---
 > 08:47:13  Ark  
    
-![2018-01-20 08:47:13](http://static.cocolian.org/img/20180120_084713.png) 
+![2018-01-20 08:47:13](http://static.cocolian.org/img/201801/20180120_084713.png) 
    
 > 08:52:30  韩财光-东软(前)-开发-广州  
    
@@ -92,7 +92,7 @@ ibm的mips就是贵，3万多一个mips
    
 > 17:23:22  陈琳xo  
    
-![2018-01-20 17:23:22](http://static.cocolian.org/img/20180120_172322.png) 
+![2018-01-20 17:23:22](http://static.cocolian.org/img/201801/20180120_172322.png) 
    
 > 17:24:10  陈琳xo  
    

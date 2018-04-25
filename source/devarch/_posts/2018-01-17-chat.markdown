@@ -68,7 +68,7 @@ tag:		  [chat]
    
 > 15:29:59  syu  
    
-![2018-01-17 15:29:59](http://static.cocolian.org/img/20180117_152959.png) 
+![2018-01-17 15:29:59](http://static.cocolian.org/img/201801/20180117_152959.png) 
    
 > 15:30:07  syu  
    
@@ -120,5 +120,5 @@ tag:		  [chat]
    
 > 17:21:48  陈帅康  
    
-![2018-01-17 17:21:48](http://static.cocolian.org/img/20180117_172148.png) 
+![2018-01-17 17:21:48](http://static.cocolian.org/img/201801/20180117_172148.png) 
    

@@ -26,15 +26,15 @@ Payment Card Industry Data Security Standard支付卡行业数据安全标准。
 - PCI DSS的认证周期为每年一次，认证通过后延续一年有效期，目前执行的评估标准为2016年4月发布的V3.2。
       
 PCIDSS 3.2标准要求：6大类，12大项，300余子项。   
-![20180111_192704](http://static.cocolian.org/img/20180111_192704.png)   
+![20180111_192704](http://static.cocolian.org/img/201801/20180111_192704.png)   
 
 持卡人数据范围：持卡人数据CHD和敏感验证数据SAD，共7类。   
-![20180111_192748](http://static.cocolian.org/img/20180111_192748.png)   
+![20180111_192748](http://static.cocolian.org/img/201801/20180111_192748.png)   
       
 ### 存储要求
 
 表格列举了持卡人数据和敏感验证数据的常用元素，是否允许存储各数据元素,以及是否必须保护各数据元素。   
-![20180111_192827](http://static.cocolian.org/img/20180111_192827.png)      
+![20180111_192827](http://static.cocolian.org/img/201801/20180111_192827.png)      
 
 ### 业务视角数据梳理
 - 支付流程：请款/支付授权；对账/清结算；退款/拒付；发卡。

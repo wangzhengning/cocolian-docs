@@ -19,7 +19,7 @@ XX电商平台整体业务包括B2B和B2C两大部分。
 
 2B的商品销售主要通过在线支付完成，少量大额订单可能采用线下银行转账形式支付。银行转账的订单会在业务订单内标注具体的付款方式，由财务人员在对应收款银行账户内核实款项是否到账。
 
-![图1 平台业务介绍](http://static.cocolian.org/img/20180114/1.jpg)
+![图1 平台业务介绍](http://static.cocolian.org/img/201801/20180114/1.jpg)
 
 
 ### 2. 系统现有问题
@@ -41,7 +41,7 @@ XX电商平台整体业务包括B2B和B2C两大部分。
 
 ### 4. 支付平台架构
 
-![图2 支付平台架构](http://static.cocolian.org/img/20180114/2.jpg)
+![图2 支付平台架构](http://static.cocolian.org/img/201801/20180114/2.jpg)
 
 
 **1. 支付受理平台**
@@ -72,9 +72,9 @@ XX电商平台整体业务包括B2B和B2C两大部分。
 
 2C业务官网配置及收银台展示如下：
 
-![图3 2C官网收银台配置](http://static.cocolian.org/img/20180114//3.png)
+![图3 2C官网收银台配置](http://static.cocolian.org/img/201801/20180114//3.png)
 
-![图4 2C官网收银台](http://static.cocolian.org/img/20180114/4.png)
+![图4 2C官网收银台](http://static.cocolian.org/img/201801/20180114/4.png)
 
 **2. 渠道对账管理**
 
@@ -84,9 +84,9 @@ XX电商平台整体业务包括B2B和B2C两大部分。
 
 对账系统页面示例：
 
-![图5 对账批次管理](http://static.cocolian.org/img/20180114/5.png)
+![图5 对账批次管理](http://static.cocolian.org/img/201801/20180114/5.png)
 
-![图6 对账流水管理](http://static.cocolian.org/img/20180114/6.png)
+![图6 对账流水管理](http://static.cocolian.org/img/201801/20180114/6.png)
 
 
 

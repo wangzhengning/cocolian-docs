@@ -428,7 +428,7 @@ spring batch框架可以处理对账文件
    
 > 10:25:52  fashioncat  
    
-![2017-12-19 10:25:52](http://static.cocolian.org/img/20171219_102552.png) 
+![2017-12-19 10:25:52](http://static.cocolian.org/img/201712/20171219_102552.png) 
    
 > 10:26:06  fashioncat  
    
@@ -524,11 +524,11 @@ spring batch框架可以处理对账文件
    
 > 10:43:35  dimi  
    
-![2017-12-19 10:43:35](http://static.cocolian.org/img/20171219_104335.png) 
+![2017-12-19 10:43:35](http://static.cocolian.org/img/201712/20171219_104335.png) 
    
 > 10:43:35  杜蒙-途家-产品-北京  
    
-![2017-12-19 10:43:35](http://static.cocolian.org/img/20171219_104335.png) 
+![2017-12-19 10:43:35](http://static.cocolian.org/img/201712/20171219_104335.png) 
    
 > 10:43:45  dimi  
    
@@ -612,7 +612,7 @@ EA
    
 > 11:31:25  fashioncat  
    
-![2017-12-19 11:31:25](http://static.cocolian.org/img/20171219_113125.png) 
+![2017-12-19 11:31:25](http://static.cocolian.org/img/201712/20171219_113125.png) 
    
 > 11:31:44  dimi  
    
@@ -772,11 +772,11 @@ EA
    
 > 12:53:35  巴德妈妈小Gabby  
    
-![2017-12-19 12:53:35](http://static.cocolian.org/img/20171219_125335.png) 
+![2017-12-19 12:53:35](http://static.cocolian.org/img/201712/20171219_125335.png) 
    
 > 12:53:35  周雅雯-途虎养车-支付PM-上海  
    
-![2017-12-19 12:53:35](http://static.cocolian.org/img/20171219_125335.png) 
+![2017-12-19 12:53:35](http://static.cocolian.org/img/201712/20171219_125335.png) 
    
 > 12:54:13  舒俊～产品  
    
@@ -1820,19 +1820,19 @@ t+1报表性能压力小
    
 > 18:02:33  我  
    
-![2017-12-19 18:02:33](http://static.cocolian.org/img/20171219_180233.png) 
+![2017-12-19 18:02:33](http://static.cocolian.org/img/201712/20171219_180233.png) 
    
 > 18:02:33  李雄峰  
    
-![2017-12-19 18:02:33](http://static.cocolian.org/img/20171219_180233.png) 
+![2017-12-19 18:02:33](http://static.cocolian.org/img/201712/20171219_180233.png) 
    
 > 18:02:34  我  
    
-![2017-12-19 18:02:34](http://static.cocolian.org/img/20171219_180234.png) 
+![2017-12-19 18:02:34](http://static.cocolian.org/img/201712/20171219_180234.png) 
    
 > 18:02:34  李雄峰  
    
-![2017-12-19 18:02:34](http://static.cocolian.org/img/20171219_180234.png) 
+![2017-12-19 18:02:34](http://static.cocolian.org/img/201712/20171219_180234.png) 
    
 > 18:03:38  我  
    
@@ -2648,11 +2648,11 @@ t+0不用批量
    
 > 20:15:26  产品汪  
    
-![2017-12-19 20:15:26](http://static.cocolian.org/img/20171219_201526.png) 
+![2017-12-19 20:15:26](http://static.cocolian.org/img/201712/20171219_201526.png) 
    
 > 20:15:26  互金产品-郑式静-杭州  
    
-![2017-12-19 20:15:26](http://static.cocolian.org/img/20171219_201526.png) 
+![2017-12-19 20:15:26](http://static.cocolian.org/img/201712/20171219_201526.png) 
    
 > 20:15:34  heping  
    

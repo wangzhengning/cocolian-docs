@@ -12,7 +12,7 @@ tag:		  [chat]
    
 > 12:22:28  huh!  
    
-![2018-01-15 12:22:28](http://static.cocolian.org/img/20180115_122228.png) 
+![2018-01-15 12:22:28](http://static.cocolian.org/img/201801/20180115_122228.png) 
    
 > 12:35:32  吴松福  
    
@@ -68,7 +68,7 @@ Spark快速入门-3-Spark的算子总结
    
 > 21:46:56  窦巍  
    
-![2018-01-15 21:46:56](http://static.cocolian.org/img/20180115_214656.png) 
+![2018-01-15 21:46:56](http://static.cocolian.org/img/201801/20180115_214656.png) 
    
 > 22:52:33  高水平  
    

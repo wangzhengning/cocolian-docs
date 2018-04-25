@@ -14,7 +14,7 @@ header-img: "img/post-bg-wechat.jpg"
 
 首先发一下我画的支付平台系统边界图； 
 
-![ 平 台 4- 0 支 付 ](http://static.cocolian.org/img/20180103_181323.png)
+![ 平 台 4- 0 支 付 ](http://static.cocolian.org/img/201801/20180103_181323.png)
 
 那我现在就结合这个图来讲一下。
 

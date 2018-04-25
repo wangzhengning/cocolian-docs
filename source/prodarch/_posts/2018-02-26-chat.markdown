@@ -184,7 +184,7 @@ tag:		  [chat]
    
 > 13:41:47  梁新华-北京-金融支付产品  
    
-![2018-02-26 13:41:47](http://static.cocolian.org/img/20180226_134147.png) 
+![2018-02-26 13:41:47](http://static.cocolian.org/img/201802/20180226_134147.png) 
    
 > 13:42:07  梁新华-北京-金融支付产品  
    
@@ -280,7 +280,7 @@ tag:		  [chat]
    
 > 16:38:03  heping  
    
-![2018-02-26 16:38:03](http://static.cocolian.org/img/20180226_163803.png) 
+![2018-02-26 16:38:03](http://static.cocolian.org/img/201802/20180226_163803.png) 
    
 > 16:43:50  heping  
    

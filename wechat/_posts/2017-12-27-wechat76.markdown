@@ -17,7 +17,7 @@ header-img: "img/post-bg-wechat.jpg"
 
 大家应该都很熟悉了，我开个场，然后介绍下我们现在的产品流程。
 
-![产品流程](http://static.cocolian.org/img/20171227_193606.png)
+![产品流程](http://static.cocolian.org/img/201712/20171227_193606.png)
 
  
 

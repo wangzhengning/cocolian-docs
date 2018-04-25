@@ -160,11 +160,11 @@ tag:		  [chat]
    
 > 08:53:01  龚晓冬  
    
-![2017-12-18 08:53:01](http://static.cocolian.org/img/20171218_085301.png) 
+![2017-12-18 08:53:01](http://static.cocolian.org/img/201712/20171218_085301.png) 
    
 > 08:53:01  龚晓冬-银商账户-产品-上海  
    
-![2017-12-18 08:53:01](http://static.cocolian.org/img/20171218_085301.png) 
+![2017-12-18 08:53:01](http://static.cocolian.org/img/201712/20171218_085301.png) 
    
 > 08:53:17  龚晓冬  
    
@@ -628,11 +628,11 @@ IAP不是iOS内购嘛？
    
 > 17:21:14  pangning-安邦集团收付团队研发  
    
-![2017-12-18 17:21:14](http://static.cocolian.org/img/20171218_172114.png) 
+![2017-12-18 17:21:14](http://static.cocolian.org/img/201712/20171218_172114.png) 
    
 > 17:21:14  阿烨??  
    
-![2017-12-18 17:21:14](http://static.cocolian.org/img/20171218_172114.png) 
+![2017-12-18 17:21:14](http://static.cocolian.org/img/201712/20171218_172114.png) 
    
 > 17:21:44  田浩沛  
    

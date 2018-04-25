@@ -8,11 +8,11 @@ tag:		  [chat]
 ---
 > 00:01:16  Peter-找钢网-PM  
    
-![2017-12-17 00:01:16](http://static.cocolian.org/img/20171217_000116.png) 
+![2017-12-17 00:01:16](http://static.cocolian.org/img/201712/20171217_000116.png) 
    
 > 00:01:16  潘啟金-找钢网-产品TL-上海  
    
-![2017-12-17 00:01:16](http://static.cocolian.org/img/20171217_000116.png) 
+![2017-12-17 00:01:16](http://static.cocolian.org/img/201712/20171217_000116.png) 
    
 > 00:03:14  Peter-找钢网-PM  
    
@@ -1384,11 +1384,11 @@ http://www.cbrc.gov.cn/chinese/home/docDOC_ReadView/275.html
    
 > 20:42:46  李伟锋  
    
-![2017-12-17 20:42:46](http://static.cocolian.org/img/20171217_204246.png) 
+![2017-12-17 20:42:46](http://static.cocolian.org/img/201712/20171217_204246.png) 
    
 > 20:42:46  李伟锋-51信用卡-杭州  
    
-![2017-12-17 20:42:46](http://static.cocolian.org/img/20171217_204246.png) 
+![2017-12-17 20:42:46](http://static.cocolian.org/img/201712/20171217_204246.png) 
    
 > 20:43:29  龚晓冬  
    

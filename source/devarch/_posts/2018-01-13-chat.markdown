@@ -8,7 +8,7 @@ tag:		  [chat]
 ---
 > 07:38:37  csp  
    
-![2018-01-13 07:38:37](http://static.cocolian.org/img/20180113_073837.png) 
+![2018-01-13 07:38:37](http://static.cocolian.org/img/201801/20180113_073837.png) 
    
 > 07:38:58  csp  
    
@@ -24,7 +24,7 @@ tag:		  [chat]
    
 > 10:04:40  忘忧草  
    
-![2018-01-13 10:04:40](http://static.cocolian.org/img/20180113_100440.png) 
+![2018-01-13 10:04:40](http://static.cocolian.org/img/201801/20180113_100440.png) 
    
 > 10:05:00  忘忧草  
    
@@ -64,7 +64,7 @@ tag:		  [chat]
    
 > 10:14:54  忘忧草  
    
-![2018-01-13 10:14:54](http://static.cocolian.org/img/20180113_101454.png) 
+![2018-01-13 10:14:54](http://static.cocolian.org/img/201801/20180113_101454.png) 
    
 > 10:15:06  忘忧草  
    
@@ -184,15 +184,15 @@ gc耗时长的那次正好发生了大量的IO
    
 > 10:38:50  王亮  
    
-![2018-01-13 10:38:50](http://static.cocolian.org/img/20180113_103850.png) 
+![2018-01-13 10:38:50](http://static.cocolian.org/img/201801/20180113_103850.png) 
    
 > 10:38:51  王亮  
    
-![2018-01-13 10:38:51](http://static.cocolian.org/img/20180113_103851.png) 
+![2018-01-13 10:38:51](http://static.cocolian.org/img/201801/20180113_103851.png) 
    
 > 10:38:52  王亮  
    
-![2018-01-13 10:38:52](http://static.cocolian.org/img/20180113_103852.png) 
+![2018-01-13 10:38:52](http://static.cocolian.org/img/201801/20180113_103852.png) 
    
 > 10:40:22  张起坤  
    

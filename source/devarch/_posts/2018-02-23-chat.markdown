@@ -28,7 +28,7 @@ tag:		  [chat]
    
 > 11:05:34  毛毛  
    
-![2018-02-23 11:05:34](http://static.cocolian.org/img/20180223_110534.png) 
+![2018-02-23 11:05:34](http://static.cocolian.org/img/201802/20180223_110534.png) 
    
 > 11:06:38  田浩沛  
    
@@ -100,7 +100,7 @@ tag:		  [chat]
    
 > 15:22:55  钟鸿敏  
    
-![2018-02-23 15:22:55](http://static.cocolian.org/img/20180223_152255.png) 
+![2018-02-23 15:22:55](http://static.cocolian.org/img/201802/20180223_152255.png) 
    
 > 15:48:34  Mr.张  
    

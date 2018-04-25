@@ -292,11 +292,11 @@ tag:		  [chat]
    
 > 10:36:22  _  
    
-![2017-12-27 10:36:22](http://static.cocolian.org/img/20171227_103622.png) 
+![2017-12-27 10:36:22](http://static.cocolian.org/img/201712/20171227_103622.png) 
    
 > 10:36:22  兰洋-银联  
    
-![2017-12-27 10:36:22](http://static.cocolian.org/img/20171227_103622.png) 
+![2017-12-27 10:36:22](http://static.cocolian.org/img/201712/20171227_103622.png) 
    
 > 10:37:01  Stephen  
    
@@ -316,19 +316,19 @@ tag:		  [chat]
    
 > 10:39:42  sunshine-苏宁金融  
    
-![2017-12-27 10:39:42](http://static.cocolian.org/img/20171227_103942.png) 
+![2017-12-27 10:39:42](http://static.cocolian.org/img/201712/20171227_103942.png) 
    
 > 10:39:42  一抹sunshine  
    
-![2017-12-27 10:39:42](http://static.cocolian.org/img/20171227_103942.png) 
+![2017-12-27 10:39:42](http://static.cocolian.org/img/201712/20171227_103942.png) 
    
 > 10:53:27  Michael-CGB-技术经理-佛山  
    
-![2017-12-27 10:53:27](http://static.cocolian.org/img/20171227_105327.png) 
+![2017-12-27 10:53:27](http://static.cocolian.org/img/201712/20171227_105327.png) 
    
 > 10:53:27  朱雄新-广发支付组  
    
-![2017-12-27 10:53:27](http://static.cocolian.org/img/20171227_105327.png) 
+![2017-12-27 10:53:27](http://static.cocolian.org/img/201712/20171227_105327.png) 
    
 > 10:53:35  Michael-CGB-技术经理-佛山  
    
@@ -464,11 +464,11 @@ memory_4987560:
    
 > 11:42:46  Michael-CGB-技术经理-佛山  
    
-![2017-12-27 11:42:46](http://static.cocolian.org/img/20171227_114246.png) 
+![2017-12-27 11:42:46](http://static.cocolian.org/img/201712/20171227_114246.png) 
    
 > 11:42:46  朱雄新-广发支付组  
    
-![2017-12-27 11:42:46](http://static.cocolian.org/img/20171227_114246.png) 
+![2017-12-27 11:42:46](http://static.cocolian.org/img/201712/20171227_114246.png) 
    
 > 11:43:37  Michael-CGB-技术经理-佛山  
    
@@ -552,11 +552,11 @@ memory_4987560:
    
 > 12:37:15  钟  
    
-![2017-12-27 12:37:15](http://static.cocolian.org/img/20171227_123715.png) 
+![2017-12-27 12:37:15](http://static.cocolian.org/img/201712/20171227_123715.png) 
    
 > 12:37:15  钟文帅-移付宝科技-产品经理  
    
-![2017-12-27 12:37:15](http://static.cocolian.org/img/20171227_123715.png) 
+![2017-12-27 12:37:15](http://static.cocolian.org/img/201712/20171227_123715.png) 
    
 > 12:37:29  钟  
    
@@ -828,19 +828,19 @@ memory_4987560:
    
 > 13:06:55  辉少  
    
-![2017-12-27 13:06:55](http://static.cocolian.org/img/20171227_130655.png) 
+![2017-12-27 13:06:55](http://static.cocolian.org/img/201712/20171227_130655.png) 
    
 > 13:06:55  少帅-快捷通支付产品  
    
-![2017-12-27 13:06:55](http://static.cocolian.org/img/20171227_130655.png) 
+![2017-12-27 13:06:55](http://static.cocolian.org/img/201712/20171227_130655.png) 
    
 > 13:31:07  MEET  
    
-![2017-12-27 13:31:07](http://static.cocolian.org/img/20171227_133107.png) 
+![2017-12-27 13:31:07](http://static.cocolian.org/img/201712/20171227_133107.png) 
    
 > 13:31:07  meet-支付圈-北京  
    
-![2017-12-27 13:31:07](http://static.cocolian.org/img/20171227_133107.png) 
+![2017-12-27 13:31:07](http://static.cocolian.org/img/201712/20171227_133107.png) 
    
 > 14:15:41  凤凰牌老熊-群主  
    
@@ -888,7 +888,7 @@ memory_4987560:
    
 > 14:25:32  余铭  
    
-![2017-12-27 14:25:32](http://static.cocolian.org/img/20171227_142532.png) 
+![2017-12-27 14:25:32](http://static.cocolian.org/img/201712/20171227_142532.png) 
    
 > 14:34:27  鸽子  
    
@@ -936,7 +936,7 @@ memory_4987560:
    
 > 14:36:23  张嘉杰  
    
-![2017-12-27 14:36:23](http://static.cocolian.org/img/20171227_143623.png) 
+![2017-12-27 14:36:23](http://static.cocolian.org/img/201712/20171227_143623.png) 
    
 > 14:36:44  张嘉杰  
    
@@ -996,11 +996,11 @@ memory_4987560:
    
 > 16:34:55  田浩沛  
    
-![2017-12-27 16:34:55](http://static.cocolian.org/img/20171227_163455.png) 
+![2017-12-27 16:34:55](http://static.cocolian.org/img/201712/20171227_163455.png) 
    
 > 16:34:55  田浩沛-银生宝电子支付公司技术总  
    
-![2017-12-27 16:34:55](http://static.cocolian.org/img/20171227_163455.png) 
+![2017-12-27 16:34:55](http://static.cocolian.org/img/201712/20171227_163455.png) 
    
 > 16:35:30  右军  
    
@@ -1264,7 +1264,7 @@ memory_4987560:
    
 > 16:46:00  心有灵浠  
    
-![2017-12-27 16:46:00](http://static.cocolian.org/img/20171227_164600.png) 
+![2017-12-27 16:46:00](http://static.cocolian.org/img/201712/20171227_164600.png) 
    
 > 16:46:06  田浩沛  
    
@@ -1300,11 +1300,11 @@ memory_4987560:
    
 > 16:46:47  田浩沛  
    
-![2017-12-27 16:46:47](http://static.cocolian.org/img/20171227_164647.png) 
+![2017-12-27 16:46:47](http://static.cocolian.org/img/201712/20171227_164647.png) 
    
 > 16:46:47  田浩沛-银生宝电子支付公司技术总  
    
-![2017-12-27 16:46:47](http://static.cocolian.org/img/20171227_164647.png) 
+![2017-12-27 16:46:47](http://static.cocolian.org/img/201712/20171227_164647.png) 
    
 > 16:46:54  程超  
    
@@ -1356,11 +1356,11 @@ memory_4987560:
    
 > 16:52:54  武伟会  
    
-![2017-12-27 16:52:54](http://static.cocolian.org/img/20171227_165254.png) 
+![2017-12-27 16:52:54](http://static.cocolian.org/img/201712/20171227_165254.png) 
    
 > 16:52:54  武伟会-国家电网新能源-PM  
    
-![2017-12-27 16:52:54](http://static.cocolian.org/img/20171227_165254.png) 
+![2017-12-27 16:52:54](http://static.cocolian.org/img/201712/20171227_165254.png) 
    
 > 16:53:55  田浩沛  
    
@@ -1860,11 +1860,11 @@ memory_4987560:
    
 > 17:41:57  乔俊翔  
    
-![2017-12-27 17:41:57](http://static.cocolian.org/img/20171227_174157.png) 
+![2017-12-27 17:41:57](http://static.cocolian.org/img/201712/20171227_174157.png) 
    
 > 17:41:57  乔俊翔-爱又米-支付开发  
    
-![2017-12-27 17:41:57](http://static.cocolian.org/img/20171227_174157.png) 
+![2017-12-27 17:41:57](http://static.cocolian.org/img/201712/20171227_174157.png) 
    
 > 17:42:18  王涵  
    
@@ -1916,11 +1916,11 @@ memory_4987560:
    
 > 17:53:29  沙莎  
    
-![2017-12-27 17:53:29](http://static.cocolian.org/img/20171227_175329.png) 
+![2017-12-27 17:53:29](http://static.cocolian.org/img/201712/20171227_175329.png) 
    
 > 17:53:29  都沙沙-点融网-支付PM  
    
-![2017-12-27 17:53:29](http://static.cocolian.org/img/20171227_175329.png) 
+![2017-12-27 17:53:29](http://static.cocolian.org/img/201712/20171227_175329.png) 
    
 > 17:53:34  龚晓冬  
    
@@ -2628,11 +2628,11 @@ p2p走的是存管账户，和支付宝微信不能牵扯进来
    
 > 18:43:55  Roger丙  
    
-![2017-12-27 18:43:55](http://static.cocolian.org/img/20171227_184355.png) 
+![2017-12-27 18:43:55](http://static.cocolian.org/img/201712/20171227_184355.png) 
    
 > 18:43:55  Roger丙-翼支付  
    
-![2017-12-27 18:43:55](http://static.cocolian.org/img/20171227_184355.png) 
+![2017-12-27 18:43:55](http://static.cocolian.org/img/201712/20171227_184355.png) 
    
 > 18:44:22  钟  
    
@@ -2684,11 +2684,11 @@ http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/3450002/index.html
    
 > 18:57:13  Bison  
    
-![2017-12-27 18:57:13](http://static.cocolian.org/img/20171227_185713.png) 
+![2017-12-27 18:57:13](http://static.cocolian.org/img/201712/20171227_185713.png) 
    
 > 18:57:13  Bison-拉卡拉北京网络金融部副总  
    
-![2017-12-27 18:57:13](http://static.cocolian.org/img/20171227_185713.png) 
+![2017-12-27 18:57:13](http://static.cocolian.org/img/201712/20171227_185713.png) 
    
 > 19:02:49  万黎-恒丰银行-支付产品PM  
    
@@ -2760,11 +2760,11 @@ http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/3450002/index.html
    
 > 19:40:07  Jin He 何瑾  
    
-![2017-12-27 19:40:07](http://static.cocolian.org/img/20171227_194007.png) 
+![2017-12-27 19:40:07](http://static.cocolian.org/img/201712/20171227_194007.png) 
    
 > 19:40:20  Jin He 何瑾  
    
-![2017-12-27 19:40:20](http://static.cocolian.org/img/20171227_194020.png) 
+![2017-12-27 19:40:20](http://static.cocolian.org/img/201712/20171227_194020.png) 
    
 > 19:41:37  lisp 财付通结算财务  
    
@@ -3264,11 +3264,11 @@ id我觉得也算是敏感信息的
    
 > 20:54:58  龚晓冬  
    
-![2017-12-27 20:54:58](http://static.cocolian.org/img/20171227_205458.png) 
+![2017-12-27 20:54:58](http://static.cocolian.org/img/201712/20171227_205458.png) 
    
 > 20:54:58  龚晓冬-银商账户-产品-上海  
    
-![2017-12-27 20:54:58](http://static.cocolian.org/img/20171227_205458.png) 
+![2017-12-27 20:54:58](http://static.cocolian.org/img/201712/20171227_205458.png) 
    
 > 20:55:17  龚晓冬  
    

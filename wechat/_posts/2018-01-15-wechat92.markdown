@@ -12,7 +12,7 @@ header-img: "img/post-bg-wechat.jpg"
  
 ### 1.1业务场景说明
 
-![20180115_180118](http://static.cocolian.org/img/20180115_180118.png)  
+![20180115_180118](http://static.cocolian.org/img/201801/20180115_180118.png)  
 
 **场景1：客户开户**  
 
@@ -37,7 +37,7 @@ header-img: "img/post-bg-wechat.jpg"
 
 ### 1.2支付系统的架构图
 
-![20180115_180731](http://static.cocolian.org/img/20180115_180731.png)  
+![20180115_180731](http://static.cocolian.org/img/201801/20180115_180731.png)  
 
 对于不同银行,我们有独立的Adaptor作对应, 各个Adaptor再merge到一个Processor的处理器,实际的资金处理都在Processor实行, 并记录流水到资金数据库。   帐务系统主要是我们市场的财务使用，做一些对帐，查询等操作。
 

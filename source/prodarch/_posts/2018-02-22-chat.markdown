@@ -156,7 +156,7 @@ tag:		  [chat]
    
 > 17:06:14  w  
    
-![2018-02-22 17:06:14](http://static.cocolian.org/img/20180222_170614.png) 
+![2018-02-22 17:06:14](http://static.cocolian.org/img/201802/20180222_170614.png) 
    
 > 17:06:50  w  
    
@@ -260,7 +260,7 @@ tag:		  [chat]
    
 > 18:00:48  w  
    
-![2018-02-22 18:00:48](http://static.cocolian.org/img/20180222_180048.png) 
+![2018-02-22 18:00:48](http://static.cocolian.org/img/201802/20180222_180048.png) 
    
 > 18:01:03  w  
    

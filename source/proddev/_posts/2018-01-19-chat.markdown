@@ -12,7 +12,7 @@ tag:		  [chat]
    
 > 08:24:22  Ark  
    
-![2018-01-19 08:24:22](http://static.cocolian.org/img/20180119_082422.png) 
+![2018-01-19 08:24:22](http://static.cocolian.org/img/201801/20180119_082422.png) 
    
 > 09:45:59  MEET  
    
@@ -120,7 +120,7 @@ https://github.com/COALAIP/omi-mvi-1.0  这个项目有没有人用过？
    
 > 17:13:02  珞珈-恒丰银行-产品-北京  
    
-![2018-01-19 17:13:02](http://static.cocolian.org/img/20180119_171302.png) 
+![2018-01-19 17:13:02](http://static.cocolian.org/img/201801/20180119_171302.png) 
    
 > 17:13:41  珞珈-恒丰银行-产品-北京  
    
@@ -428,7 +428,7 @@ http://training.pcac.org.cn/hypx/web/pxgl/login.jsp
    
 > 17:53:04  邵翁路  
    
-![2018-01-19 17:53:04](http://static.cocolian.org/img/20180119_175304.png) 
+![2018-01-19 17:53:04](http://static.cocolian.org/img/201801/20180119_175304.png) 
    
 > 17:54:03  邵翁路  
    
@@ -464,7 +464,7 @@ http://training.pcac.org.cn/hypx/web/pxgl/login.jsp
    
 > 18:01:00  Emerson  
    
-![2018-01-19 18:01:00](http://static.cocolian.org/img/20180119_180100.png) 
+![2018-01-19 18:01:00](http://static.cocolian.org/img/201801/20180119_180100.png) 
    
 > 18:02:14  田浩沛  
    
@@ -488,7 +488,7 @@ http://training.pcac.org.cn/hypx/web/pxgl/login.jsp
    
 > 18:29:34  李伟锋  
    
-![2018-01-19 18:29:34](http://static.cocolian.org/img/20180119_182934.png) 
+![2018-01-19 18:29:34](http://static.cocolian.org/img/201801/20180119_182934.png) 
    
 > 18:31:48  田浩沛  
    
@@ -572,7 +572,7 @@ https://github.com/COALAIP/omi-mvi-1.0
    
 > 21:32:08  双眼皮Eagle  
    
-![2018-01-19 21:32:08](http://static.cocolian.org/img/20180119_213208.png) 
+![2018-01-19 21:32:08](http://static.cocolian.org/img/201801/20180119_213208.png) 
    
 > 23:21:12  胡新松-银联  
    

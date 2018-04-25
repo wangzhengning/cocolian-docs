@@ -8,7 +8,7 @@ tag:		  [chat]
 ---
 > 08:28:32  Ark  
    
-![2018-01-28 08:28:32](http://static.cocolian.org/img/20180128_082832.png) 
+![2018-01-28 08:28:32](http://static.cocolian.org/img/201801/20180128_082832.png) 
    
 > 19:21:51  钟  
    
@@ -56,7 +56,7 @@ tag:		  [chat]
    
 > 19:25:19  钟  
    
-![2018-01-28 19:25:19](http://static.cocolian.org/img/20180128_192519.png) 
+![2018-01-28 19:25:19](http://static.cocolian.org/img/201801/20180128_192519.png) 
    
 > 19:25:46  龚晓冬  
    
@@ -404,7 +404,7 @@ tag:		  [chat]
    
 > 19:59:45  钟  
    
-![2018-01-28 19:59:45](http://static.cocolian.org/img/20180128_195945.png) 
+![2018-01-28 19:59:45](http://static.cocolian.org/img/201801/20180128_195945.png) 
    
 > 19:59:50  钟  
    

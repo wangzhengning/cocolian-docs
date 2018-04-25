@@ -8,11 +8,11 @@ tag:		  [chat]
 ---
 > 09:07:20  钟  
    
-![2017-12-19 09:07:20](http://static.cocolian.org/img/20171219_090720.png) 
+![2017-12-19 09:07:20](http://static.cocolian.org/img/201712/20171219_090720.png) 
    
 > 09:07:20  钟文帅-移付宝科技-产品经理  
    
-![2017-12-19 09:07:20](http://static.cocolian.org/img/20171219_090720.png) 
+![2017-12-19 09:07:20](http://static.cocolian.org/img/201712/20171219_090720.png) 
    
 > 09:12:47  大冷  
    
@@ -244,11 +244,11 @@ POS机具，即便是智能POS，什么场景下需要收短信
    
 > 10:56:26  lisp 财付通结算财务  
    
-![2017-12-19 10:56:26](http://static.cocolian.org/img/20171219_105626.png) 
+![2017-12-19 10:56:26](http://static.cocolian.org/img/201712/20171219_105626.png) 
    
 > 10:56:26  lispppppp  
    
-![2017-12-19 10:56:26](http://static.cocolian.org/img/20171219_105626.png) 
+![2017-12-19 10:56:26](http://static.cocolian.org/img/201712/20171219_105626.png) 
    
 > 10:56:27  张泽雄-民生金服 项目总监  
    
@@ -340,11 +340,11 @@ POS机具，即便是智能POS，什么场景下需要收短信
    
 > 11:04:47  大冷  
    
-![2017-12-19 11:04:47](http://static.cocolian.org/img/20171219_110447.png) 
+![2017-12-19 11:04:47](http://static.cocolian.org/img/201712/20171219_110447.png) 
    
 > 11:04:47  大冷-银联国际支付产品  
    
-![2017-12-19 11:04:47](http://static.cocolian.org/img/20171219_110447.png) 
+![2017-12-19 11:04:47](http://static.cocolian.org/img/201712/20171219_110447.png) 
    
 > 11:05:08  lisp 财付通结算财务  
    
@@ -380,11 +380,11 @@ POS机具，即便是智能POS，什么场景下需要收短信
    
 > 11:09:26  槑旭旭 ?微信超級會員  
    
-![2017-12-19 11:09:26](http://static.cocolian.org/img/20171219_110926.png) 
+![2017-12-19 11:09:26](http://static.cocolian.org/img/201712/20171219_110926.png) 
    
 > 11:09:26  聚合支付_程昱  
    
-![2017-12-19 11:09:26](http://static.cocolian.org/img/20171219_110926.png) 
+![2017-12-19 11:09:26](http://static.cocolian.org/img/201712/20171219_110926.png) 
    
 > 11:09:31  槑旭旭 ?微信超級會員  
    
@@ -464,11 +464,11 @@ gigicn:
    
 > 11:57:55  lisp 财付通结算财务  
    
-![2017-12-19 11:57:55](http://static.cocolian.org/img/20171219_115755.png) 
+![2017-12-19 11:57:55](http://static.cocolian.org/img/201712/20171219_115755.png) 
    
 > 11:57:55  lispppppp  
    
-![2017-12-19 11:57:55](http://static.cocolian.org/img/20171219_115755.png) 
+![2017-12-19 11:57:55](http://static.cocolian.org/img/201712/20171219_115755.png) 
    
 > 11:58:24  陈创  
    
@@ -852,11 +852,11 @@ CFCA  山东CA都可以
    
 > 16:00:29  vniuv  
    
-![2017-12-19 16:00:29](http://static.cocolian.org/img/20171219_160029.png) 
+![2017-12-19 16:00:29](http://static.cocolian.org/img/201712/20171219_160029.png) 
    
 > 16:00:29  vniuv-群星金融（供应链金融）产品  
    
-![2017-12-19 16:00:29](http://static.cocolian.org/img/20171219_160029.png) 
+![2017-12-19 16:00:29](http://static.cocolian.org/img/201712/20171219_160029.png) 
    
 > 16:09:00  宏  
    

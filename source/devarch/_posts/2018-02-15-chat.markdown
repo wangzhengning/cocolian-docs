@@ -8,7 +8,7 @@ tag:		  [chat]
 ---
 > 17:39:18  田浩沛  
    
-![2018-02-15 17:39:18](http://static.cocolian.org/img/20180215_173918.png) 
+![2018-02-15 17:39:18](http://static.cocolian.org/img/201802/20180215_173918.png) 
    
 > 17:42:27  钟鸿敏  
    
@@ -36,7 +36,7 @@ tag:		  [chat]
    
 > 20:15:24  窦巍  
    
-![2018-02-15 20:15:24](http://static.cocolian.org/img/20180215_201524.png) 
+![2018-02-15 20:15:24](http://static.cocolian.org/img/201802/20180215_201524.png) 
    
 > 20:23:58  我  
    

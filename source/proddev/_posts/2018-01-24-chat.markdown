@@ -12,7 +12,7 @@ tag:		  [chat]
    
 > 07:38:12  Ark  
    
-![2018-01-24 07:38:12](http://static.cocolian.org/img/20180124_073812.png) 
+![2018-01-24 07:38:12](http://static.cocolian.org/img/201801/20180124_073812.png) 
    
 > 10:40:00  右军  
    
@@ -36,7 +36,7 @@ tag:		  [chat]
    
 > 18:49:00  coral－群管理－深圳－产品  
    
-![2018-01-24 18:49:00](http://static.cocolian.org/img/20180124_184900.png) 
+![2018-01-24 18:49:00](http://static.cocolian.org/img/201801/20180124_184900.png) 
    
 > 18:49:06  coral－群管理－深圳－产品  
    
@@ -640,7 +640,7 @@ tag:		  [chat]
    
 > 21:39:42  聚合支付_程昱  
    
-![2018-01-24 21:39:42](http://static.cocolian.org/img/20180124_213942.png) 
+![2018-01-24 21:39:42](http://static.cocolian.org/img/201801/20180124_213942.png) 
    
 > 21:40:03  龚晓冬  
    
@@ -696,7 +696,7 @@ tag:		  [chat]
    
 > 21:45:49  钟  
    
-![2018-01-24 21:45:49](http://static.cocolian.org/img/20180124_214549.png) 
+![2018-01-24 21:45:49](http://static.cocolian.org/img/201801/20180124_214549.png) 
    
 > 21:45:55  张彦龙  
    
@@ -736,7 +736,7 @@ tag:		  [chat]
    
 > 22:55:07  聚合支付_程昱  
    
-![2018-01-24 22:55:07](http://static.cocolian.org/img/20180124_225507.png) 
+![2018-01-24 22:55:07](http://static.cocolian.org/img/201801/20180124_225507.png) 
    
 > 22:56:21  龚晓冬  
    
@@ -944,11 +944,11 @@ https://pay.weixin.qq.com/wechatpay_guide/isp_list.shtml
    
 > 23:25:57  Davy大魔王  
    
-![2018-01-24 23:25:57](http://static.cocolian.org/img/20180124_232557.png) 
+![2018-01-24 23:25:57](http://static.cocolian.org/img/201801/20180124_232557.png) 
    
 > 23:25:58  Davy大魔王  
    
-![2018-01-24 23:25:58](http://static.cocolian.org/img/20180124_232558.png) 
+![2018-01-24 23:25:58](http://static.cocolian.org/img/201801/20180124_232558.png) 
    
 > 23:26:12  Davy大魔王  
    
@@ -1184,7 +1184,7 @@ ota比较有争议的，我认为不算，可以找人行确认
    
 > 23:44:29  聚合支付_程昱  
    
-![2018-01-24 23:44:29](http://static.cocolian.org/img/20180124_234429.png) 
+![2018-01-24 23:44:29](http://static.cocolian.org/img/201801/20180124_234429.png) 
    
 > 23:44:37  田浩沛  
    
@@ -1356,7 +1356,7 @@ ota比较有争议的，我认为不算，可以找人行确认
    
 > 23:53:30  田浩沛  
    
-![2018-01-24 23:53:30](http://static.cocolian.org/img/20180124_235330.png) 
+![2018-01-24 23:53:30](http://static.cocolian.org/img/201801/20180124_235330.png) 
    
 > 23:53:35  田浩沛  
    

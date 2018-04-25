@@ -14,7 +14,7 @@ header-img: "img/post-bg-wechat.jpg"
 
 简单的示意图如下：
 
-![20180127_203218](http://static.cocolian.org/img/20180127_203218.png)
+![20180127_203218](http://static.cocolian.org/img/201801/20180127_203218.png)
 
 此系统平台投资人和借款人在第三方支付分别开设账户，平台在第三方支付建立平台托管账户和自有资金账户，以实现资金隔离。平台真实资金在第三方支付备付金。
 
@@ -24,7 +24,7 @@ header-img: "img/post-bg-wechat.jpg"
 
 示意图如下：
 
-![20180127_203352](http://static.cocolian.org/img/20180127_203352.png)
+![20180127_203352](http://static.cocolian.org/img/201801/20180127_203352.png)
 
 ### 三、直管模式
 
@@ -33,7 +33,7 @@ header-img: "img/post-bg-wechat.jpg"
 
 示意图如下：
 
-![20180127_203455](http://static.cocolian.org/img/20180127_203455.png)
+![20180127_203455](http://static.cocolian.org/img/201801/20180127_203455.png)
 
 --- 
 

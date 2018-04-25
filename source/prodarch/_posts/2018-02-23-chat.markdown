@@ -16,7 +16,7 @@ tag:		  [chat]
    
 > 15:07:45  周鑫  
    
-![2018-02-23 15:07:45](http://static.cocolian.org/img/20180223_150745.png) 
+![2018-02-23 15:07:45](http://static.cocolian.org/img/201802/20180223_150745.png) 
    
 > 15:08:17  周鑫  
    
@@ -72,7 +72,7 @@ tag:		  [chat]
    
 > 16:35:57  张于刚  
    
-![2018-02-23 16:35:57](http://static.cocolian.org/img/20180223_163557.png) 
+![2018-02-23 16:35:57](http://static.cocolian.org/img/201802/20180223_163557.png) 
    
 > 16:38:43  张于刚  
    

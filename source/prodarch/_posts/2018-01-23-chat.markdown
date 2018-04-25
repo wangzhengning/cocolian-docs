@@ -176,7 +176,7 @@ tag:		  [chat]
    
 > 10:49:31  龚晓冬  
    
-![2018-01-23 10:49:31](http://static.cocolian.org/img/20180123_104931.png) 
+![2018-01-23 10:49:31](http://static.cocolian.org/img/201801/20180123_104931.png) 
    
 > 10:49:33  熊颖杰-杭州-支付宝前移动架构  
    
@@ -264,7 +264,7 @@ tag:		  [chat]
    
 > 11:01:39  韩涛  
    
-![2018-01-23 11:01:39](http://static.cocolian.org/img/20180123_110139.png) 
+![2018-01-23 11:01:39](http://static.cocolian.org/img/201801/20180123_110139.png) 
    
 > 11:01:46  韩涛  
    
@@ -496,7 +496,7 @@ tag:		  [chat]
    
 > 13:44:29  MyCity  
    
-![2018-01-23 13:44:29](http://static.cocolian.org/img/20180123_134429.png) 
+![2018-01-23 13:44:29](http://static.cocolian.org/img/201801/20180123_134429.png) 
    
 > 13:44:45  MyCity  
    
@@ -580,11 +580,11 @@ tag:		  [chat]
    
 > 15:08:32  龚晓冬  
    
-![2018-01-23 15:08:32](http://static.cocolian.org/img/20180123_150832.png) 
+![2018-01-23 15:08:32](http://static.cocolian.org/img/201801/20180123_150832.png) 
    
 > 15:10:10  龚晓冬  
    
-![2018-01-23 15:10:10](http://static.cocolian.org/img/20180123_151010.png) 
+![2018-01-23 15:10:10](http://static.cocolian.org/img/201801/20180123_151010.png) 
    
 > 15:11:06  龚晓冬  
    
@@ -608,7 +608,7 @@ tag:		  [chat]
    
 > 15:12:54  龚晓冬  
    
-![2018-01-23 15:12:54](http://static.cocolian.org/img/20180123_151254.png) 
+![2018-01-23 15:12:54](http://static.cocolian.org/img/201801/20180123_151254.png) 
    
 > 15:13:58  龚晓冬  
    
@@ -636,7 +636,7 @@ tag:		  [chat]
    
 > 17:05:42  付云-农业-开发-成都  
    
-![2018-01-23 17:05:42](http://static.cocolian.org/img/20180123_170542.png) 
+![2018-01-23 17:05:42](http://static.cocolian.org/img/201801/20180123_170542.png) 
    
 > 17:18:40  邹芳  
    
@@ -648,7 +648,7 @@ tag:		  [chat]
    
 > 17:20:17  付云-农业-开发-成都  
    
-![2018-01-23 17:20:17](http://static.cocolian.org/img/20180123_172017.png) 
+![2018-01-23 17:20:17](http://static.cocolian.org/img/201801/20180123_172017.png) 
    
 > 17:21:28  龚晓冬  
    

@@ -12,7 +12,7 @@ tag:		  [chat]
    
 > 08:06:27  Emerson  
    
-![2018-01-12 08:06:27](http://static.cocolian.org/img/20180112_080627.png) 
+![2018-01-12 08:06:27](http://static.cocolian.org/img/201801/20180112_080627.png) 
    
 > 08:20:01  龚晓冬  
    
@@ -56,7 +56,7 @@ tag:		  [chat]
    
 > 08:53:12  龚晓冬  
    
-![2018-01-12 08:53:12](http://static.cocolian.org/img/20180112_085312.png) 
+![2018-01-12 08:53:12](http://static.cocolian.org/img/201801/20180112_085312.png) 
    
 > 08:53:21  龚晓冬  
    
@@ -124,15 +124,15 @@ tag:		  [chat]
    
 > 09:09:20  Ark  
    
-![2018-01-12 09:09:20](http://static.cocolian.org/img/20180112_090920.png) 
+![2018-01-12 09:09:20](http://static.cocolian.org/img/201801/20180112_090920.png) 
    
 > 10:57:33  龚晓冬  
    
-![2018-01-12 10:57:33](http://static.cocolian.org/img/20180112_105733.png) 
+![2018-01-12 10:57:33](http://static.cocolian.org/img/201801/20180112_105733.png) 
    
 > 10:57:44  龚晓冬  
    
-![2018-01-12 10:57:44](http://static.cocolian.org/img/20180112_105744.png) 
+![2018-01-12 10:57:44](http://static.cocolian.org/img/201801/20180112_105744.png) 
    
 > 10:57:50  龚晓冬  
    
@@ -324,7 +324,7 @@ P2P有借贷关系
    
 > 17:09:16  珞珈-恒丰银行-产品-北京  
    
-![2018-01-12 17:09:16](http://static.cocolian.org/img/20180112_170916.png) 
+![2018-01-12 17:09:16](http://static.cocolian.org/img/201801/20180112_170916.png) 
    
 > 17:09:46  龚晓冬  
    
@@ -464,7 +464,7 @@ P2P有借贷关系
    
 > 19:35:42  一抹sunshine  
    
-![2018-01-12 19:35:42](http://static.cocolian.org/img/20180112_193542.png) 
+![2018-01-12 19:35:42](http://static.cocolian.org/img/201801/20180112_193542.png) 
    
 > 19:55:54  李雄峰  
    

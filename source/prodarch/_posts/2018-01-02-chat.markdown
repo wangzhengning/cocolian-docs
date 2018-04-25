@@ -44,7 +44,7 @@ tag:		  [chat]
    
 > 10:32:50  我  
    
-![2018-01-02 10:32:50](http://static.cocolian.org/img/20180102_103250.png) 
+![2018-01-02 10:32:50](http://static.cocolian.org/img/201801/20180102_103250.png) 
    
 > 10:32:54  我  
    
@@ -112,7 +112,7 @@ tag:		  [chat]
    
 > 11:18:17  邹芳  
    
-![2018-01-02 11:18:17](http://static.cocolian.org/img/20180102_111817.png) 
+![2018-01-02 11:18:17](http://static.cocolian.org/img/201801/20180102_111817.png) 
    
 > 11:18:29  邹芳  
    

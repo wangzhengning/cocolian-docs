@@ -28,11 +28,11 @@ header-img: "img/post-bg-wechat.jpg"
 
 公司A在助贷模式下需要和支付公司做系统对接，提供入金、出金服务。直融模式业务流程如下
 
-![图1](http://static.cocolian.org/img/20180206_170126.png)
+![图1](http://static.cocolian.org/img/201802/20180206_170126.png)
 
 ### 2 系统框图
 
-![图2](http://static.cocolian.org/img/20180206_170205.png)
+![图2](http://static.cocolian.org/img/201802/20180206_170205.png)
 
 ### 3 支付流程介绍
 

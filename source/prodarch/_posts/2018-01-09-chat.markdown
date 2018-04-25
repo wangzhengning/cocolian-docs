@@ -48,7 +48,7 @@ tag:		  [chat]
    
 > 00:05:11  sea  
    
-![2018-01-09 00:05:11](http://static.cocolian.org/img/20180109_000511.png) 
+![2018-01-09 00:05:11](http://static.cocolian.org/img/201801/20180109_000511.png) 
    
 > 00:05:18  sea  
    
@@ -108,7 +108,7 @@ tag:		  [chat]
    
 > 00:12:51  付云-农业-开发-成都  
    
-![2018-01-09 00:12:51](http://static.cocolian.org/img/20180109_001251.png) 
+![2018-01-09 00:12:51](http://static.cocolian.org/img/201801/20180109_001251.png) 
    
 > 00:13:26  付云-农业-开发-成都  
    
@@ -168,7 +168,7 @@ tag:		  [chat]
    
 > 00:21:15  sea  
    
-![2018-01-09 00:21:15](http://static.cocolian.org/img/20180109_002115.png) 
+![2018-01-09 00:21:15](http://static.cocolian.org/img/201801/20180109_002115.png) 
    
 > 00:21:43  sea  
    
@@ -528,7 +528,7 @@ tag:		  [chat]
    
 > 11:00:13  付云-农业-开发-成都  
    
-![2018-01-09 11:00:13](http://static.cocolian.org/img/20180109_110013.png) 
+![2018-01-09 11:00:13](http://static.cocolian.org/img/201801/20180109_110013.png) 
    
 > 11:01:11  一盏灯  
    
@@ -564,7 +564,7 @@ mind manager也可以
    
 > 11:13:00  MyCity  
    
-![2018-01-09 11:13:00](http://static.cocolian.org/img/20180109_111300.png) 
+![2018-01-09 11:13:00](http://static.cocolian.org/img/201801/20180109_111300.png) 
    
 > 11:13:08  MyCity  
    

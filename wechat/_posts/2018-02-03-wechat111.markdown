@@ -21,11 +21,11 @@ header-img: "img/post-bg-wechat.jpg"
 
 从身体健康角度可以将用户分为四种客群  
 
-![20180203_150110](http://static.cocolian.org/img/20180203_150110.png)
+![20180203_150110](http://static.cocolian.org/img/201802/20180203_150110.png)
 
 从个人健康探索历程来说分为四个阶段  
 
-![20180203_150127](http://static.cocolian.org/img/20180203_150127.png)
+![20180203_150127](http://static.cocolian.org/img/201802/20180203_150127.png)
 
 观望期、探索期、坚持期及分享期。这4个阶段，是消费者从菜鸟变成健康达人的必经之旅，也是大健康企业可以发挥自身商业价值的历程。
 
@@ -36,18 +36,18 @@ header-img: "img/post-bg-wechat.jpg"
 
 从生命周期角度看待个人健康需求: 
 
-![20180203_150214](http://static.cocolian.org/img/20180203_150214.png)
+![20180203_150214](http://static.cocolian.org/img/201802/20180203_150214.png)
 
 ### 三、行业趋势及产业链
 
 关于大健康的粗分类：  
-![20180203_150242](http://static.cocolian.org/img/20180203_150242.png)
+![20180203_150242](http://static.cocolian.org/img/201802/20180203_150242.png)
 
 中美大健康环境背景的差异：  
-![20180203_150256](http://static.cocolian.org/img/20180203_150256.png)
+![20180203_150256](http://static.cocolian.org/img/201802/20180203_150256.png)
 
 移动健康产业相关方分析：  
-![20180203_150308](http://static.cocolian.org/img/20180203_150308.png)
+![20180203_150308](http://static.cocolian.org/img/201802/20180203_150308.png)
 
 医疗资源提供方-医院/医生：医疗体系的核心资源。能否接入医院对移动医疗商业模式直观重要，因此医院在移动医疗产业链中拥有较高的话语权和地位。考虑到移动医疗可能对医院现有利益链条进行重组的情况，医院对移动医疗的付费能力和付费动力都不会太强；
  
@@ -60,53 +60,53 @@ header-img: "img/post-bg-wechat.jpg"
 ### 四、移动健康行业巨头简介
 
 **阿里**
-![20180203_150400](http://static.cocolian.org/img/20180203_150400.png)
+![20180203_150400](http://static.cocolian.org/img/201802/20180203_150400.png)
 
 **腾讯**
-![20180203_150401](http://static.cocolian.org/img/20180203_150401.png)
+![20180203_150401](http://static.cocolian.org/img/201802/20180203_150401.png)
 
 **百度**
-![20180203_150402](http://static.cocolian.org/img/20180203_150402.png)
+![20180203_150402](http://static.cocolian.org/img/201802/20180203_150402.png)
 
 **妙健康**
-![20180203_150403](http://static.cocolian.org/img/20180203_150403.png)
+![20180203_150403](http://static.cocolian.org/img/201802/20180203_150403.png)
 
 **平安**
-![20180203_150404](http://static.cocolian.org/img/20180203_150404.png)
+![20180203_150404](http://static.cocolian.org/img/201802/20180203_150404.png)
 
 ### 五、垂直领域典型应用
 
 **垂直平台-医疗服务**
-![20180203_150425](http://static.cocolian.org/img/20180203_150425.png)
+![20180203_150425](http://static.cocolian.org/img/201802/20180203_150425.png)
 
 **垂直平台-运动**
-![20180203_150426](http://static.cocolian.org/img/20180203_150426.png)
+![20180203_150426](http://static.cocolian.org/img/201802/20180203_150426.png)
 
 ### 六、近年健康领域行业趋势
 
 **科技趋势-基因组学**
-![20180203_150531](http://static.cocolian.org/img/20180203_150531.png)
+![20180203_150531](http://static.cocolian.org/img/201802/20180203_150531.png)
 **科技趋势-人工智能**
-![20180203_150532](http://static.cocolian.org/img/20180203_150532.png)
+![20180203_150532](http://static.cocolian.org/img/201802/20180203_150532.png)
 **科技趋势-医疗机器人**
-![20180203_150533](http://static.cocolian.org/img/20180203_150533.png)
+![20180203_150533](http://static.cocolian.org/img/201802/20180203_150533.png)
 **科技趋势-区块链**
-![20180203_150534](http://static.cocolian.org/img/20180203_150534.png)
+![20180203_150534](http://static.cocolian.org/img/201802/20180203_150534.png)
 **科技趋势-科技医疗化**
-![20180203_150535](http://static.cocolian.org/img/20180203_150535.png)
+![20180203_150535](http://static.cocolian.org/img/201802/20180203_150535.png)
 
 **科技趋势-体外诊断**
-![20180203_150536.png](http://static.cocolian.org/img/20180203_150536.png)
+![20180203_150536.png](http://static.cocolian.org/img/201802/20180203_150536.png)
 
 **生产关系-医疗机构**
-![20180203_150537.png](http://static.cocolian.org/img/20180203_150537.png)
+![20180203_150537.png](http://static.cocolian.org/img/201802/20180203_150537.png)
 
 **生产要素-互联网医疗**
-![20180203_150538.png](http://static.cocolian.org/img/20180203_150538.png)
+![20180203_150538.png](http://static.cocolian.org/img/201802/20180203_150538.png)
 **生产要素-互联网医院**
-![20180203_150539.png](http://static.cocolian.org/img/20180203_150539.png)
+![20180203_150539.png](http://static.cocolian.org/img/201802/20180203_150539.png)
 **消费升级-需求倒逼市场化改革**
-![20180203_150540.png](http://static.cocolian.org/img/20180203_150540.png)
+![20180203_150540.png](http://static.cocolian.org/img/201802/20180203_150540.png)
 
 
 ### 七、关于失利案例与痛点及痛点分享
@@ -130,12 +130,12 @@ header-img: "img/post-bg-wechat.jpg"
 失利案例分享： 
 
 - 看处方-杏仁医生前区
-![20180203_150650](http://static.cocolian.org/img/20180203_150650.png)
+![20180203_150650](http://static.cocolian.org/img/201802/20180203_150650.png)
 - 青苹果健康-医患交流
-![20180203_150651.png](http://static.cocolian.org/img/20180203_150651.png)
+![20180203_150651.png](http://static.cocolian.org/img/201802/20180203_150651.png)
 - 百度移动医疗事业部
-![20180203_150652](http://static.cocolian.org/img/20180203_150652.png)
+![20180203_150652](http://static.cocolian.org/img/201802/20180203_150652.png)
 - Pact-健康管理工具
-![20180203_150653](http://static.cocolian.org/img/20180203_150653.png)
+![20180203_150653](http://static.cocolian.org/img/201802/20180203_150653.png)
 
 

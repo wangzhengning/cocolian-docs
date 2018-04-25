@@ -42,13 +42,13 @@ tag:		[publish]
 6. 资产转让流程  
 7. 还款催收流程  
 
-![20180209_170133](http://static.cocolian.org/img/20180209_170133.png)  
-![20180209_170148](http://static.cocolian.org/img/20180209_170148.png)  
-![20180209_170153](http://static.cocolian.org/img/20180209_170153.png)  
-![20180209_170157](http://static.cocolian.org/img/20180209_170157.png)  
-![20180209_170201](http://static.cocolian.org/img/20180209_170201.png)  
-![20180209_170206](http://static.cocolian.org/img/20180209_170206.png)  
-![20180209_170210](http://static.cocolian.org/img/20180209_170210.png)  
+![20180209_170133](http://static.cocolian.org/img/201802/20180209_170133.png)  
+![20180209_170148](http://static.cocolian.org/img/201802/20180209_170148.png)  
+![20180209_170153](http://static.cocolian.org/img/201802/20180209_170153.png)  
+![20180209_170157](http://static.cocolian.org/img/201802/20180209_170157.png)  
+![20180209_170201](http://static.cocolian.org/img/201802/20180209_170201.png)  
+![20180209_170206](http://static.cocolian.org/img/201802/20180209_170206.png)  
+![20180209_170210](http://static.cocolian.org/img/201802/20180209_170210.png)  
 
 ### 3、技术架构
 

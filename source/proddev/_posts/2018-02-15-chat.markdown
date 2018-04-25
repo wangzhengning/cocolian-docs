@@ -8,7 +8,7 @@ tag:		  [chat]
 ---
 > 00:06:17  龚晓冬  
    
-![2018-02-15 00:06:17](http://static.cocolian.org/img/20180215_000617.png) 
+![2018-02-15 00:06:17](http://static.cocolian.org/img/201802/20180215_000617.png) 
    
 > 00:07:16  聚合支付_程昱  
    
@@ -16,11 +16,11 @@ tag:		  [chat]
    
 > 00:07:45  龚晓冬  
    
-![2018-02-15 00:07:45](http://static.cocolian.org/img/20180215_000745.png) 
+![2018-02-15 00:07:45](http://static.cocolian.org/img/201802/20180215_000745.png) 
    
 > 00:07:45  龚晓冬  
    
-![2018-02-15 00:07:45](http://static.cocolian.org/img/20180215_000745.png) 
+![2018-02-15 00:07:45](http://static.cocolian.org/img/201802/20180215_000745.png) 
    
 > 00:08:30  龚晓冬  
    
@@ -48,7 +48,7 @@ tag:		  [chat]
    
 > 14:04:36  右军  
    
-![2018-02-15 14:04:36](http://static.cocolian.org/img/20180215_140436.png) 
+![2018-02-15 14:04:36](http://static.cocolian.org/img/201802/20180215_140436.png) 
    
 > 14:23:57  聚合支付_程昱  
    
@@ -56,7 +56,7 @@ tag:		  [chat]
    
 > 14:29:25  吕剑辉  
    
-![2018-02-15 14:29:25](http://static.cocolian.org/img/20180215_142925.png) 
+![2018-02-15 14:29:25](http://static.cocolian.org/img/201802/20180215_142925.png) 
    
 > 14:30:51  程超  
    

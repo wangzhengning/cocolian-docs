@@ -32,11 +32,11 @@ tag:		  [chat]
    
 > 10:21:02  Ben富友PM  
    
-![2017-12-21 10:21:02](http://static.cocolian.org/img/20171221_102102.png) 
+![2017-12-21 10:21:02](http://static.cocolian.org/img/201712/20171221_102102.png) 
    
 > 10:21:02  维森陌-拉莫帅-帅德-布耀布耀德  
    
-![2017-12-21 10:21:02](http://static.cocolian.org/img/20171221_102102.png) 
+![2017-12-21 10:21:02](http://static.cocolian.org/img/201712/20171221_102102.png) 
    
 > 10:38:29  槑旭旭 ?微信超級會員  
    
@@ -108,7 +108,7 @@ tag:		  [chat]
    
 > 10:55:39  心有灵浠  
    
-![2017-12-21 10:55:39](http://static.cocolian.org/img/20171221_105539.png) 
+![2017-12-21 10:55:39](http://static.cocolian.org/img/201712/20171221_105539.png) 
    
 > 10:55:52  心有灵浠  
    
@@ -164,11 +164,11 @@ tag:		  [chat]
    
 > 14:44:59  Michael-CGB-技术经理-佛山  
    
-![2017-12-21 14:44:59](http://static.cocolian.org/img/20171221_144459.png) 
+![2017-12-21 14:44:59](http://static.cocolian.org/img/201712/20171221_144459.png) 
    
 > 14:44:59  朱雄新-广发支付组  
    
-![2017-12-21 14:44:59](http://static.cocolian.org/img/20171221_144459.png) 
+![2017-12-21 14:44:59](http://static.cocolian.org/img/201712/20171221_144459.png) 
    
 > 15:22:07  fangfang  
    
@@ -180,11 +180,11 @@ tag:		  [chat]
    
 > 16:54:51  王  
    
-![2017-12-21 16:54:51](http://static.cocolian.org/img/20171221_165451.png) 
+![2017-12-21 16:54:51](http://static.cocolian.org/img/201712/20171221_165451.png) 
    
 > 16:54:51  王qz-玖富支付  
    
-![2017-12-21 16:54:51](http://static.cocolian.org/img/20171221_165451.png) 
+![2017-12-21 16:54:51](http://static.cocolian.org/img/201712/20171221_165451.png) 
    
 > 16:55:44  龚晓冬  
    
@@ -364,11 +364,11 @@ wllw_luojia:
    
 > 17:26:08  李小胖  
    
-![2017-12-21 17:26:08](http://static.cocolian.org/img/20171221_172608.png) 
+![2017-12-21 17:26:08](http://static.cocolian.org/img/201712/20171221_172608.png) 
    
 > 17:26:08  李钦珑-深圳优讯-PM  
    
-![2017-12-21 17:26:08](http://static.cocolian.org/img/20171221_172608.png) 
+![2017-12-21 17:26:08](http://static.cocolian.org/img/201712/20171221_172608.png) 
    
 > 17:26:09  李小胖  
    
@@ -424,11 +424,11 @@ wllw_luojia:
    
 > 17:27:52  Stephen  
    
-![2017-12-21 17:27:52](http://static.cocolian.org/img/20171221_172752.png) 
+![2017-12-21 17:27:52](http://static.cocolian.org/img/201712/20171221_172752.png) 
    
 > 17:27:52  ls-翼支付-PM  
    
-![2017-12-21 17:27:52](http://static.cocolian.org/img/20171221_172752.png) 
+![2017-12-21 17:27:52](http://static.cocolian.org/img/201712/20171221_172752.png) 
    
 > 17:28:04  孔晓光 丰瑞祥CTO  
    
@@ -440,7 +440,7 @@ wllw_luojia:
    
 > 17:28:28  胡新松-银联  
    
-![2017-12-21 17:28:28](http://static.cocolian.org/img/20171221_172828.png) 
+![2017-12-21 17:28:28](http://static.cocolian.org/img/201712/20171221_172828.png) 
    
 > 17:28:32  lisp 财付通结算财务  
    
@@ -636,11 +636,11 @@ wllw_luojia:
    
 > 17:36:25  Roger丙  
    
-![2017-12-21 17:36:25](http://static.cocolian.org/img/20171221_173625.png) 
+![2017-12-21 17:36:25](http://static.cocolian.org/img/201712/20171221_173625.png) 
    
 > 17:36:25  Roger丙-翼支付  
    
-![2017-12-21 17:36:25](http://static.cocolian.org/img/20171221_173625.png) 
+![2017-12-21 17:36:25](http://static.cocolian.org/img/201712/20171221_173625.png) 
    
 > 17:37:13  lisp 财付通结算财务  
    
@@ -728,11 +728,11 @@ kxg80123:
    
 > 17:39:44  李小胖  
    
-![2017-12-21 17:39:44](http://static.cocolian.org/img/20171221_173944.png) 
+![2017-12-21 17:39:44](http://static.cocolian.org/img/201712/20171221_173944.png) 
    
 > 17:39:44  李钦珑-深圳优讯-PM  
    
-![2017-12-21 17:39:44](http://static.cocolian.org/img/20171221_173944.png) 
+![2017-12-21 17:39:44](http://static.cocolian.org/img/201712/20171221_173944.png) 
    
 > 17:39:49  李小胖  
    
@@ -784,11 +784,11 @@ kxg80123:
    
 > 17:40:54  龚晓冬  
    
-![2017-12-21 17:40:54](http://static.cocolian.org/img/20171221_174054.png) 
+![2017-12-21 17:40:54](http://static.cocolian.org/img/201712/20171221_174054.png) 
    
 > 17:40:54  龚晓冬-银商账户-产品-上海  
    
-![2017-12-21 17:40:54](http://static.cocolian.org/img/20171221_174054.png) 
+![2017-12-21 17:40:54](http://static.cocolian.org/img/201712/20171221_174054.png) 
    
 > 17:40:56  沙莎  
    
@@ -1120,11 +1120,11 @@ CUPD 3楼[捂脸]
    
 > 18:00:58  Tree  
    
-![2017-12-21 18:00:58](http://static.cocolian.org/img/20171221_180058.png) 
+![2017-12-21 18:00:58](http://static.cocolian.org/img/201712/20171221_180058.png) 
    
 > 18:00:58  叶林松-微众银行高级产品经理  
    
-![2017-12-21 18:00:58](http://static.cocolian.org/img/20171221_180058.png) 
+![2017-12-21 18:00:58](http://static.cocolian.org/img/201712/20171221_180058.png) 
    
 > 18:01:00  Tree  
    
@@ -1240,11 +1240,11 @@ CUPD 3楼[捂脸]
    
 > 18:11:37  万黎-恒丰银行-支付产品PM  
    
-![2017-12-21 18:11:37](http://static.cocolian.org/img/20171221_181137.png) 
+![2017-12-21 18:11:37](http://static.cocolian.org/img/201712/20171221_181137.png) 
    
 > 18:11:37  珞珈-恒丰银行-产品-北京  
    
-![2017-12-21 18:11:37](http://static.cocolian.org/img/20171221_181137.png) 
+![2017-12-21 18:11:37](http://static.cocolian.org/img/201712/20171221_181137.png) 
    
 > 18:11:59  万黎-恒丰银行-支付产品PM  
    
@@ -1488,11 +1488,11 @@ CUPD 3楼[捂脸]
    
 > 18:19:53  龚晓冬  
    
-![2017-12-21 18:19:53](http://static.cocolian.org/img/20171221_181953.png) 
+![2017-12-21 18:19:53](http://static.cocolian.org/img/201712/20171221_181953.png) 
    
 > 18:19:53  龚晓冬-银商账户-产品-上海  
    
-![2017-12-21 18:19:53](http://static.cocolian.org/img/20171221_181953.png) 
+![2017-12-21 18:19:53](http://static.cocolian.org/img/201712/20171221_181953.png) 
    
 > 18:20:06  万黎-恒丰银行-支付产品PM  
    
@@ -1660,7 +1660,7 @@ CUPD 3楼[捂脸]
    
 > 18:27:13  万黎-恒丰银行-支付产品PM  
    
-![2017-12-21 18:27:13](http://static.cocolian.org/img/20171221_182713.png) 
+![2017-12-21 18:27:13](http://static.cocolian.org/img/201712/20171221_182713.png) 
    
 > 18:27:14  龚晓冬-银商账户-产品-上海  
    
@@ -1668,7 +1668,7 @@ CUPD 3楼[捂脸]
    
 > 18:27:14  珞珈-恒丰银行-产品-北京  
    
-![2017-12-21 18:27:14](http://static.cocolian.org/img/20171221_182714.png) 
+![2017-12-21 18:27:14](http://static.cocolian.org/img/201712/20171221_182714.png) 
    
 > 18:27:32  万黎-恒丰银行-支付产品PM  
    
@@ -1744,27 +1744,27 @@ CUPD 3楼[捂脸]
    
 > 18:31:24  龚晓冬  
    
-![2017-12-21 18:31:24](http://static.cocolian.org/img/20171221_183124.png) 
+![2017-12-21 18:31:24](http://static.cocolian.org/img/201712/20171221_183124.png) 
    
 > 18:31:24  龚晓冬-银商账户-产品-上海  
    
-![2017-12-21 18:31:24](http://static.cocolian.org/img/20171221_183124.png) 
+![2017-12-21 18:31:24](http://static.cocolian.org/img/201712/20171221_183124.png) 
    
 > 18:32:14  龚晓冬  
    
-![2017-12-21 18:32:14](http://static.cocolian.org/img/20171221_183214.png) 
+![2017-12-21 18:32:14](http://static.cocolian.org/img/201712/20171221_183214.png) 
    
 > 18:32:14  龚晓冬-银商账户-产品-上海  
    
-![2017-12-21 18:32:14](http://static.cocolian.org/img/20171221_183214.png) 
+![2017-12-21 18:32:14](http://static.cocolian.org/img/201712/20171221_183214.png) 
    
 > 18:33:22  龚晓冬  
    
-![2017-12-21 18:33:22](http://static.cocolian.org/img/20171221_183322.png) 
+![2017-12-21 18:33:22](http://static.cocolian.org/img/201712/20171221_183322.png) 
    
 > 18:33:22  龚晓冬-银商账户-产品-上海  
    
-![2017-12-21 18:33:22](http://static.cocolian.org/img/20171221_183322.png) 
+![2017-12-21 18:33:22](http://static.cocolian.org/img/201712/20171221_183322.png) 
    
 > 18:33:28  龚晓冬  
    
@@ -1800,19 +1800,19 @@ CUPD 3楼[捂脸]
    
 > 18:35:12  龚晓冬  
    
-![2017-12-21 18:35:12](http://static.cocolian.org/img/20171221_183512.png) 
+![2017-12-21 18:35:12](http://static.cocolian.org/img/201712/20171221_183512.png) 
    
 > 18:35:12  龚晓冬-银商账户-产品-上海  
    
-![2017-12-21 18:35:12](http://static.cocolian.org/img/20171221_183512.png) 
+![2017-12-21 18:35:12](http://static.cocolian.org/img/201712/20171221_183512.png) 
    
 > 18:35:35  龚晓冬  
    
-![2017-12-21 18:35:35](http://static.cocolian.org/img/20171221_183535.png) 
+![2017-12-21 18:35:35](http://static.cocolian.org/img/201712/20171221_183535.png) 
    
 > 18:35:35  龚晓冬-银商账户-产品-上海  
    
-![2017-12-21 18:35:35](http://static.cocolian.org/img/20171221_183535.png) 
+![2017-12-21 18:35:35](http://static.cocolian.org/img/201712/20171221_183535.png) 
    
 > 18:35:58  龚晓冬  
    
@@ -1944,11 +1944,11 @@ CUPD 3楼[捂脸]
    
 > 18:43:00  于江宁  
    
-![2017-12-21 18:43:00](http://static.cocolian.org/img/20171221_184300.png) 
+![2017-12-21 18:43:00](http://static.cocolian.org/img/201712/20171221_184300.png) 
    
 > 18:43:00  于江宁-银联电子PM  
    
-![2017-12-21 18:43:00](http://static.cocolian.org/img/20171221_184300.png) 
+![2017-12-21 18:43:00](http://static.cocolian.org/img/201712/20171221_184300.png) 
    
 > 18:43:19  H?o?wa?r?d?_?WANG  
    
@@ -2024,11 +2024,11 @@ CUPD 3楼[捂脸]
    
 > 18:44:25  槑旭旭 ?微信超級會員  
    
-![2017-12-21 18:44:25](http://static.cocolian.org/img/20171221_184425.png) 
+![2017-12-21 18:44:25](http://static.cocolian.org/img/201712/20171221_184425.png) 
    
 > 18:44:25  聚合支付_程昱  
    
-![2017-12-21 18:44:25](http://static.cocolian.org/img/20171221_184425.png) 
+![2017-12-21 18:44:25](http://static.cocolian.org/img/201712/20171221_184425.png) 
    
 > 18:44:51  龚晓冬  
    
@@ -2096,11 +2096,11 @@ gxd1987:
    
 > 18:46:44  槑旭旭 ?微信超級會員  
    
-![2017-12-21 18:46:44](http://static.cocolian.org/img/20171221_184644.png) 
+![2017-12-21 18:46:44](http://static.cocolian.org/img/201712/20171221_184644.png) 
    
 > 18:46:44  聚合支付_程昱  
    
-![2017-12-21 18:46:44](http://static.cocolian.org/img/20171221_184644.png) 
+![2017-12-21 18:46:44](http://static.cocolian.org/img/201712/20171221_184644.png) 
    
 > 18:46:57  槑旭旭 ?微信超級會員  
    
@@ -2644,11 +2644,11 @@ gxd1987:
    
 > 19:06:31  龚晓冬  
    
-![2017-12-21 19:06:31](http://static.cocolian.org/img/20171221_190631.png) 
+![2017-12-21 19:06:31](http://static.cocolian.org/img/201712/20171221_190631.png) 
    
 > 19:06:31  龚晓冬-银商账户-产品-上海  
    
-![2017-12-21 19:06:31](http://static.cocolian.org/img/20171221_190631.png) 
+![2017-12-21 19:06:31](http://static.cocolian.org/img/201712/20171221_190631.png) 
    
 > 19:06:47  万黎-恒丰银行-支付产品PM  
    
@@ -2940,11 +2940,11 @@ gxd1987:
    
 > 19:14:55  龚晓冬  
    
-![2017-12-21 19:14:55](http://static.cocolian.org/img/20171221_191455.png) 
+![2017-12-21 19:14:55](http://static.cocolian.org/img/201712/20171221_191455.png) 
    
 > 19:14:55  龚晓冬-银商账户-产品-上海  
    
-![2017-12-21 19:14:55](http://static.cocolian.org/img/20171221_191455.png) 
+![2017-12-21 19:14:55](http://static.cocolian.org/img/201712/20171221_191455.png) 
    
 > 19:15:09  龚晓冬  
    
@@ -3176,11 +3176,11 @@ gxd1987:
    
 > 19:23:55  龚晓冬  
    
-![2017-12-21 19:23:55](http://static.cocolian.org/img/20171221_192355.png) 
+![2017-12-21 19:23:55](http://static.cocolian.org/img/201712/20171221_192355.png) 
    
 > 19:23:55  龚晓冬-银商账户-产品-上海  
    
-![2017-12-21 19:23:55](http://static.cocolian.org/img/20171221_192355.png) 
+![2017-12-21 19:23:55](http://static.cocolian.org/img/201712/20171221_192355.png) 
    
 > 19:24:19  龚晓冬  
    
@@ -3272,11 +3272,11 @@ gxd1987:
    
 > 19:33:40  龚晓冬  
    
-![2017-12-21 19:33:40](http://static.cocolian.org/img/20171221_193340.png) 
+![2017-12-21 19:33:40](http://static.cocolian.org/img/201712/20171221_193340.png) 
    
 > 19:33:40  龚晓冬-银商账户-产品-上海  
    
-![2017-12-21 19:33:40](http://static.cocolian.org/img/20171221_193340.png) 
+![2017-12-21 19:33:40](http://static.cocolian.org/img/201712/20171221_193340.png) 
    
 > 19:34:40  龚晓冬  
    

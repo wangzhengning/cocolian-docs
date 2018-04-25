@@ -308,7 +308,7 @@ k8s还有这么多坑啊。我估计我们定的Q2的目标完不成了[流泪]
    
 > 16:48:35  钟鸿敏  
    
-![2018-01-03 16:48:35](http://static.cocolian.org/img/20180103_164835.png) 
+![2018-01-03 16:48:35](http://static.cocolian.org/img/201801/20180103_164835.png) 
    
 > 16:49:31  bill在飞  
    
@@ -368,7 +368,7 @@ Atlassian基本就满足你的需求了
    
 > 20:02:27  钢星  
    
-![2018-01-03 20:02:27](http://static.cocolian.org/img/20180103_200227.png) 
+![2018-01-03 20:02:27](http://static.cocolian.org/img/201801/20180103_200227.png) 
    
 > 20:04:49  Codefor-YMT-TechLead-BJ  
    

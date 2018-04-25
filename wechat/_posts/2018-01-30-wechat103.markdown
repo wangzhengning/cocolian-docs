@@ -61,7 +61,7 @@ header-img: "img/post-bg-wechat.jpg"
 
 三级：营业执照和店面照片上传成功
 
-![20180130_210620](http://static.cocolian.org/img/20180130_210620.png)
+![20180130_210620](http://static.cocolian.org/img/201801/20180130_210620.png)
 
 ---
 

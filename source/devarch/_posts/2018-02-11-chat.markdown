@@ -8,7 +8,7 @@ tag:		  [chat]
 ---
 > 09:21:10  kent--研发  
    
-![2018-02-11 09:21:10](http://static.cocolian.org/img/20180211_092110.png) 
+![2018-02-11 09:21:10](http://static.cocolian.org/img/201802/20180211_092110.png) 
    
 > 09:21:28  kent--研发  
    

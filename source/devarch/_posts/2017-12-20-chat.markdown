@@ -156,19 +156,19 @@ tag:		  [chat]
    
 > 09:24:31  丁爱民  
    
-![2017-12-20 09:24:31](http://static.cocolian.org/img/20171220_092431.png) 
+![2017-12-20 09:24:31](http://static.cocolian.org/img/201712/20171220_092431.png) 
    
 > 09:24:31  丁爱民-JAVA开发工程师-圣亚云鼎支  
    
-![2017-12-20 09:24:31](http://static.cocolian.org/img/20171220_092431.png) 
+![2017-12-20 09:24:31](http://static.cocolian.org/img/201712/20171220_092431.png) 
    
 > 09:24:32  丁爱民  
    
-![2017-12-20 09:24:32](http://static.cocolian.org/img/20171220_092432.png) 
+![2017-12-20 09:24:32](http://static.cocolian.org/img/201712/20171220_092432.png) 
    
 > 09:24:32  丁爱民-JAVA开发工程师-圣亚云鼎支  
    
-![2017-12-20 09:24:32](http://static.cocolian.org/img/20171220_092432.png) 
+![2017-12-20 09:24:32](http://static.cocolian.org/img/201712/20171220_092432.png) 
    
 > 09:24:48  丁爱民  
    
@@ -292,7 +292,7 @@ https://developers.redhat.com/video/vimeo/26393084/
    
 > 12:26:28  胡桥-资邦金服-财务核心  
    
-![2017-12-20 12:26:28](http://static.cocolian.org/img/20171220_122628.png) 
+![2017-12-20 12:26:28](http://static.cocolian.org/img/201712/20171220_122628.png) 
    
 > 12:26:33  胡桥-资邦金服-财务核心  
    
@@ -304,7 +304,7 @@ https://developers.redhat.com/video/vimeo/26393084/
    
 > 12:26:34  胡桥-资邦金服-账务核心业务架构  
    
-![2017-12-20 12:26:34](http://static.cocolian.org/img/20171220_122634.png) 
+![2017-12-20 12:26:34](http://static.cocolian.org/img/201712/20171220_122634.png) 
    
 > 12:29:00  右军  
    
@@ -412,7 +412,7 @@ https://developers.redhat.com/video/vimeo/26393084/
    
 > 17:20:13  贾盼龙  
    
-![2017-12-20 17:20:13](http://static.cocolian.org/img/20171220_172013.png) 
+![2017-12-20 17:20:13](http://static.cocolian.org/img/201712/20171220_172013.png) 
    
 > 17:20:24  杜雷  
    

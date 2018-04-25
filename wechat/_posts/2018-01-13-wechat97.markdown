@@ -15,11 +15,11 @@ header-img: "img/post-bg-wechat.jpg"
 
 我们先看看支付宝、微信、银联的支付产品介绍
 
-![20180113_193148](http://static.cocolian.org/img/20180113_193148.png)
+![20180113_193148](http://static.cocolian.org/img/201801/20180113_193148.png)
 
-![20180113_193154](http://static.cocolian.org/img/20180113_193154.png)
+![20180113_193154](http://static.cocolian.org/img/201801/20180113_193154.png)
 
-![20180113_193201](http://static.cocolian.org/img/20180113_193201.png)
+![20180113_193201](http://static.cocolian.org/img/201801/20180113_193201.png)
 
 主流支付渠道都推出了诸多支付产品，面对消费者支付选择多样化的需求，商户需要接入不同渠道、不同支付产品。面对不同的渠道、不同的产品产品，需要商户逐个去申请签约、等待审核、开发联调……费尽心力接通后，还要在各渠道、各产品不同清结算方式下，根据正负向订单、结算周期、手续费，历经漫长的对账折磨；遇到通道不稳定产生的各种异常，漫长、低效的沟通也会让商户欲哭无泪。
 
@@ -36,11 +36,11 @@ header-img: "img/post-bg-wechat.jpg"
 
 申请成为支付宝、微信的官方服务商，按照蚂蚁金服服务商平台、微信服务商平台的指导说明，逐步完成资质审核、接口开发等环节，官方文档有详细的介绍说明：https://docs.open.alipay.com/399/106917/
 
-![20180113_193330](http://static.cocolian.org/img/20180113_193330.png)
+![20180113_193330](http://static.cocolian.org/img/201801/20180113_193330.png)
 
 https://pay.weixin.qq.com/wiki/doc/api/sl.html
 
-![20180113_193343](http://static.cocolian.org/img/20180113_193343.png)
+![20180113_193343](http://static.cocolian.org/img/201801/20180113_193343.png)
 
 **2. 间连银行模式**
 
@@ -123,7 +123,7 @@ A：1、支付宝、微信都有强大的风控系统，发现异常交易会直
 
 所以接通道之前有一件非常重要的事，就是**接口评估**
 
-![20180113_205000](http://static.cocolian.org/img/20180113_205000.png)
+![20180113_205000](http://static.cocolian.org/img/201801/20180113_205000.png)
 
 
 ---

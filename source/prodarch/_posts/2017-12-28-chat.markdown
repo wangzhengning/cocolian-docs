@@ -8,7 +8,7 @@ tag:		  [chat]
 ---
 > 00:26:56  于江宁  
    
-![2017-12-28 00:26:56](http://static.cocolian.org/img/20171228_002656.png) 
+![2017-12-28 00:26:56](http://static.cocolian.org/img/201712/20171228_002656.png) 
    
 > 00:27:47  于江宁  
    
@@ -40,7 +40,7 @@ tag:		  [chat]
    
 > 09:03:08  邹芳  
    
-![2017-12-28 09:03:08](http://static.cocolian.org/img/20171228_090308.png) 
+![2017-12-28 09:03:08](http://static.cocolian.org/img/201712/20171228_090308.png) 
    
 > 09:03:24  邹芳  
    
@@ -636,7 +636,7 @@ QA负责人从风险的角度开始打断RD，想要回滚。这时RD负责人�
    
 > 19:57:05  Codefor-YMT-TechLead-BJ  
    
-![2017-12-28 19:57:05](http://static.cocolian.org/img/20171228_195705.png) 
+![2017-12-28 19:57:05](http://static.cocolian.org/img/201712/20171228_195705.png) 
    
 > 19:57:22  Codefor-YMT-TechLead-BJ  
    
