@@ -7,7 +7,7 @@ date:       2018-02-26 12:00:00
 
 <aside class="content-aside">
 <ul>
-{% assign posts =  site.categories["monthly"] | sort:"month" %}
+{% assign posts =  site.categories["monthly"] | sort:"month" | reverse %}
 {% for post in posts  %}
 <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 {% endfor %}
