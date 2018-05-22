@@ -4,7 +4,7 @@ title: 		"支付系统整体架构"
 subtitle: 	"支付系统设计-1"
 date: 		2016-08-08 12:00:00
 author: 	"shamphone"
-chapter:	"2.1"
+chapter:	"02.1"
 
 ---
 

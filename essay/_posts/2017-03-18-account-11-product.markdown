@@ -4,7 +4,7 @@ title: 		"支付产品服务的设计"
 subtitle: 	"支付系统设计-11"
 date: 		2017-03-19 12:00:00
 author: 	"shamphone"
-chapter:	"2.3"
+chapter:	"02.3"
 
 ---
 

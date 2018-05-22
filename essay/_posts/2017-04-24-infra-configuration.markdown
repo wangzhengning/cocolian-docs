@@ -4,7 +4,7 @@ title: 		"配置管理系统设计和选型"
 subtitle: 	"支付系统设计"
 date: 		2017-04-24 12:00:00
 author: 	"shamphone"
-chapter:	"6.4"
+chapter:	"16.4"
 status:		"unfinished"
 ---
 

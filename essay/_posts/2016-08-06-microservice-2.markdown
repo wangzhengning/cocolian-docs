@@ -4,7 +4,7 @@ title:      "重构中的外部准备工作"
 subtitle:   "从SSH单体应用到微服务架构-2"
 date:       2016-08-05 12:00:00
 author:     "shamphone"
-chapter:	"5.2"
+chapter:	"15.2"
 
 ---
 

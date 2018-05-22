@@ -4,7 +4,7 @@ title: 		"支付风控数据仓库建设"
 subtitle: 	"支付风控系统设计-2"
 date: 		2016-12-18 12:00:00
 author: 	"shamphone"
-chapter:	"4.2"
+chapter:	"04.2"
 
 ---
 

@@ -4,7 +4,7 @@ title: 		"微服务的基础设施建设"
 subtitle: 	"支付系统设计-8"
 date: 		2017-03-01 12:00:00
 author: 	"shamphone"
-chapter:	"6.1"
+chapter:	"16.1"
 
 ---
 
