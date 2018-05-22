@@ -4,7 +4,7 @@ title: 		"支付系统的基础设施建设"
 subtitle: 	"支付系统设计-8"
 date: 		2016-11-12 12:00:00
 author: 	"shamphone"
-chapter:	"06.1"
+chapter:	"16.1"
 ---   
 
 
