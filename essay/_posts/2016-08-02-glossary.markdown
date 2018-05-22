@@ -4,7 +4,7 @@ title:      "支付行业词汇表"
 subtitle:   "支付行业词汇表"
 date:       2016-08-02 12:00:00
 author:     "shamphone"
-chapter:	"08.1"
+chapter:	"18.1"
 ---
 
 ## 机构和账户相关

@@ -4,7 +4,7 @@ title:      "银行卡bin"
 subtitle:   "截止2018年3月2日"
 date:       2017-10-09 12:00:00
 author:     "shamphone"
-chapter:	"08.2"
+chapter:	"18.2"
 ---
 
 - [2017年12月10日版卡表](http://static.cocolian.org/attach/2017年12月10日版卡表.xls)  
