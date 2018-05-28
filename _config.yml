@@ -4,7 +4,7 @@ SEOTitle: "Cocolian Framework | 可可链 "
 header-img: img/home-bg.jpg
 email: shamphone@gmail.com
 description: "Cocolian Framework，凤凰牌老熊， 开源支付基础组件"
-keyword: "Cocolian Framework, Fintech, Paymanet, 开源, 支付, 基础组件"
+keyword: "Cocolian, Fintech, Paymant, 凤凰牌老熊, 开源, 支付, 基础组件"
 url: "http://doc.cocolian.org"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 encoding: UTF-8
