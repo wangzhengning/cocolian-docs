@@ -1,6 +1,6 @@
 ---
 layout: 	essay
-title: 		" P2p产品设计的理论"
+title: 		"P2P产品设计的理论"
 date: 		2018-05-23 12:00:00
 author: 	"shamphone"
 chapter:	"06.1"
