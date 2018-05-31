@@ -1,11 +1,13 @@
 ---
 layout: 	essay
-title: 		"国外P2P的产品模式和公司"
+title: 		"国内P2P的产品模式和公司"
 date: 		2018-05-26 12:00:00
 author: 	"shamphone"
 chapter:	"06.4"
 status:		"hidden"
 ---
+
+
 http://doc.cocolian.org/wechat/2018/02/06/wechat109/
 
 
