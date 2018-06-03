@@ -4,7 +4,6 @@ title: 		"P2P存管系统"
 date: 		2018-05-29 12:00:00
 author: 	"shamphone"
 chapter:	"06.1"
-status:		"hidden"
 ---
 
 理解P2P系统的产品和技术设计，需要先通过认识在合规监管层面对P2P存管的设计。以此为基础，来把握P2P资金流。 

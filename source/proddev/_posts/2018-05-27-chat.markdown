@@ -3,7 +3,7 @@ layout:     source
 title:      "2018-05-27-WeChat"
 date:       2018-05-27 12:00:00
 author:     PaymentGroup
-lines:      85 
+lines:      87 
 tag:		  [chat]
 ---
 > 15:43:04  程琳Wa-杉德支付-产品-上海  
@@ -349,4 +349,12 @@ tag:		  [chat]
 > 22:59:10  Judy??  
    
 欢迎刘科长[鼓掌][鼓掌][鼓掌]  
+   
+> 23:04:37  Yang  
+   
+哈哈哈，欢迎刘科长[鼓掌][鼓掌][鼓掌]  
+   
+> 23:15:35  于江宁  
+   
+久仰  
    
