@@ -192,37 +192,46 @@ sudo systemctl start kubelet
 
 ```bash
 docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/pause-amd64:3.0
-docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-sidecar-amd64:1.14.4
+docker pull registry.cn-hangzhou.aliyuncs.com/jhr-k8s/k8s-dns-sidecar-amd64:1.14.8
 docker pull registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-apiserver-amd64:v1.7.5
 docker pull registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-controller-manager-amd64:v1.7.5
 docker pull registry.cn-hangzhou.aliyuncs.com/google-containers/kube-scheduler-amd64:v1.7.5
 docker pull registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-proxy-amd64:v1.7.5
 docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/flannel:v0.8.0-amd64
-docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-amd64:1.14.4
-docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4
+docker pull registry.cn-hangzhou.aliyuncs.com/jhr-k8s/k8s-dns-kube-dns-amd64:1.14.8
+docker pull registry.cn-hangzhou.aliyuncs.com/jhr-k8s/k8s-dns-dnsmasq-nanny-amd64:1.14.8
 docker pull registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17
 
 docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17  gcr.io/google_containers/etcd-amd64:3.0.1
-docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-apiserver-amd64:v1.7.5 gcr.io/google_containers/kube-apiserver-
+docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-apiserver-amd64:v1.7.5 gcr.io/google_containers/kube-apiserver-amd64:v1.7.5
 docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-controller-manager-amd64:v1.7.5  gcr.io/google_containers/kube-ager-amd64:v1.7.5
 docker tag registry.cn-hangzhou.aliyuncs.com/google-containers/kube-scheduler-amd64:v1.7.5 gcr.io/google_containers/kube64:v1.7.5
-docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4 gcr.io/google_containers/q-nanny-amd64:1.14.4
-docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-amd64:1.14.4 gcr.io/google_containers/k8s-dd64:1.14.4
+docker tag registry.cn-hangzhou.aliyuncs.com/jhr-k8s/k8s-dns-dnsmasq-nanny-amd64:1.14.8 gcr.io/google_containers/q-nanny-amd64:1.14.8
+docker tag registry.cn-hangzhou.aliyuncs.com/jhr-k8s/k8s-dns-kube-dns-amd64:1.14.8 gcr.io/google_containers/k8s-dd64:1.14.8
 docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/flannel:v0.8.0-amd64 gcr.io/google_containers/flannel:v0.8.0
 docker tag registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-proxy-amd64:v1.7.5 gcr.io/google_containers/kube-proxy-amd64:v1
 docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/pause-amd64:3.0 gcr.io/google_containers/pause-amd64:3.0
-docker tag registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-sidecar-amd64:1.14.4 gcr.io/google_containers/k8s-dn4:1.14.4
+docker tag registry.cn-hangzhou.aliyuncs.com/jhr-k8s/k8s-dns-sidecar-amd64:1.14.8 gcr.io/google_containers/k8s-dn4:1.14.8
 
 docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/pause-amd64:3.0
-docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-sidecar-amd64:1.14.4
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/jhr-k8s/k8s-dns-sidecar-amd64:1.14.8
 docker rmi -f registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-apiserver-amd64:v1.7.5
 docker rmi -f registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-controller-manager-amd64:v1.7.5
 docker rmi -f registry.cn-hangzhou.aliyuncs.com/google-containers/kube-scheduler-amd64:v1.7.5
 docker rmi -f registry.cn-qingdao.aliyuncs.com/zdd_k8s/kube-proxy-amd64:v1.7.5
 docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/flannel:v0.8.0-amd64
-docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-kube-dns-amd64:1.14.4
-docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/k8s-dns-dnsmasq-nanny-amd64:1.14.4
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/jhr-k8s/k8s-dns-kube-dns-amd64:1.14.8
+docker rmi -f registry.cn-hangzhou.aliyuncs.com/jhr-k8s/k8s-dns-dnsmasq-nanny-amd64:1.14.8
 docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17
+```
+
+## 八、为docker配置代理
+
+ 编辑/etc/systemd/system/docker.service.d/http-proxy.conf文件，内容： 
+
+```bash  
+[Service]
+Environment="HTTP_PROXY=http://127.0.0.1:18880/" "HTTPS_PROXY=http://127.0.0.1:18880/" "NO_PROXY=localhost,127.0.0.1,192.168.0.0/16,172.16.0.0/16,.jigsaw,.mirror.aliyuncs.com,10.96.0.0/16,10.244.0.0/16"
 ```
 
 
@@ -238,15 +247,14 @@ docker rmi -f registry.cn-hangzhou.aliyuncs.com/daniel_kubeadm/etcd-amd64:3.0.17
 /etc/init.d/privoxy restart
 export http_proxy="http://127.0.0.1:18880/"
 export https_proxy="http://127.0.0.1:18880/"
-export no_proxy="localhost,127.0.0.1,192.168.1.112,192.168.1.115,172.16.2.23, 172.16.2.24,172.16.1.,.jigsaw"
+export no_proxy="localhost,127.0.0.1,192.168.0.0/16,172.16.0.0/16,.jigsaw,.mirror.aliyuncs.com,10.96.0.0/16,10.244.0.0/16"
 echo $http_proxy
 echo $https_proxy
 echo $no_proxy
-
-# 重新加载kubelet服务
 systemctl daemon-reload
 systemctl restart kubelet
-kubeadm init  --pod-network-cidr=10.244.0.0/16 --kubernetes-version=v1.7.5  --apiserver-advertise-address=172.16.2.24
+kubeadm init  --pod-network-cidr=10.244.0.0/16 --kubernetes-version=v1.10.0  --apiserver-advertise-address=192.168.1.112 --token=jigsaw.paymentkubetoken  --ignore-preflight-errors=Swap
+
 ```
 
 然后执行：
@@ -264,34 +272,53 @@ Stopping Privoxy, OK.
 Starting Privoxy, OK.
 http://127.0.0.1:18880/
 http://127.0.0.1:18880/
-localhost,127.0.0.1,192.168.1.112,192.168.1.115,172.16.2.23, 172.16.2.24,172.16.1.,.jigsaw
-[kubeadm] WARNING: kubeadm is in beta, please do not use it for production clusters.
-[init] Using Kubernetes version: v1.7.5
+localhost,127.0.0.1,192.168.0.0/16,172.16.0.0/16,.jigsaw,.mirror.aliyuncs.com,10.96.0.0/16,10.244.0.0/16
+[init] Using Kubernetes version: v1.10.0
 [init] Using Authorization modes: [Node RBAC]
-[preflight] Running pre-flight checks
-[kubeadm] WARNING: starting in 1.8, tokens expire after 24 hours by default (if you require a non-expiring token use --token-ttl 0)
-[certificates] Generated CA certificate and key.
-[certificates] Generated API server certificate and key.
-[certificates] API Server serving cert is signed for DNS names [kube-master.jigsaw kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 192.168.1.112]
-[certificates] Generated API server kubelet client certificate and key.
-[certificates] Generated service account token signing key and public key.
-[certificates] Generated front-proxy CA certificate and key.
-[certificates] Generated front-proxy client certificate and key.
+[preflight] Running pre-flight checks.
+        [WARNING SystemVerification]: docker version is greater than the most recently validated version. Docker version: 18.03.0-ce. Max validated version: 17.03
+        [WARNING FileExisting-crictl]: crictl not found in system path
+Suggestion: go get github.com/kubernetes-incubator/cri-tools/cmd/crictl
+[certificates] Generated ca certificate and key.
+[certificates] Generated apiserver certificate and key.
+[certificates] apiserver serving cert is signed for DNS names [kube-master.jigsaw kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 192.168.1.112]
+[certificates] Generated apiserver-kubelet-client certificate and key.
+[certificates] Generated etcd/ca certificate and key.
+[certificates] Generated etcd/server certificate and key.
+[certificates] etcd/server serving cert is signed for DNS names [localhost] and IPs [127.0.0.1]
+[certificates] Generated etcd/peer certificate and key.
+[certificates] etcd/peer serving cert is signed for DNS names [kube-master.jigsaw] and IPs [192.168.1.112]
+[certificates] Generated etcd/healthcheck-client certificate and key.
+[certificates] Generated apiserver-etcd-client certificate and key.
+[certificates] Generated sa key and public key.
+[certificates] Generated front-proxy-ca certificate and key.
+[certificates] Generated front-proxy-client certificate and key.
 [certificates] Valid certificates and keys now exist in "/etc/kubernetes/pki"
 [kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/admin.conf"
 [kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/kubelet.conf"
 [kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/controller-manager.conf"
 [kubeconfig] Wrote KubeConfig file to disk: "/etc/kubernetes/scheduler.conf"
-[apiclient] Created API client, waiting for the control plane to become ready
-[apiclient] All control plane components are healthy after 35.503021 seconds
-[token] Using token: 703089.e6b9cc54a8810491
-[apiconfig] Created RBAC rules
-[addons] Applied essential addon: kube-proxy
+[controlplane] Wrote Static Pod manifest for component kube-apiserver to "/etc/kubernetes/manifests/kube-apiserver.yaml"
+[controlplane] Wrote Static Pod manifest for component kube-controller-manager to "/etc/kubernetes/manifests/kube-controller-manager.yaml"
+[controlplane] Wrote Static Pod manifest for component kube-scheduler to "/etc/kubernetes/manifests/kube-scheduler.yaml"
+[etcd] Wrote Static Pod manifest for a local etcd instance to "/etc/kubernetes/manifests/etcd.yaml"
+[init] Waiting for the kubelet to boot up the control plane as Static Pods from directory "/etc/kubernetes/manifests".
+[init] This might take a minute or longer if the control plane images have to be pulled.
+[apiclient] All control plane components are healthy after 38.004284 seconds
+[uploadconfig]聽Storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace
+[markmaster] Will mark node kube-master.jigsaw as master by adding a label and a taint
+[markmaster] Master kube-master.jigsaw tainted and labelled with key/value: node-role.kubernetes.io/master=""
+[bootstraptoken] Using token: jigsaw.paymentkubetoken
+[bootstraptoken] Configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
+[bootstraptoken] Configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token
+[bootstraptoken] Configured RBAC rules to allow certificate rotation for all node client certificates in the cluster
+[bootstraptoken] Creating the "cluster-info" ConfigMap in the "kube-public" namespace
 [addons] Applied essential addon: kube-dns
+[addons] Applied essential addon: kube-proxy
 
 Your Kubernetes master has initialized successfully!
 
-To start using your cluster, you need to run (as a regular user):
+To start using your cluster, you need to run the following as a regular user:
 
   mkdir -p $HOME/.kube
   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
@@ -299,13 +326,12 @@ To start using your cluster, you need to run (as a regular user):
 
 You should now deploy a pod network to the cluster.
 Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
-  http://kubernetes.io/docs/admin/addons/
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
 
 You can now join any number of machines by running the following on each node
 as root:
 
-  kubeadm join --token jigsaw.paymentkubetoken 172.16.2.24:6443
-
+  kubeadm join 192.168.1.112:6443 --token jigsaw.paymentkubetoken --discovery-token-ca-cert-hash sha256:ab3e68f3e3b02c493bcfc34b86fa6183a16783cc3047e  7d5405858d129094648
 
 ```
 
@@ -342,3 +368,22 @@ the server does not allow access to the requested resource (get pods kube-flanne
 kubectl create -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel-rbac.yml
 kubectl create -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 ```
+
+## 十一、docker代理
+
+通过sudo journalctl -x -r -u docker， 如果发现还有连接不上gcr.io的错误，可以考虑给docker配置代理
+到  /etc/systemd/system/docker.service.d/ 目录下，创建 http-proxy.conf 文件， 内容
+
+```bash
+[Service]
+Environment="HTTP_PROXY=http://127.0.0.1:18880/" "HTTPS_PROXY=http://127.0.0.1:18880/" "NO_PROXY=localhost,127.0.0.1,192.168.1.112,192.168.1.115,172.16.2.23, 172.16.2.24,172.16.1.,.jigsaw,.aliyuncs.com"
+
+```
+
+重启docker服务  
+```bash
+sudo vi http-proxy.conf
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
