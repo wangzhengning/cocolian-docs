@@ -4,7 +4,7 @@ title:      "使用微服务架构重构支付网关"
 subtitle:   "从SSH单体应用到微服务架构-4"
 date:       2016-09-01 12:00:00
 author:     "shamphone"
-chapter:	"5.4"
+chapter:	"15.4"
 
 ---
 

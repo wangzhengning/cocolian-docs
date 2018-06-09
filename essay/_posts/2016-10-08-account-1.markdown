@@ -4,7 +4,7 @@ title: 		"账户模型"
 subtitle: 	"支付系统设计"
 date: 		2016-10-08 12:00:00
 author: 	"shamphone"
-chapter:	"3.1"
+chapter:	"03.1"
 
 ---
 

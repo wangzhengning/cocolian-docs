@@ -4,7 +4,7 @@ title: 		"微服务与RPC"
 subtitle: 	"从SSH单体应用到微服务架构-7"
 date: 		2017-02-17 12:00:00
 author: 	"shamphone"
-chapter:	"6.2"
+chapter:	"16.2"
 
 ---
 

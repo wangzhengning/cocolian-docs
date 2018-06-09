@@ -4,7 +4,7 @@ title: 		"搭建一个私有区块链环境"
 subtitle: 	"区块链开发-1"
 date: 		2016-09-02 12:00:00
 author: 	"shamphone"
-chapter:	"7.1"
+chapter:	"17.1"
 
 ---
 

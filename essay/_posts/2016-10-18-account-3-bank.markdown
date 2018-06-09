@@ -4,7 +4,7 @@ title: 		"银行卡支付"
 subtitle: 	"支付系统设计-3"
 date: 		2016-10-12 12:00:00
 author: 	"shamphone"
-chapter:	"2.3.1"
+chapter:	"02.3.1"
 ---
 
 ## 银行卡支付

@@ -4,7 +4,7 @@ title: 		"实现一个简单的交易"
 subtitle: 	"区块链开发-2"
 date: 		2016-09-04 12:00:00
 author: 	"shamphone"
-chapter:	"7.2"
+chapter:	"17.2"
 ---
 
 > 本文是针对以太坊开发入门的教程。 纯开发人员版本。关于以太坊相关概念，比如合约、交易、以太币等，参考[官方文档](https://github.com/ethereum/go-ethereum/wiki/Contracts-and-Transactions)，或者[中文版](http://wangxiaoming.com/blog/archives/)

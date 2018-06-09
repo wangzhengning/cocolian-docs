@@ -4,7 +4,7 @@ title: 		"支付路由设计"
 subtitle: 	"支付系统设计-9"
 date: 		2017-02-06 12:00:00
 author: 	"shamphone"
-chapter:	"2.4"
+chapter:	"02.4"
 
 ---
 
